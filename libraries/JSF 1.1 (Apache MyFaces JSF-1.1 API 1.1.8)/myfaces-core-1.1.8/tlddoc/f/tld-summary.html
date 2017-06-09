@@ -1,0 +1,181 @@
+<html xmlns:javaee="http://java.sun.com/xml/ns/javaee" xmlns:fo="http://www.w3.org/1999/XSL/Format">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>JSF core tag library.
+          (Apache MyFaces JSF-1.1 Implementation Tag library documentation)
+        </title>
+<link rel="stylesheet" type="text/css" href="../stylesheet.css" title="styie">
+</head>
+<script>
+            function asd()
+            {
+            parent.document.title="JSF core tag library. (Apache MyFaces JSF-1.1 Implementation Tag library documentation)";
+            }
+          </script>
+<body bgcolor="white" onload="asd();">
+<a name="navbar_top"></a>
+<table border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td COLSPAN="3" BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><a NAME="navbar_top_firstrow"></a>
+<table BORDER="0" CELLPADDING="0" CELLSPACING="3">
+<tr ALIGN="center" VALIGN="top">
+<td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a href="../overview-summary.html"><font CLASS="NavBarFont1"><b>Overview</b></font></a>&nbsp;</td><td BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev">    &nbsp;<font CLASS="NavBarFont1Rev">&nbsp;Library&nbsp;</font>&nbsp;</td><td BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><font CLASS="NavBarFont1">&nbsp;Tag&nbsp;</font></td><td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a HREF="../help-doc.html"><font CLASS="NavBarFont1"><b>Help</b></font></a>&nbsp;</td>
+</tr>
+</table>
+</td><td ALIGN="right" VALIGN="top" ROWSPAN="3"><em></em></td>
+</tr>
+<tr>
+<td BGCOLOR="white" CLASS="NavBarCell2"><font SIZE="-2"></font></td><td BGCOLOR="white" CLASS="NavBarCell2"><font SIZE="-2">
+                &nbsp;<a HREF="../index.html" TARGET="_top"><b>FRAMES</b></a>&nbsp;
+                &nbsp;<a HREF="tld-summary.html" TARGET="_top"><b>NO FRAMES</b></a>&nbsp;
+                <script></script>
+<noscript>
+<a HREF="../alltags-noframe.html" TARGET=""><b>All Tags</b></a>
+</noscript>
+</font></td>
+</tr>
+</table>
+<hr>
+<h2>JSF core tag library.</h2>
+<hr>
+<b>Standard Syntax:</b>
+<br>
+<code>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                
+                    &lt;%@ taglib prefix="f" uri="http://java.sun.com/jsf/core" %&gt;<br>
+</code>
+<br>
+<b>XML Syntax:</b>
+<br>
+<code>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                
+                    &lt;anyxmlelement xmlns:f="http://java.sun.com/jsf/core" /&gt;<br>
+</code>
+<hr>
+<pre>This tag library implements the standard JSF core tags.</pre>
+<p></p>
+<table border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+<td colspan="2"><font size="+2"><b>Tag Library Information</b></font></td>
+</tr>
+<tr>
+<td>Display Name</td><td>JSF core tag library.</td>
+</tr>
+<tr>
+<td>Version</td><td>1.0</td>
+</tr>
+<tr>
+<td>Short Name</td><td>f</td>
+</tr>
+<tr>
+<td>URI</td><td>http://java.sun.com/jsf/core</td>
+</tr>
+</table>
+            &nbsp;
+            <p></p>
+<table border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+<td colspan="2"><font size="+2"><b>Tag Summary</b></font></td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%"><b><a href="param.html">param</a></b></td><td>This tag associates a parameter name-value pair with the nearest parent UIComponent. <p> A UIComponent is created to represent this name-value pair, and stored as a child of the parent component; what effect this has depends upon the renderer of that parent component. <p> Unless otherwise specified, all attributes accept static values or EL expressions. <p> See Javadoc of <a href="http://java.sun.com/j2ee/javaserverfaces/1.1_01/docs/api/index.html">JSF Specification</a></td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%"><b><a href="selectItem.html">selectItem</a></b></td><td>A component representing a single option that the user can choose. <p> The option attributes can either be defined directly on this component (via the itemValue, itemLabel, itemDescription properties) or the value property can reference a SelectItem object (directly or via an EL expression). <p> The value expression (if defined) is read-only; the parent select component will have a value attribute specifying where the value for the chosen selection will be stored. <p> See Javadoc of <a href="http://java.sun.com/j2ee/javaserverfaces/1.1_01/docs/api/index.html">JSF Specification</a></td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%"><b><a href="selectItems.html">selectItems</a></b></td><td>This tag associates a set of selection list items with the nearest parent UIComponent. The set of SelectItem objects is retrieved via a value-binding. <p> Unless otherwise specified, all attributes accept static values or EL expressions. <p> See Javadoc of <a href="http://java.sun.com/j2ee/javaserverfaces/1.1_01/docs/api/index.html">JSF Specification</a></td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%"><b><a href="view.html">view</a></b></td><td>Creates a JSF View, which is a container that holds all of the components that are part of the view. <p> Unless otherwise specified, all attributes accept static values or EL expressions. <p> See Javadoc of <a href="http://java.sun.com/j2ee/javaserverfaces/1.1_01/docs/api/index.html">JSF Specification</a></td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%"><b><a href="convertDateTime.html">convertDateTime</a></b></td><td>This tag associates a date time converter with the nearest parent UIComponent. Unless otherwise specified, all attributes accept static values or EL expressions. see Javadoc of <a href="http://java.sun.com/j2ee/javaserverfaces/1.1_01/docs/api/index.html">JSF Specification</a></td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%"><b><a href="convertNumber.html">convertNumber</a></b></td><td>This tag creates a number formatting converter and associates it with the nearest parent UIComponent. Unless otherwise specified, all attributes accept static values or EL expressions. see Javadoc of <a href="http://java.sun.com/j2ee/javaserverfaces/1.1_01/docs/api/index.html">JSF Specification</a></td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%"><b><a href="validateDoubleRange.html">validateDoubleRange</a></b></td><td>Creates a validator and associateds it with the nearest parent UIComponent. When invoked, the validator ensures that values are valid doubles that lie within the minimum and maximum values specified. Commonly associated with a h:inputText entity. Unless otherwise specified, all attributes accept static values or EL expressions. see Javadoc of <a href="http://java.sun.com/j2ee/javaserverfaces/1.1_01/docs/api/index.html">JSF Specification</a></td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%"><b><a href="validateLength.html">validateLength</a></b></td><td>Creates a validator and associateds it with the nearest parent UIComponent. When invoked, the validator ensures that values are valid strings with a length that lies within the minimum and maximum values specified. Commonly associated with a h:inputText entity. Unless otherwise specified, all attributes accept static values or EL expressions. see Javadoc of <a href="http://java.sun.com/j2ee/javaserverfaces/1.1_01/docs/api/index.html">JSF Specification</a></td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%"><b><a href="validateLongRange.html">validateLongRange</a></b></td><td>Creates a validator and associateds it with the nearest parent UIComponent. When invoked, the validator ensures that values are valid longs that lie within the minimum and maximum values specified. Commonly associated with a h:inputText entity. Unless otherwise specified, all attributes accept static values or EL expressions. see Javadoc of <a href="http://java.sun.com/j2ee/javaserverfaces/1.1_01/docs/api/index.html">JSF Specification</a></td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%"><b><a href="attribute.html">attribute</a></b></td><td>This tag associates an attribute with the nearest parent UIComponent. <p> When the value is not an EL expression, this tag has the same effect as calling component.getAttributes.put(name, value). When the attribute name specified matches a standard property of the component, that property is set. However it is also valid to assign attributes to components using any arbitrary name; the component itself won't make any use of these but other objects such as custom renderers, validators or action listeners can later retrieve the attribute from the component by name. <p> When the value is an EL expression, this tag has the same effect as calling component.setValueBinding. A call to method component.getAttributes().get(name) will then cause that expression to be evaluated and the result of the expression is returned, not the original EL expression string. <p> See the javadoc for UIComponent.getAttributes for more details. <p> Unless otherwise specified, all attributes accept static values or EL expressions. see Javadoc of <a href="http://java.sun.com/j2ee/javaserverfaces/1.1_01/docs/api/index.html">JSF Specification</a></td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%"><b><a href="converter.html">converter</a></b></td><td>This tag creates an instance of the specified Converter, and associates it with the nearest parent UIComponent. see Javadoc of <a href="http://java.sun.com/j2ee/javaserverfaces/1.1_01/docs/api/index.html">JSF Specification</a></td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%"><b><a href="facet.html">facet</a></b></td><td>This tag adds its child as a facet of the nearest parent UIComponent. A child consisting of multiple elements should be nested within a container component (i.e., within an h:panelGroup for HTML library components). Unless otherwise specified, all attributes accept static values or EL expressions. see Javadoc of <a href="http://java.sun.com/j2ee/javaserverfaces/1.1_01/docs/api/index.html">JSF Specification</a></td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%"><b><a href="validator.html">validator</a></b></td><td>Creates a validator and associates it with the nearest parent UIComponent. During the validation phase (or the apply-request-values phase for immediate components), if the associated component has any submitted value and the conversion of that value to the required type has succeeded then the specified validator type is invoked to test the validity of the converted value. <p> Commonly associated with an h:inputText entity, but may be applied to any input component. <p> Some validators may allow the component to use attributes to define component-specific validation constraints; see the f:attribute tag. See also the "validator" attribute of all input components, which allows a component to specify an arbitrary validation <i>method</i> (rather than a registered validation type, as this tag does). <p> Unless otherwise specified, all attributes accept static values or EL expressions. see Javadoc of <a href="http://java.sun.com/j2ee/javaserverfaces/1.1_01/docs/api/index.html">JSF Specification</a></td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%"><b><a href="actionListener.html">actionListener</a></b></td><td>This tag creates an instance of the specified ActionListener, and associates it with the nearest parent UIComponent. Unless otherwise specified, all attributes accept static values or EL expressions.</td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%"><b><a href="loadBundle.html">loadBundle</a></b></td><td>Loads a resource bundle and saves it as a variable in the request scope. Unless otherwise specified, all attributes accept static values or EL expressions.</td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%"><b><a href="subview.html">subview</a></b></td><td>This tag associates a set of UIComponents with the nearest parent UIComponent. It acts as a naming container to make the IDs of its component elements unique. Unless otherwise specified, all attributes accept static values or EL expressions.</td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%"><b><a href="valueChangeListener.html">valueChangeListener</a></b></td><td>Adds the specified ValueChangeListener to the nearest parent UIComponent (which is expected to be a UIInput component). Whenever the form containing the parent UIComponent is submitted, an instance of the specified type is created. If the submitted value from the component is different from the component's current value then a ValueChangeEvent is queued. When the ValueChangeEvent is processed (at end of the validate phase for non-immediate components, or at end of the apply-request-values phase for immediate components) the object's processValueChange method is invoked. <p> Unless otherwise specified, all attributes accept static values or EL expressions.</td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%"><b><a href="verbatim.html">verbatim</a></b></td><td>Outputs its body as verbatim text. No JSP tags within the verbatim tag (including JSF tags) are evaluated; the content is treated simply as literal text to be copied to the response. <p> Unless otherwise specified, all attributes accept static values or EL expressions.</td>
+</tr>
+</table>
+              &nbsp;
+              <p></p>
+<table border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+<td><font size="+2"><b>Listeners</b></font></td>
+</tr>
+<tr valign="top" bgcolor="white" class="TableRowColor">
+<td><b>org.apache.myfaces.webapp.StartupServletContextListener</b></td>
+</tr>
+</table>
+              &nbsp;
+              <p></p>
+<a name="navbar_bottom"></a>
+<table border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td COLSPAN="3" BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><a NAME="navbar_bottom_firstrow"></a>
+<table BORDER="0" CELLPADDING="0" CELLSPACING="3">
+<tr ALIGN="center" VALIGN="top">
+<td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a href="../overview-summary.html"><font CLASS="NavBarFont1"><b>Overview</b></font></a>&nbsp;</td><td BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev">    &nbsp;<font CLASS="NavBarFont1Rev">&nbsp;Library&nbsp;</font>&nbsp;</td><td BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><font CLASS="NavBarFont1">&nbsp;Tag&nbsp;</font></td><td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a HREF="../help-doc.html"><font CLASS="NavBarFont1"><b>Help</b></font></a>&nbsp;</td>
+</tr>
+</table>
+</td><td ALIGN="right" VALIGN="top" ROWSPAN="3"><em></em></td>
+</tr>
+<tr>
+<td BGCOLOR="white" CLASS="NavBarCell2"><font SIZE="-2"></font></td><td BGCOLOR="white" CLASS="NavBarCell2"><font SIZE="-2">
+                &nbsp;<a HREF="../index.html" TARGET="_top"><b>FRAMES</b></a>&nbsp;
+                &nbsp;<a HREF="tld-summary.html" TARGET="_top"><b>NO FRAMES</b></a>&nbsp;
+                <script></script>
+<noscript>
+<a HREF="../alltags-noframe.html" TARGET=""><b>All Tags</b></a>
+</noscript>
+</font></td>
+</tr>
+</table>
+<hr>
+<small><i>
+            Java, JSP, and JavaServer Pages are trademarks or registered 
+            trademarks of Sun Microsystems, Inc. in the US and other countries.
+            Copyright 2002-3 Sun Microsystems, Inc.
+            4150 Network Circle
+            Santa Clara, CA 95054, U.S.A.
+            All Rights Reserved. 
+            </i></small>
+</body>
+</html>

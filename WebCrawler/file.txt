@@ -1,0 +1,3863 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/QAPage">
+
+<head>
+
+<title>How do I save a String to a text file using Java? - Stack Overflow</title>
+    <link rel="shortcut icon" href="https://cdn.sstatic.net/Sites/stackoverflow/img/favicon.ico?v=4f32ecc8f43d">
+    <link rel="apple-touch-icon image_src" href="https://cdn.sstatic.net/Sites/stackoverflow/img/apple-touch-icon.png?v=c78bd457575a">
+    <link rel="search" type="application/opensearchdescription+xml" title="Stack Overflow" href="/opensearch.xml">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:domain" content="stackoverflow.com"/>
+    <meta property="og:type" content="website" />
+
+    <meta property="og:image" itemprop="image primaryImageOfPage" content="https://cdn.sstatic.net/Sites/stackoverflow/img/apple-touch-icon@2.png?v=73d79a89bded" />
+    <meta name="twitter:title" property="og:title" itemprop="title name" content="How do I save a String to a text file using Java?" />
+    <meta name="twitter:description" property="og:description" itemprop="description" content="In Java, I have text from a text field in a String variable called &quot;text&quot;.
+
+How can I save the contents of the &quot;text&quot; variable to a file?" />
+    <meta property="og:url" content="http://stackoverflow.com/questions/1053467/how-do-i-save-a-string-to-a-text-file-using-java"/>
+    <link rel="canonical" href="http://stackoverflow.com/questions/1053467/how-do-i-save-a-string-to-a-text-file-using-java" />
+
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.sstatic.net/Js/stub.en.js?v=1899cfb7cf9e"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.sstatic.net/Sites/stackoverflow/all.css?v=df272f6aeb12">
+
+            <link rel="alternate" type="application/atom+xml" title="Feed for question &#39;How do I save a String to a text file using Java?&#39;" href="/feeds/question/1053467">
+            <meta name="twitter:app:country" content="US" />
+            <meta name="twitter:app:name:iphone" content="Stack Exchange iOS" />
+            <meta name="twitter:app:id:iphone" content="871299723" />
+            <meta name="twitter:app:url:iphone" content="se-zaphod://stackoverflow.com/questions/1053467/how-do-i-save-a-string-to-a-text-file-using-java" />
+            <meta name="twitter:app:name:ipad" content="Stack Exchange iOS" />
+            <meta name="twitter:app:id:ipad" content="871299723" />
+            <meta name="twitter:app:url:ipad" content="se-zaphod://stackoverflow.com/questions/1053467/how-do-i-save-a-string-to-a-text-file-using-java" />
+            <meta name="twitter:app:name:googleplay" content="Stack Exchange Android">
+            <meta name="twitter:app:url:googleplay" content="http://stackoverflow.com/questions/1053467/how-do-i-save-a-string-to-a-text-file-using-java">
+            <meta name="twitter:app:id:googleplay" content="com.stackexchange.marvin">
+        <script>
+        
+            StackExchange.ready(function () {
+                                    
+                    StackExchange.using("snippets", function () {
+                        StackExchange.snippets.initSnippetRenderer();
+                    });
+                    
+
+                StackExchange.using("postValidation", function () {
+                    StackExchange.postValidation.initOnBlurAndSubmit($('#post-form'), 2, 'answer');
+                });
+
+                
+                StackExchange.question.init({showAnswerHelp:true,totalCommentCount:0,shownCommentCount:0,highlightColor:'#F4A83D',backgroundColor:'#FFF',questionId:1053467});
+
+                styleCode();
+
+                    StackExchange.realtime.subscribeToQuestion('1', '1053467');
+                                                                    StackExchange.using("gps", function () { StackExchange.gps.trackOutboundClicks('#content', '.post-text', true); });
+
+            });
+        </script>
+
+
+    <script>
+        StackExchange.init({"locale":"en","stackAuthUrl":"https://stackauth.com","networkMetaHostname":"meta.stackexchange.com","serverTime":1489633720,"routeName":"Questions/Show","site":{"name":"Stack Overflow","description":"Q&A for professional and enthusiast programmers","isNoticesTabEnabled":true,"recaptchaPublicKey":"6LdchgIAAAAAAJwGpIzRQSOFaO0pU6s44Xt8aTwc","recaptchaAudioLang":"en","enableNewTagCreationWarning":true,"insertSpaceAfterNameTabCompletion":false,"id":1,"enableInsertDocLinkDialog":true,"childUrl":"https://meta.stackoverflow.com","enableSocialMediaInSharePopup":true,"protocol":"http"},"user":{"fkey":"d686f153c4cb999f00601996b8d9ed18","rep":0,"isAnonymous":true,"isAnonymousNetworkWide":true,"canSeeNewHeaderDesign":true,"ab":{"question_show_tweaks":{"v":"altern_unansw_cta","g":1},"simplified_signup_form":{"v":"messaging_b","g":2}}},"events":{"postType":{"question":1},"postEditionSection":{"title":1,"body":2,"tags":3}},"story":{"minCompleteBodyLength":75}}, {"site":{"allowImageUploads":true,"enableUserHovercards":true,"styleCode":true,"enableNewLinkInsertDialog":true,"enableImgurHttps":true,"forceHttpsImages":true},"comments":{},"userProfile":{"openGraphAPIKey":"58740831ad23540e00c58987"},"tags":{},"accounts":{"currentPasswordRequiredForChangingStackIdPassword":true},"flags":{"allowRetractingFlags":true},"analytics":{"clientTimingsAbsoluteTimeout":30000,"clientTimingsDebounceTimeout":1000},"snippets":{"snippetsEnabled":true,"renderDomain":"stacksnippets.net"},"markdown":{"asteriskIntraWordEmphasis":true}});
+        StackExchange.using.setCacheBreakers({"js/prettify-full.en.js":"ba861d302271","js/moderator.en.js":"807bb02152f9","js/full-anon.en.js":"98ac9067369d","js/full.en.js":"5d0e14b96d06","js/wmd.en.js":"22ea6436650f","js/third-party/jquery.autocomplete.min.js":"d3b8fa7fdf74","js/third-party/jquery.autocomplete.min.en.js":"","js/mobile.en.js":"153e33c56ac2","js/help.en.js":"118cb359bcc6","js/tageditor.en.js":"491534bc508d","js/tageditornew.en.js":"f9e8eb5b7403","js/inline-tag-editing.en.js":"77dde44800e2","js/revisions.en.js":"47de10a8358f","js/review.en.js":"9f716ff77e01","js/tagsuggestions.en.js":"d1ff9b84abe5","js/post-validation.en.js":"065a5c920a8a","js/explore-qlist.en.js":"e71f14781288","js/events.en.js":"cf597fff9231","js/keyboard-shortcuts.en.js":"5cdf9c58fe3f","js/external-editor.en.js":"e574ed908cf3","js/adops.en.js":"9a6a7812a212","js/external-editor.en.js":"e574ed908cf3","js/snippet-javascript.en.js":"19360e860353","js/snippet-javascript-codemirror.en.js":"051ca91900fa"});
+        StackExchange.using("gps", function() {
+             StackExchange.gps.init(true);
+        });
+    </script>
+    
+        <script>
+            StackExchange.ready(function () {
+                $('#nav-tour').click(function () {
+                    StackExchange.using("gps", function() {
+                        StackExchange.gps.track("aboutpage.click", { aboutclick_location: "headermain" }, true);
+                    });
+                });
+            });
+        </script>
+    <noscript id="noscript-css"><style type="text/css">body,.so-header{margin-top:1.9em}</style></noscript>
+</head>
+<body class="question-page new-topbar">
+            <script>(function () { var old = $.fn.contents; $.fn.contents = function () { try { return old.apply(this, arguments); } catch (e) { return $([]); } } })()</script>
+        <iframe id="adzerk-user-match" width="0" height="0" frameborder="0" scrolling="no" onload="window.AUMIframeDone=true"
+                src="https://ssum-sec.casalemedia.com/usermatch?s=183712&amp;cb=https%3A%2F%2Fengine.adzerk.net%2Fudb%2F22%2Fsync%2Fi.gif%3FpartnerId%3D1%26userId%3D"
+                style="display: none;" marginheight="0" marginwidth="0"></iframe>
+
+    <div id="notify-container"></div>
+    <div id="custom-header"></div>
+
+
+<header class="so-header js-so-header _fixed">
+    <div class="-container">
+        <div class="-main">            
+            <a href="http://stackoverflow.com" class="-logo ">
+                <span class="-img">Stack Overflow</span>
+            </a>
+
+            <nav class="navigation">
+                <ol class="-list">
+                        <li class="-item _current">
+        <a id="nav-questions" href="/questions" class="-link js-gps-track" 
+            data-gps-track="top_nav.click({is_current:true, location:2, destination:1})">Questions</a>
+    </li>
+
+    <li class="-item">
+        <a id="nav-jobs" href="/jobs?med=site-ui&amp;ref=jobs-tab" class="-link js-gps-track" 
+            data-gps-track="top_nav.click({is_current:false, location:2, destination:6})">Jobs</a>
+    </li>
+                        <li class="-item">
+        <a id="nav-docs" href="/documentation" class="-link js-gps-track" 
+            data-gps-track="top_nav.click({is_current:false, location:2, destination:7})">Documentation <small class='beta-badge'>beta</small></a>
+    </li>
+                        <li class="-item">
+        <a id="nav-tags" href="/tags" class="-link js-gps-track" 
+            data-gps-track="top_nav.click({is_current:false, location:2, destination:2})">Tags</a>
+    </li>
+
+                        <li class="-item">
+        <a id="nav-users" href="/users" class="-link js-gps-track" 
+            data-gps-track="top_nav.click({is_current:false, location:2, destination:3})">Users</a>
+    </li>
+
+                </ol>
+            </nav>
+
+            <form id="search" action="/search" method="get" class="searchbar" autocomplete="off">
+                <svg viewBox="0 0 18 18" width="18" height="18" role="icon"><path fill-rule="evenodd" d="M12.864 11.32h-.813l-.288-.277A6.66 6.66 0 0 0 13.38 6.69a6.69 6.69 0 1 0-6.69 6.69 6.66 6.66 0 0 0 4.354-1.617l.278.288v.813L16.467 18 18 16.467l-5.136-5.146zm-6.174 0a4.625 4.625 0 0 1-4.632-4.63A4.625 4.625 0 0 1 6.69 2.058a4.625 4.625 0 0 1 4.63 4.632 4.625 4.625 0 0 1-4.63 4.63z"/></svg>
+                <input name="q" type="text" placeholder="Search..." value="" tabindex="1" autocomplete="off" maxlength="240" class="f-input js-search-field" />
+                <button type="submit" class="btn js-search-submit">
+                    <svg viewBox="0 0 18 18" width="18" height="18" role="icon"><path fill-rule="evenodd" d="M12.864 11.32h-.813l-.288-.277A6.66 6.66 0 0 0 13.38 6.69a6.69 6.69 0 1 0-6.69 6.69 6.66 6.66 0 0 0 4.354-1.617l.278.288v.813L16.467 18 18 16.467l-5.136-5.146zm-6.174 0a4.625 4.625 0 0 1-4.632-4.63A4.625 4.625 0 0 1 6.69 2.058a4.625 4.625 0 0 1 4.63 4.632 4.625 4.625 0 0 1-4.63 4.63z"/></svg>
+                </button>
+            </form>
+
+        </div>
+        
+
+
+<div class="-actions">
+    <nav class="secondary-nav">
+        <div class="-dialog-container js-topbar-dialog-corral">
+
+
+    <div class="topbar-dialog siteSwitcher-dialog dno">
+        <div class="header">
+            <h3><a href="http://stackoverflow.com">current community</a>
+            </h3>
+        </div>
+        <div class="modal-content current-site-container">
+            <ul class="current-site">
+                    <li>
+                            <div class="related-links">
+            <a href="http://stackoverflow.com/help" class="js-gps-track"     data-gps-track="site_switcher.click({ item_type:14 })"
+>help</a>
+                    <a href="http://chat.stackoverflow.com" class="js-gps-track"     data-gps-track="site_switcher.click({ item_type:6 })"
+>chat</a>
+            </div>
+
+    <a href="http://stackoverflow.com"
+       class="current-site-link site-link js-gps-track"
+       data-id="1"
+       data-gps-track="site_switcher.click({ item_type:3 })">
+        <div class="site-icon favicon favicon-stackoverflow" title="Stack Overflow"></div>
+        Stack Overflow
+    </a>
+
+                    </li>
+                    <li class="related-site">
+                            <div class="L-shaped-icon-container">
+        <span class="L-shaped-icon"></span>
+    </div>
+
+                        
+    <a href="https://meta.stackoverflow.com"
+       class="site-link js-gps-track"
+       data-id="552"
+       data-gps-track="site.switch({ target_site:552, item_type:3 }),site_switcher.click({ item_type:4 })">
+        <div class="site-icon favicon favicon-stackoverflowmeta" title="Meta Stack Overflow"></div>
+        Meta Stack Overflow
+    </a>
+
+                    </li>
+            </ul>
+        </div>
+
+        <div class="header" id="your-communities-header">
+            <h3>
+your communities            </h3>
+
+        </div>
+        <div class="modal-content" id="your-communities-section">
+
+                <div class="call-to-login">
+<a href="https://stackoverflow.com/users/signup?ssrc=site_switcher&amp;returnurl=%2fusers%2fstory%2fcurrent&amp;amp;utm_source=stackoverflow.com&amp;amp;utm_medium=dev-story&amp;amp;utm_campaign=signup-redirect" class="login-link js-gps-track"     data-gps-track="site_switcher.click({ item_type:10 })"
+>Sign up</a> or <a href="https://stackoverflow.com/users/login?ssrc=site_switcher&amp;returnurl=http%3a%2f%2fstackoverflow.com%2fquestions%2f1053467%2fhow-do-i-save-a-string-to-a-text-file-using-java" class="login-link js-gps-track"     data-gps-track="site_switcher.click({ item_type:11 })"
+>log in</a> to customize your list.
+                </div>
+        </div>
+
+        <div class="header">
+            <h3><a href="https://stackexchange.com/sites">more stack exchange communities</a>
+            </h3>
+            <a href="https://stackoverflow.blog" class="fr">company blog</a>
+        </div>
+        <div class="modal-content">
+                <div class="child-content"></div>
+        </div>        
+    </div>
+                <div class="topbar-dialog help-dialog js-help-dialog dno">
+        <div class="modal-content">
+            <ul>
+                                    <li>
+                        <a href="/tour" class="js-gps-track" data-gps-track="help_popup.click({ item_type:1 })">
+                            Tour
+                            <span class="item-summary">
+                                Start here for a quick overview of the site
+                            </span>
+                        </a>
+                    </li>
+                <li>
+                    <a href="/help" class="js-gps-track" data-gps-track="help_popup.click({ item_type:4 })">
+                        Help Center
+                        <span class="item-summary">
+                            Detailed answers to any questions you might have
+                        </span>
+                    </a>
+                </li>
+                        <li>
+                            <a href="https://meta.stackoverflow.com" class="js-gps-track" data-gps-track="help_popup.click({ item_type:2 })">
+                                Meta
+                                <span class="item-summary">
+                                    Discuss the workings and policies of this site
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://stackoverflow.com/company/about" class="js-gps-track" data-gps-track="help_popup.click({ item_type:6 })">
+                                About Us
+                                <span class="item-summary">
+                                    Learn more about Stack Overflow the company
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.stackoverflowbusiness.com/?ref=topbar_help" class="js-gps-track" data-gps-track="help_popup.click({ item_type:7 })">
+                                Business
+                                <span class="item-summary">
+                                    Learn more about hiring developers or posting ads with us
+                                </span>
+                            </a>
+                        </li>
+            </ul>
+        </div>
+    </div>
+
+        </div>
+        <ol class="-list">
+            
+    <li class="-item"><a href="#" class="-link js-help-button" title="Help Center and other resources">
+        <svg viewBox="0 0 18 18" width="18" height="18" role="icon"><path fill-rule="evenodd" d="M9 0a9 9 0 1 0 .001 18.001A9 9 0 0 0 9 0zm.812 13.126c-.02.716-.55 1.157-1.238 1.137-.659-.02-1.177-.49-1.157-1.209.02-.715.566-1.17 1.225-1.15.691.021 1.194.507 1.17 1.222zm1.956-5.114c-.168.237-.546.542-1.02.912l-.527.361c-.257.197-.417.43-.502.695-.044.141-.076.507-.084.752-.004.048-.032.156-.181.156H7.883c-.165 0-.185-.096-.18-.144.023-.667.12-1.218.397-1.66.374-.594 1.426-1.221 1.426-1.221.161-.12.286-.25.382-.39.177-.24.321-.51.321-.8 0-.333-.08-.65-.293-.915-.249-.31-.518-.458-1.036-.458-.51 0-.808.257-1.021.594-.213.338-.177.735-.177 1.097H5.746c0-1.366.357-2.238 1.112-2.752.51-.35 1.162-.502 1.921-.502.996 0 1.788.184 2.487.715.647.49.988 1.181.988 2.113 0 .575-.2 1.057-.486 1.447z" /></svg>
+    </a></li>
+                <li class="-item">
+        <a href="https://stackexchange.com" class="-link js-site-switcher-button js-gps-track" data-gps-track="site_switcher.show" title="A list of all 166 Stack Exchange sites">
+            <svg viewBox="0 0 18 19" width="18" height="19" role="icon"><path fill-rule="evenodd" d="M0 14a2 2 0 0 0 2 2h10v3l3-3h1a2 2 0 0 0 2-2v-2H0v2zM16 0H2a2 2 0 0 0-2 2v2h18V2a2 2 0 0 0-2-2zM0 6h18v4H0V6z" /></svg>
+        </a>
+    </li>
+
+
+        </ol>
+    </nav>
+        <div class="-ctas">
+                    <a href="https://stackoverflow.com/users/login?ssrc=head&returnurl=http%3a%2f%2fstackoverflow.com%2fquestions%2f1053467%2fhow-do-i-save-a-string-to-a-text-file-using-java" class="login-link btn-clear" rel="nofollow">Log In</a>
+                        <a href="https://stackoverflow.com/users/signup?ssrc=head&returnurl=%2fusers%2fstory%2fcurrent&amp;utm_source=stackoverflow.com&amp;utm_medium=dev-story&amp;utm_campaign=signup-redirect" class="login-link btn" rel="nofollow">Sign Up</a>
+
+        </div>
+</div>
+    </div>
+</header>
+
+    <script>
+        StackExchange.ready(function () { StackExchange.topbar.init(); });
+            StackExchange.scrollPadding.setPaddingTop(60, 10);     </script>
+
+    <div class="container">
+        
+
+
+        <div id="content" class="snippet-hidden">
+
+
+
+            
+
+<div itemscope itemtype="http://schema.org/Question">
+    <link itemprop="image" href="https://cdn.sstatic.net/Sites/stackoverflow/img/apple-touch-icon.png?v=c78bd457575a">
+
+
+<div id="herobox" class="alternate">
+    <div class="test"></div>
+        <div id="close">
+            <a title="click to minimize"><span>x</span> Dismiss</a>
+        </div>
+    <div class="content">
+        <b>Join the Stack Overflow Community</b>
+        <div class="separator"></div>
+        <div class="blurb">
+            Stack Overflow is a community of 6.8 million programmers, just like you, helping each other.
+                <br />
+Join them; it only takes a minute:                <br />
+        </div>
+        <a href="/users/signup?ssrc=hero&amp;returnurl=%2fusers%2fstory%2fcurrent&amp;amp;utm_source=stackoverflow.com&amp;amp;utm_medium=dev-story&amp;amp;utm_campaign=signup-redirect" id="tell-me-more" class="button">Sign up</a>
+    </div>
+</div>
+<script>
+    StackExchange.ready(function () {
+
+        var location = 0;
+        if ($("body").hasClass("questions-page")) {
+            location = 1;;
+        } else if ($("body").hasClass("question-page")) {
+            location = 1;;
+        } else if ($("body").hasClass("faq-page")) {
+            location = 5;;
+        } else if ($("body").hasClass("home-page")) {
+            location = 3;;
+        }
+
+        $('#tell-me-more').click(function () {
+            StackExchange.using("gps", function () {
+                StackExchange.gps.track("hero.action", { hero_action_type: 'cta', location: location }, true);
+            });
+        });
+        $('#herobox #close').click(function () {
+            StackExchange.using("gps", function () {
+                StackExchange.gps.track("hero.action", { hero_action_type: "minimize", location: location }, true);
+            });
+            $.cookie("hero", "mini", { path: "/", expires: 365 });
+            $.ajax({
+                url: "/hero-mini",
+                success: function (data) {
+                    $("#herobox").fadeOut("fast", function () {
+                        $("#herobox").replaceWith(data);
+                        $("#herobox-mini").fadeIn("fast");
+                    });
+                }
+            });
+            return false;
+        });
+    });
+
+</script>			<div id="question-header">
+                <h1 itemprop="name"><a href="/questions/1053467/how-do-i-save-a-string-to-a-text-file-using-java" class="question-hyperlink">How do I save a String to a text file using Java?</a></h1>
+
+            
+<div class="aside-cta">
+    <a href="/questions/ask" class="btn-outlined">Ask Question</a>
+</div>
+		</div>
+			<div id="mainbar">
+
+			
+
+<div class="question" data-questionid="1053467"  id="question">
+
+    <script>
+                var ados = ados || {}; ados.run = ados.run || [];
+                ados.run.push(function () { ados_add_placement(22,8277,"adzerk122378968",4).setZone(43); });
+            </script>
+            <div class="everyonelovesstackoverflow" id="adzerk122378968"></div>    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="1053467">
+        <a class="vote-up-off" title="This question shows research effort; it is useful and clear">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">436</span>
+        <a class="vote-down-off" title="This question does not show any research effort; it is unclear or not useful">down vote</a>
+
+        <a class="star-off" href="#">favorite</a>
+        <div class="favoritecount"><b>82</b></div>
+
+
+</div>
+
+            </td>
+            
+<td class="postcell">
+<div>
+    <div class="post-text" itemprop="text">
+
+<p>In Java, I have text from a text field in a String variable called "text".</p>
+
+<p>How can I save the contents of the "text" variable to a file?</p>
+    </div>
+    <div class="post-taglist">
+        <a href="/questions/tagged/java" class="post-tag" title="show questions tagged &#39;java&#39;" rel="tag">java</a> <a href="/questions/tagged/file" class="post-tag" title="show questions tagged &#39;file&#39;" rel="tag">file</a> <a href="/questions/tagged/file-io" class="post-tag" title="show questions tagged &#39;file-io&#39;" rel="tag">file-io</a> <a href="/questions/tagged/text-files" class="post-tag" title="show questions tagged &#39;text-files&#39;" rel="tag">text-files</a> 
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/q/1053467" title="short permalink to this question" class="short-link" id="link-post-1053467">share</a><span class="lsep">|</span><a href="/posts/1053467/edit" class="suggest-edit-post" title="">improve this question</a></div>        
+    </td>
+    <td align="right" class="post-signature">
+<div class="user-info user-hover">
+    <div class="user-action-time">
+        <a href="/posts/1053467/revisions" title="show all edits to this post">edited <span title="2014-07-01 06:12:07Z" class="relativetime">Jul 1 '14 at 6:12</span></a>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/321731/tshepang"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/88e60659e997d36af3ff348b3251e1a6?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/321731/tshepang">Tshepang</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">4,971</span><span title="11 gold badges"><span class="badge1"></span><span class="badgecount">11</span></span><span title="61 silver badges"><span class="badge2"></span><span class="badgecount">61</span></span><span title="104 bronze badges"><span class="badge3"></span><span class="badgecount">104</span></span>
+        </div>
+    </div>
+</div>    </td>
+    <td class="post-signature owner">
+        <div class="user-info ">
+    <div class="user-action-time">
+        asked <span title="2009-06-27 19:37:28Z" class="relativetime">Jun 27 '09 at 19:37</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/126680/justin-white"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/20f77df5ad847ce27037ccc593fd53db?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/126680/justin-white">Justin White</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">2,338</span><span title="3 gold badges"><span class="badge1"></span><span class="badgecount">3</span></span><span title="12 silver badges"><span class="badge2"></span><span class="badgecount">12</span></span><span title="8 bronze badges"><span class="badge3"></span><span class="badgecount">8</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</div>
+</td>
+        </tr>
+                    
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-1053467" class="comments  dno">
+		    <table>
+                <tbody data-remaining-comments-count="0"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+                        <tr><td></td><td></td></tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-1053467" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid answering questions in comments."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>        </table>
+</div>
+
+			<div id="answers">
+
+				<a name="tab-top"></a>
+				<div id="answers-header">
+					<div class="subheader answers-subheader">
+						<h2>
+								17 Answers
+                                <span style="display:none;" itemprop="answerCount">17</span>
+						</h2>
+						<div>
+							<div id="tabs">
+        <a href="/questions/1053467/how-do-i-save-a-string-to-a-text-file-using-java?answertab=active#tab-top" data-nav-xhref="" title="Answers with the latest activity first" data-value="active" data-shortcut="A">
+            active</a>
+        <a href="/questions/1053467/how-do-i-save-a-string-to-a-text-file-using-java?answertab=oldest#tab-top" data-nav-xhref="" title="Answers in the order they were provided" data-value="oldest" data-shortcut="O">
+            oldest</a>
+        <a class="youarehere" href="/questions/1053467/how-do-i-save-a-string-to-a-text-file-using-java?answertab=votes#tab-top" data-nav-xhref="" title="Answers with the highest score first" data-value="votes" data-shortcut="V">
+            votes</a>
+</div>
+						</div>
+					</div>    
+				</div>    
+
+
+
+
+  
+<a name="1053475"></a>
+<div id="answer-1053475" class="answer" data-answerid="1053475"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="1053475">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">475</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>If you're simply outputting text, rather than any binary data, the following will work:</p>
+
+<pre><code>PrintWriter out = new PrintWriter("filename.txt");
+</code></pre>
+
+<p>Then, write your String to it, just like you would to any output stream:</p>
+
+<pre><code>out.println(text);
+</code></pre>
+
+<p>You'll need exception handling, as ever. Be sure to call <code>out.close()</code> when you've finished writing.</p>
+
+<p>If you are using Java 7 or later, you can use the "<a href="https://docs.oracle.com/javase/tutorial/essential/exceptions/tryResourceClose.html" rel="noreferrer">try-with-resources statement</a>" which will automatically close your <code>PrintStream</code> when you are done with it (ie exit the block) like so:</p>
+
+<pre><code>try(  PrintWriter out = new PrintWriter( "filename.txt" )  ){
+    out.println( text );
+}
+</code></pre>
+
+<p>You will still need to explicitly throw the <code>java.io.FileNotFoundException</code> as before.</p>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/1053475" title="short permalink to this answer" class="short-link" id="link-post-1053475">share</a><span class="lsep">|</span><a href="/posts/1053475/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info ">
+    <div class="user-action-time">
+        <a href="/posts/1053475/revisions" title="show all edits to this post">edited <span title="2016-10-01 14:10:31Z" class="relativetime">Oct 1 '16 at 14:10</span></a>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/6655092/pycoder"><div class="gravatar-wrapper-32"><img src="https://i.stack.imgur.com/SVyIS.png?s=32&amp;g=1" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/6655092/pycoder">pycoder</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">275</span><span title="1 silver badge"><span class="badge2"></span><span class="badgecount">1</span></span><span title="18 bronze badges"><span class="badge3"></span><span class="badgecount">18</span></span>
+        </div>
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info user-hover">
+    <div class="user-action-time">
+        answered <span title="2009-06-27 19:43:22Z" class="relativetime">Jun 27 '09 at 19:43</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/121971/jeremy-smyth"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/18d21cf45fa95eb028bf94573fa127be?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/121971/jeremy-smyth">Jeremy Smyth</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score 16,233" dir="ltr">16.2k</span><span title="1 gold badge"><span class="badge1"></span><span class="badgecount">1</span></span><span title="31 silver badges"><span class="badge2"></span><span class="badgecount">31</span></span><span title="58 bronze badges"><span class="badge3"></span><span class="badgecount">58</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-1053475" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="10"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+
+
+    <tr id="comment-866231" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">3</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">@Justin, you could also pass an absolute path (e.g. &quot;/tmp/filename.txt&quot;) to the FileOutputStream constructor, to save the file anywhere you want</span>
+                    &ndash;&nbsp;<a href="/users/56285/jonik"
+                       title="40,651 reputation"
+                       class="comment-user">Jonik</a>
+                <span class="comment-date" dir="ltr"><span title="2009-06-28 08:54:49Z" class="relativetime-clean">Jun 28 '09 at 8:54</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-866871" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="warm">6</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Btw, this could be simplified using the convenience constructors PrintStream has had since 1.5. This would suffice: PrintStream out = new PrintStream(&quot;filename.txt&quot;);</span>
+                    &ndash;&nbsp;<a href="/users/56285/jonik"
+                       title="40,651 reputation"
+                       class="comment-user">Jonik</a>
+                <span class="comment-date" dir="ltr"><span title="2009-06-28 16:22:05Z" class="relativetime-clean">Jun 28 '09 at 16:22</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-14622883" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="warm">7</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Need to close that file though at some point...?  <a href="http://www.codecodex.com/wiki/ASCII_file_save#Java" rel="nofollow noreferrer">codecodex.com/wiki/ASCII_file_save#Java</a></span>
+                    &ndash;&nbsp;<a href="/users/139271/jstrahl"
+                       title="303 reputation"
+                       class="comment-user">JStrahl</a>
+                <span class="comment-date" dir="ltr"><span title="2012-06-22 08:03:42Z" class="relativetime-clean">Jun 22 '12 at 8:03</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-39408196" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">1</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">You want to use  try{} catch(){}finally{}, where in finally{} you close the file if it is not null.</span>
+                    &ndash;&nbsp;<a href="/users/2092109/benas"
+                       title="451 reputation"
+                       class="comment-user">Benas</a>
+                <span class="comment-date" dir="ltr"><span title="2014-08-13 13:34:25Z" class="relativetime-clean">Aug 13 '14 at 13:34</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-45080733" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="warm">10</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">In java8 you can try(PrintStream ps = new PrintStream(&quot;filename&quot;)) { ps.println(out); } this will handle close for you</span>
+                    &ndash;&nbsp;<a href="/users/435680/anton-chikin"
+                       title="1,122 reputation"
+                       class="comment-user">Anton Chikin</a>
+                <span class="comment-date" dir="ltr"><span title="2015-02-06 16:14:50Z" class="relativetime-clean">Feb 6 '15 at 16:14</span></span>
+                        <span class="edited-yes" title="this comment was edited 1 time"></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-1053475" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link  dno"
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   ></a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link " title="expand to show all comments on this post" href=# onclick="">show <b>10</b> more comments</a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+<script>
+                var ados = ados || {}; ados.run = ados.run || [];
+                ados.run.push(function () { ados_add_placement(22,8277,"adzerk873831",4).setZone(44); });
+            </script>
+            <div class="everyonelovesstackoverflow" id="adzerk873831"></div>
+  
+<a name="1053487"></a>
+<div id="answer-1053487" class="answer" data-answerid="1053487"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="1053487">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">187</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p><a href="http://commons.apache.org/io" rel="noreferrer">Apache Commons IO</a> contains some great methods for doing this, in particular FileUtils contains the following method:</p>
+
+<pre><code>static void writeStringToFile(File file, String data) 
+</code></pre>
+
+<p>which allows you to write text to a file in one method call:</p>
+
+<pre><code>FileUtils.writeStringToFile(new File("test.txt"), "Hello File");
+</code></pre>
+
+<p>You might also want to consider specifying the encoding for the file as well.</p>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/1053487" title="short permalink to this answer" class="short-link" id="link-post-1053487">share</a><span class="lsep">|</span><a href="/posts/1053487/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info user-hover">
+    <div class="user-action-time">
+        <a href="/posts/1053487/revisions" title="show all edits to this post">edited <span title="2012-08-09 23:32:38Z" class="relativetime">Aug 9 '12 at 23:32</span></a>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/1172181/leco"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/9c13615fb4d73d7fbb1f54c0a889de43?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/1172181/leco">Leco</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">1,909</span><span title="1 gold badge"><span class="badge1"></span><span class="badgecount">1</span></span><span title="11 silver badges"><span class="badge2"></span><span class="badgecount">11</span></span><span title="30 bronze badges"><span class="badge3"></span><span class="badgecount">30</span></span>
+        </div>
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info user-hover">
+    <div class="user-action-time">
+        answered <span title="2009-06-27 19:46:21Z" class="relativetime">Jun 27 '09 at 19:46</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/82865/jon"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/053082988d5c2da6fe500a209f8cfdd8?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/82865/jon">Jon</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score 36,332" dir="ltr">36.3k</span><span title="23 gold badges"><span class="badge1"></span><span class="badgecount">23</span></span><span title="103 silver badges"><span class="badge2"></span><span class="badgecount">103</span></span><span title="138 bronze badges"><span class="badge3"></span><span class="badgecount">138</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-1053487" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+
+
+    <tr id="comment-11584711" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="warm">10</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Just a minor correction, the second fragment should read: FileUtils.writeStringToFile(new File(&quot;test.txt&quot;), &quot;Hello File&quot;);</span>
+                    &ndash;&nbsp;<a href="/users/275800/paul-sns"
+                       title="910 reputation"
+                       class="comment-user">paul_sns</a>
+                <span class="comment-date" dir="ltr"><span title="2012-02-09 00:31:48Z" class="relativetime-clean">Feb 9 '12 at 0:31</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-31233055" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">2</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">For those of us who prefer Guava, <a href="http://stackoverflow.com/questions/1053467/how-do-i-save-a-string-to-a-text-file-using-java/11254277#11254277">it can do this too</a>.</span>
+                    &ndash;&nbsp;<a href="/users/56285/jonik"
+                       title="40,651 reputation"
+                       class="comment-user">Jonik</a>
+                <span class="comment-date" dir="ltr"><span title="2013-12-29 15:50:49Z" class="relativetime-clean">Dec 29 '13 at 15:50</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-1053487" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+
+  
+<a name="1053474"></a>
+<div id="answer-1053474" class="answer" data-answerid="1053474"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="1053474">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">63</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>Just did something similar in my project. Use <a href="http://java.sun.com/j2se/1.4.2/docs/api/java/io/FileWriter.html" rel="noreferrer">FileWriter</a> will simplify part of your job. And here you can find nice <a href="http://tutorials.jenkov.com/java-io/index.html" rel="noreferrer">tutorial</a>.</p>
+
+<pre><code>BufferedWriter writer = null;
+try
+{
+    writer = new BufferedWriter( new FileWriter( yourfilename));
+    writer.write( yourstring);
+
+}
+catch ( IOException e)
+{
+}
+finally
+{
+    try
+    {
+        if ( writer != null)
+        writer.close( );
+    }
+    catch ( IOException e)
+    {
+    }
+}
+</code></pre>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/1053474" title="short permalink to this answer" class="short-link" id="link-post-1053474">share</a><span class="lsep">|</span><a href="/posts/1053474/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info ">
+    <div class="user-action-time">
+        <a href="/posts/1053474/revisions" title="show all edits to this post">edited <span title="2013-07-23 09:49:35Z" class="relativetime">Jul 23 '13 at 9:49</span></a>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/108341/micha%c3%abl"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/d0e19a253b555ff5b7633f6e80940325?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/108341/micha%c3%abl">Micha&#235;l</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">2,862</span><span title="7 gold badges"><span class="badge1"></span><span class="badgecount">7</span></span><span title="27 silver badges"><span class="badge2"></span><span class="badgecount">27</span></span><span title="53 bronze badges"><span class="badge3"></span><span class="badgecount">53</span></span>
+        </div>
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info user-hover">
+    <div class="user-action-time">
+        answered <span title="2009-06-27 19:42:19Z" class="relativetime">Jun 27 '09 at 19:42</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/104014/artem-barger"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/3d186f3c6ad2de59b356c1cfad9af404?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/104014/artem-barger">Artem Barger</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score 22,424" dir="ltr">22.4k</span><span title="8 gold badges"><span class="badge1"></span><span class="badgecount">8</span></span><span title="37 silver badges"><span class="badge2"></span><span class="badgecount">37</span></span><span title="54 bronze badges"><span class="badge3"></span><span class="badgecount">54</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-1053474" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="1"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+
+
+    <tr id="comment-865111" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">3</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Removing all try/catch and simplify it I&#39;m also able to do it in one line just by doing the: (new BufferedWriter( new FileWriter( filename))).write(str);</span>
+                    &ndash;&nbsp;<a href="/users/104014/artem-barger"
+                       title="22,424 reputation"
+                       class="comment-user">Artem Barger</a>
+                <span class="comment-date" dir="ltr"><span title="2009-06-27 19:46:50Z" class="relativetime-clean">Jun 27 '09 at 19:46</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-865153" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="warm">5</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">So, show your simple and nice solution. I would be glad to learn how to do it in better way.</span>
+                    &ndash;&nbsp;<a href="/users/104014/artem-barger"
+                       title="22,424 reputation"
+                       class="comment-user">Artem Barger</a>
+                <span class="comment-date" dir="ltr"><span title="2009-06-27 20:06:15Z" class="relativetime-clean">Jun 27 '09 at 20:06</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-5336108" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">4</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Ignore the trolls... they always criticize without offering their own solution. Thanks for saving me from writing my own code / downloading extra library &amp; introducing dependency...</span>
+                    &ndash;&nbsp;<a href="/users/237858/kape123"
+                       title="10,768 reputation"
+                       class="comment-user">kape123</a>
+                <span class="comment-date" dir="ltr"><span title="2011-01-27 04:50:07Z" class="relativetime-clean">Jan 27 '11 at 4:50</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-14424061" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">1</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">It seems that <code>.close()</code> doesn&#39;t throw (at least in Java 7?), is the last trycatch perhaps redundant?</span>
+                    &ndash;&nbsp;<a href="/users/399317/kos"
+                       title="41,402 reputation"
+                       class="comment-user">Kos</a>
+                <span class="comment-date" dir="ltr"><span title="2012-06-14 10:43:17Z" class="relativetime-clean">Jun 14 '12 at 10:43</span></span>
+                        <span class="edited-yes" title="this comment was edited 1 time"></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-20759143" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="warm">9</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Swallowing exceptions like that is going to make life hard for you when exceptions really do occur. At the very least you should rethrow them: <code>throw new RuntimeException(e);</code></span>
+                    &ndash;&nbsp;<a href="/users/1104885/roger-keays"
+                       title="2,106 reputation"
+                       class="comment-user">Roger Keays</a>
+                <span class="comment-date" dir="ltr"><span title="2013-02-11 19:05:15Z" class="relativetime-clean">Feb 11 '13 at 19:05</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-1053474" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link  dno"
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   ></a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link " title="expand to show all comments on this post" href=# onclick="">show <b>1</b> more comment</a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+
+  
+<a name="1053472"></a>
+<div id="answer-1053472" class="answer" data-answerid="1053472"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="1053472">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">55</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>Take a look at the <a href="http://java.sun.com/j2se/1.5.0/docs/api/java/io/File.html" rel="noreferrer">Java File API</a></p>
+
+<p>a quick example:</p>
+
+<pre><code>try (PrintStream out = new PrintStream(new FileOutputStream("filename.txt"))) {
+    out.print(text);
+}
+</code></pre>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/1053472" title="short permalink to this answer" class="short-link" id="link-post-1053472">share</a><span class="lsep">|</span><a href="/posts/1053472/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info user-hover">
+    <div class="user-action-time">
+        <a href="/posts/1053472/revisions" title="show all edits to this post">edited <span title="2014-03-11 20:35:39Z" class="relativetime">Mar 11 '14 at 20:35</span></a>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/525179/everton-agner-ramos"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/7bf80d11dacf58e76fda61c354c38371?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/525179/everton-agner-ramos">Everton Agner Ramos</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">4,204</span><span title="1 gold badge"><span class="badge1"></span><span class="badgecount">1</span></span><span title="18 silver badges"><span class="badge2"></span><span class="badgecount">18</span></span><span title="33 bronze badges"><span class="badge3"></span><span class="badgecount">33</span></span>
+        </div>
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2009-06-27 19:40:10Z" class="relativetime">Jun 27 '09 at 19:40</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/8681/jorn"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/5e27ac2d53fae8db13701e0a88026b69?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/8681/jorn">Jorn</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">8,391</span><span title="4 gold badges"><span class="badge1"></span><span class="badgecount">4</span></span><span title="41 silver badges"><span class="badge2"></span><span class="badgecount">41</span></span><span title="75 bronze badges"><span class="badge3"></span><span class="badgecount">75</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-1053472" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+
+
+    <tr id="comment-8793147" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">@XP1 I know, that&#39;s a great improvement. I&#39;ve used Lombok for this in Java 6: just go <code>@Cleanup new FileOutputStream(...)</code> and you&#39;re done.</span>
+                    &ndash;&nbsp;<a href="/users/8681/jorn"
+                       title="8,391 reputation"
+                       class="comment-user">Jorn</a>
+                <span class="comment-date" dir="ltr"><span title="2011-09-04 09:31:53Z" class="relativetime-clean">Sep 4 '11 at 9:31</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-57172036" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">1</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Don&#39;t forget to call out.flush(); then out.close();</span>
+                    &ndash;&nbsp;<a href="/users/4304439/alex-byrth"
+                       title="602 reputation"
+                       class="comment-user">Alex Byrth</a>
+                <span class="comment-date" dir="ltr"><span title="2016-01-11 01:16:48Z" class="relativetime-clean">Jan 11 '16 at 1:16</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-1053472" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+
+  
+<a name="1053473"></a>
+<div id="answer-1053473" class="answer" data-answerid="1053473"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="1053473">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">44</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>Use <code>FileUtils.writeStringToFile()</code> from <a href="http://commons.apache.org/io" rel="noreferrer">Apache Commons IO</a>. No need to reinvent this particular wheel.</p>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/1053473" title="short permalink to this answer" class="short-link" id="link-post-1053473">share</a><span class="lsep">|</span><a href="/posts/1053473/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info user-hover">
+    <div class="user-action-time">
+        <a href="/posts/1053473/revisions" title="show all edits to this post">edited <span title="2013-06-14 07:27:16Z" class="relativetime">Jun 14 '13 at 7:27</span></a>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/69803/ankur"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/eed28c92944b219aa031f96fc6f71577?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/69803/ankur">Ankur</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score 16,556" dir="ltr">16.6k</span><span title="84 gold badges"><span class="badge1"></span><span class="badgecount">84</span></span><span title="200 silver badges"><span class="badge2"></span><span class="badgecount">200</span></span><span title="291 bronze badges"><span class="badge3"></span><span class="badgecount">291</span></span>
+        </div>
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2009-06-27 19:40:22Z" class="relativetime">Jun 27 '09 at 19:40</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/21234/skaffman"><div class="gravatar-wrapper-32"><img src="https://i.stack.imgur.com/Drui0.jpg?s=32&amp;g=1" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/21234/skaffman">skaffman</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score 290,671" dir="ltr">291k</span><span title="69 gold badges"><span class="badge1"></span><span class="badgecount">69</span></span><span title="639 silver badges"><span class="badge2"></span><span class="badgecount">639</span></span><span title="670 bronze badges"><span class="badge3"></span><span class="badgecount">670</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-1053473" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="4"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+
+
+    <tr id="comment-865151" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="hot">17</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">I couldn&#39;t disagree more. These libraries are there so we don&#39;t introduce subtle bugs in such a simple solution.</span>
+                    &ndash;&nbsp;<a href="/users/21234/skaffman"
+                       title="290,671 reputation"
+                       class="comment-user">skaffman</a>
+                <span class="comment-date" dir="ltr"><span title="2009-06-27 20:04:40Z" class="relativetime-clean">Jun 27 '09 at 20:04</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-865225" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">1</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">+1 for applying &quot;know and use the libraries&quot;</span>
+                    &ndash;&nbsp;<a href="/users/56285/jonik"
+                       title="40,651 reputation"
+                       class="comment-user">Jonik</a>
+                <span class="comment-date" dir="ltr"><span title="2009-06-27 20:43:20Z" class="relativetime-clean">Jun 27 '09 at 20:43</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-865305" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">3</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">No, obviously not.  I&#39;m only disagreeing that your solution might not be the first thing I&#39;d throw at someone who&#39;s a beginner Java programmer.  You aren&#39;t suggesting that you&#39;ve never written such a thing, are you?</span>
+                    &ndash;&nbsp;<a href="/users/37213/duffymo"
+                       title="240,012 reputation"
+                       class="comment-user">duffymo</a>
+                <span class="comment-date" dir="ltr"><span title="2009-06-27 21:25:24Z" class="relativetime-clean">Jun 27 '09 at 21:25</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-865343" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="warm">6</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">I have, yes, but that&#39;s before I found commons-io. Since finding that, I&#39;ve never written that sort of thing by hand, even in a one-class project. If I&#39;d known about it from day one, I&#39;d have used it from day one.</span>
+                    &ndash;&nbsp;<a href="/users/21234/skaffman"
+                       title="290,671 reputation"
+                       class="comment-user">skaffman</a>
+                <span class="comment-date" dir="ltr"><span title="2009-06-27 21:40:36Z" class="relativetime-clean">Jun 27 '09 at 21:40</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-865362" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">3</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Exactly, but you&#39;re an experienced developer.  Your bio says your a JBOSS/Spring user, but certainly you wouldn&#39;t have been up to either one in your first &quot;Hello, World&quot; effort.  I&#39;m not disagreeing with the proper use of libraries.  I&#39;m saying that people attempting a language for the first time should try to know it at its bottom, even if that means doing things that they&#39;ll discard later on when they&#39;re experienced and know better.</span>
+                    &ndash;&nbsp;<a href="/users/37213/duffymo"
+                       title="240,012 reputation"
+                       class="comment-user">duffymo</a>
+                <span class="comment-date" dir="ltr"><span title="2009-06-27 21:45:01Z" class="relativetime-clean">Jun 27 '09 at 21:45</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-1053473" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link  dno"
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   ></a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link " title="expand to show all comments on this post" href=# onclick="">show <b>4</b> more comments</a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+
+  
+<a name="22445604"></a>
+<div id="answer-22445604" class="answer" data-answerid="22445604"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="22445604">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">33</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>In Java 7 you can do this:</p>
+
+<pre><code>String content = "Hello File!";
+String path = "C:/a.txt";
+Files.write( Paths.get(path), content.getBytes(), StandardOpenOption.CREATE);
+</code></pre>
+
+<p>There is more info here:
+<a href="http://www.drdobbs.com/jvm/java-se-7-new-file-io/231600403">http://www.drdobbs.com/jvm/java-se-7-new-file-io/231600403</a></p>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/22445604" title="short permalink to this answer" class="short-link" id="link-post-22445604">share</a><span class="lsep">|</span><a href="/posts/22445604/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info user-hover">
+    <div class="user-action-time">
+        answered <span title="2014-03-17 01:44:04Z" class="relativetime">Mar 17 '14 at 1:44</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/1515058/daniil-shevelev"><div class="gravatar-wrapper-32"><img src="https://i.stack.imgur.com/YJtJk.jpg?s=32&amp;g=1" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/1515058/daniil-shevelev">Daniil Shevelev</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">3,828</span><span title="6 gold badges"><span class="badge1"></span><span class="badgecount">6</span></span><span title="27 silver badges"><span class="badge2"></span><span class="badgecount">27</span></span><span title="46 bronze badges"><span class="badge3"></span><span class="badgecount">46</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-22445604" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+
+
+    <tr id="comment-35373899" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="warm">5</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy"><code>content.getBytes()</code> ? Encoding ???</span>
+                    &ndash;&nbsp;<a href="/users/281545/mr-and-mrs-d"
+                       title="10,135 reputation"
+                       class="comment-user">Mr_and_Mrs_D</a>
+                <span class="comment-date" dir="ltr"><span title="2014-04-17 14:43:31Z" class="relativetime-clean">Apr 17 '14 at 14:43</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-55723098" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">1</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">In case someone later wondered, the encoding would be the platform standard.</span>
+                    &ndash;&nbsp;<a href="/users/1418838/haakon-l%c3%b8tveit"
+                       title="167 reputation"
+                       class="comment-user">Haakon L&#248;tveit</a>
+                <span class="comment-date" dir="ltr"><span title="2015-11-29 14:12:48Z" class="relativetime-clean">Nov 29 '15 at 14:12</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-61411406" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">3</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy"><code>content.getBytes(StandardCharsets.UTF_8)</code> can be used to explicitly define the encoding.</span>
+                    &ndash;&nbsp;<a href="/users/2324685/john29"
+                       title="1,269 reputation"
+                       class="comment-user">John29</a>
+                <span class="comment-date" dir="ltr"><span title="2016-04-28 20:43:13Z" class="relativetime-clean">Apr 28 '16 at 20:43</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-22445604" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+
+  
+<a name="1053499"></a>
+<div id="answer-1053499" class="answer" data-answerid="1053499"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="1053499">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">19</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>You can use the modify the code below to write your file from whatever class or function is handling the text.  One wonders though why the world needs a new text editor...</p>
+
+<pre><code>import java.io.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        try {
+            String str = "SomeMoreTextIsHere";
+            File newTextFile = new File("C:/thetextfile.txt");
+
+            FileWriter fw = new FileWriter(newTextFile);
+            fw.write(str);
+            fw.close();
+
+        } catch (IOException iox) {
+            //do stuff with exception
+            iox.printStackTrace();
+        }
+    }
+}
+</code></pre>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/1053499" title="short permalink to this answer" class="short-link" id="link-post-1053499">share</a><span class="lsep">|</span><a href="/posts/1053499/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info user-hover">
+    <div class="user-action-time">
+        <a href="/posts/1053499/revisions" title="show all edits to this post">edited <span title="2011-11-22 05:49:51Z" class="relativetime">Nov 22 '11 at 5:49</span></a>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/331473/adam-wagner"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/a887c3de7f5051c9d0d88a5f7c04287d?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/331473/adam-wagner">Adam Wagner</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">8,886</span><span title="4 gold badges"><span class="badge1"></span><span class="badgecount">4</span></span><span title="31 silver badges"><span class="badge2"></span><span class="badgecount">31</span></span><span title="60 bronze badges"><span class="badge3"></span><span class="badgecount">60</span></span>
+        </div>
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2009-06-27 19:52:25Z" class="relativetime">Jun 27 '09 at 19:52</span>
+    </div>
+    <div class="user-gravatar32">
+        <span class="anonymous-gravatar"></span>
+    </div>
+    <div class="user-details">
+        wolfsnipes
+        <div class="-flair">
+            
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-1053499" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+
+
+    <tr id="comment-865144" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">2</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">That doesn&#39;t close the file in case of an exception.</span>
+                    &ndash;&nbsp;<a href="/users/4725/tom-hawtin-tackline"
+                       title="111,424 reputation"
+                       class="comment-user">Tom Hawtin - tackline</a>
+                <span class="comment-date" dir="ltr"><span title="2009-06-27 20:02:37Z" class="relativetime-clean">Jun 27 '09 at 20:02</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-21122947" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">@TomHawtin-tackline: if my edit is approved, it does</span>
+                    &ndash;&nbsp;<a href="/users/309483/janus-troelsen"
+                       title="10,662 reputation"
+                       class="comment-user">Janus Troelsen</a>
+                <span class="comment-date" dir="ltr"><span title="2013-02-22 18:48:56Z" class="relativetime-clean">Feb 22 '13 at 18:48</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-21123221" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">1</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">@JanusTroelsen: If rejected, cite <a href="http://docs.oracle.com/javase/tutorial/essential/exceptions/tryResourceClose.html" rel="nofollow noreferrer"><i>The try-with-resources Statement</i></a>.</span>
+                    &ndash;&nbsp;<a href="/users/230513/trashgod"
+                       title="173,545 reputation"
+                       class="comment-user">trashgod</a>
+                <span class="comment-date" dir="ltr"><span title="2013-02-22 18:57:33Z" class="relativetime-clean">Feb 22 '13 at 18:57</span></span>
+                        <span class="edited-yes" title="this comment was edited 1 time"></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-1053499" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+
+  
+<a name="15157142"></a>
+<div id="answer-15157142" class="answer" data-answerid="15157142"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="15157142">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">10</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>Use Apache Commons IO api. Its simple </p>
+
+<p>Use API as</p>
+
+<pre><code> FileUtils.writeStringToFile(new File("FileNameToWrite.txt"), "stringToWrite");
+</code></pre>
+
+<p>Maven Dependency</p>
+
+<pre><code>&lt;dependency&gt;
+    &lt;groupId&gt;commons-io&lt;/groupId&gt;
+    &lt;artifactId&gt;commons-io&lt;/artifactId&gt;
+    &lt;version&gt;2.4&lt;/version&gt;
+&lt;/dependency&gt;
+</code></pre>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/15157142" title="short permalink to this answer" class="short-link" id="link-post-15157142">share</a><span class="lsep">|</span><a href="/posts/15157142/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2013-03-01 11:54:19Z" class="relativetime">Mar 1 '13 at 11:54</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/1106115/anirban-chakrabarti"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/fab35968b4fa6c567797b43e0b9bcfbe?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/1106115/anirban-chakrabarti">Anirban Chakrabarti</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">220</span><span title="4 silver badges"><span class="badge2"></span><span class="badgecount">4</span></span><span title="7 bronze badges"><span class="badge3"></span><span class="badgecount">7</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-15157142" class="comments  dno">
+		    <table>
+                <tbody data-remaining-comments-count="0"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+                        <tr><td></td><td></td></tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-15157142" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+
+  
+<a name="26765834"></a>
+<div id="answer-26765834" class="answer" data-answerid="26765834"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="26765834">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">9</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<pre><code>import java.io.*;
+
+private void stringToFile( String text, String fileName )
+ {
+ try
+ {
+    File file = new File( fileName );
+
+    // if file doesnt exists, then create it 
+    if ( ! file.exists( ) )
+    {
+        file.createNewFile( );
+    }
+
+    FileWriter fw = new FileWriter( file.getAbsoluteFile( ) );
+    BufferedWriter bw = new BufferedWriter( fw );
+    bw.write( text );
+    bw.close( );
+    //System.out.println("Done writing to " + fileName); //For testing 
+ }
+ catch( IOException e )
+ {
+ System.out.println("Error: " + e);
+ e.printStackTrace( );
+ }
+} //End method stringToFile
+</code></pre>
+
+<p>You can insert this method into your classes. If you are using this method in a class with a main method, change this class to static by adding the static key word. Either way you will need to import java.io.* to make it work otherwise File, FileWriter and BufferedWriter will not be recognized. </p>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/26765834" title="short permalink to this answer" class="short-link" id="link-post-26765834">share</a><span class="lsep">|</span><a href="/posts/26765834/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info ">
+    <div class="user-action-time">
+        <a href="/posts/26765834/revisions" title="show all edits to this post">edited <span title="2014-12-05 21:24:21Z" class="relativetime">Dec 5 '14 at 21:24</span></a>
+    </div>
+    <div class="user-gravatar32">
+        
+    </div>
+    <div class="user-details">
+        
+        <div class="-flair">
+            
+        </div>
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2014-11-05 19:51:26Z" class="relativetime">Nov 5 '14 at 19:51</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/2488340/sean-h-worthington"><div class="gravatar-wrapper-32"><img src="https://i.stack.imgur.com/vBH2R.jpg?s=32&amp;g=1" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/2488340/sean-h-worthington">Sean H. Worthington</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">478</span><span title="6 silver badges"><span class="badge2"></span><span class="badgecount">6</span></span><span title="6 bronze badges"><span class="badge3"></span><span class="badgecount">6</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-26765834" class="comments  dno">
+		    <table>
+                <tbody data-remaining-comments-count="0"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+                        <tr><td></td><td></td></tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-26765834" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+
+  
+<a name="11254277"></a>
+<div id="answer-11254277" class="answer" data-answerid="11254277"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="11254277">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">8</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>I prefer to rely on libraries whenever possible for this sort of operation. This makes me less likely to accidentally omit an important step (like mistake wolfsnipes made above). Some libraries are suggested above, but my favorite for this kind of thing is <a href="http://code.google.com/p/guava-libraries/" rel="nofollow">Google Guava</a>. Guava has a class called <a href="http://docs.guava-libraries.googlecode.com/git/javadoc/com/google/common/io/Files.html" rel="nofollow">Files</a> which works nicely for this task:</p>
+
+<pre><code>// This is where the file goes.
+File destination = new File("file.txt");
+// This line isn't needed, but is really useful 
+// if you're a beginner and don't know where your file is going to end up.
+System.out.println(destination.getAbsolutePath());
+try {
+    Files.write(text, destination, Charset.forName("UTF-8"));
+} catch (IOException e) {
+    // Useful error handling here
+}
+</code></pre>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/11254277" title="short permalink to this answer" class="short-link" id="link-post-11254277">share</a><span class="lsep">|</span><a href="/posts/11254277/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info user-hover">
+    <div class="user-action-time">
+        <a href="/posts/11254277/revisions" title="show all edits to this post">edited <span title="2015-06-22 08:59:12Z" class="relativetime">Jun 22 '15 at 8:59</span></a>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/309483/janus-troelsen"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/d797538504a367f277d19bd8369e9a19?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/309483/janus-troelsen">Janus Troelsen</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score 10,662" dir="ltr">10.7k</span><span title="4 gold badges"><span class="badge1"></span><span class="badgecount">4</span></span><span title="78 silver badges"><span class="badge2"></span><span class="badgecount">78</span></span><span title="123 bronze badges"><span class="badge3"></span><span class="badgecount">123</span></span>
+        </div>
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2012-06-28 23:27:03Z" class="relativetime">Jun 28 '12 at 23:27</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/170587/spina"><div class="gravatar-wrapper-32"><img src="https://i.stack.imgur.com/Sj6ay.jpg?s=32&amp;g=1" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/170587/spina">Spina</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">5,247</span><span title="2 gold badges"><span class="badge1"></span><span class="badgecount">2</span></span><span title="24 silver badges"><span class="badge2"></span><span class="badgecount">24</span></span><span title="31 bronze badges"><span class="badge3"></span><span class="badgecount">31</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-11254277" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+
+
+    <tr id="comment-54663842" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">2</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">If you&#39;re using Guava, there is also <code>Charsets.UTF-8</code>.</span>
+                    &ndash;&nbsp;<a href="/users/2132691/florian"
+                       title="88 reputation"
+                       class="comment-user">florian</a>
+                <span class="comment-date" dir="ltr"><span title="2015-10-30 14:07:50Z" class="relativetime-clean">Oct 30 '15 at 14:07</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-60208653" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">1</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">@florian: It&#39;s <code>Charsets.UTF_8</code> actually</span>
+                    &ndash;&nbsp;<a href="/users/60518/tim-b%c3%bcthe"
+                       title="37,731 reputation"
+                       class="comment-user">Tim B&#252;the</a>
+                <span class="comment-date" dir="ltr"><span title="2016-03-29 17:59:42Z" class="relativetime-clean">Mar 29 '16 at 17:59</span></span>
+                        <span class="edited-yes" title="this comment was edited 1 time"></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-11254277" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+
+  
+<a name="8203455"></a>
+<div id="answer-8203455" class="answer" data-answerid="8203455"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="8203455">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">8</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>You could do this:</p>
+
+<pre><code>import java.io.*;
+import java.util.*;
+
+class WriteText
+{
+    public static void main(String[] args)
+    {   
+        try {
+            String text = "Your sample content to save in a text file.";
+            BufferedWriter out = new BufferedWriter(new FileWriter("sample.txt"));
+            out.write(text);
+            out.close();
+        }
+        catch (IOException e)
+        {
+            System.out.println("Exception ");       
+        }
+
+        return ;
+    }
+};
+</code></pre>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/8203455" title="short permalink to this answer" class="short-link" id="link-post-8203455">share</a><span class="lsep">|</span><a href="/posts/8203455/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info user-hover">
+    <div class="user-action-time">
+        <a href="/posts/8203455/revisions" title="show all edits to this post">edited <span title="2016-01-02 15:55:02Z" class="relativetime">Jan 2 '16 at 15:55</span></a>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/2964890/javaplease42"><div class="gravatar-wrapper-32"><img src="https://i.stack.imgur.com/CUSAH.png?s=32&amp;g=1" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/2964890/javaplease42">javaPlease42</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">1,363</span><span title="14 silver badges"><span class="badge2"></span><span class="badgecount">14</span></span><span title="35 bronze badges"><span class="badge3"></span><span class="badgecount">35</span></span>
+        </div>
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2011-11-20 17:51:44Z" class="relativetime">Nov 20 '11 at 17:51</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/277746/mostafa-rezaei"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/9a524e525945ba8ca28dd71b49b75fab?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/277746/mostafa-rezaei">Mostafa Rezaei</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">344</span><span title="1 gold badge"><span class="badge1"></span><span class="badgecount">1</span></span><span title="4 silver badges"><span class="badge2"></span><span class="badgecount">4</span></span><span title="12 bronze badges"><span class="badge3"></span><span class="badgecount">12</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-8203455" class="comments  dno">
+		    <table>
+                <tbody data-remaining-comments-count="0"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+                        <tr><td></td><td></td></tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-8203455" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+
+  
+<a name="27417047"></a>
+<div id="answer-27417047" class="answer" data-answerid="27417047"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="27417047">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">7</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>Use this, it is very readable:</p>
+
+<pre><code>import java.nio.file.Files;
+import java.nio.file.Paths;
+
+Files.write(Paths.get(path), lines.getBytes(), StandardOpenOption.WRITE);
+</code></pre>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/27417047" title="short permalink to this answer" class="short-link" id="link-post-27417047">share</a><span class="lsep">|</span><a href="/posts/27417047/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info user-hover">
+    <div class="user-action-time">
+        <a href="/posts/27417047/revisions" title="show all edits to this post">edited <span title="2015-06-21 08:38:12Z" class="relativetime">Jun 21 '15 at 8:38</span></a>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/2579738/bdl"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/a0f1219973d752f952741cc26501b02a?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/2579738/bdl">BDL</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">8,524</span><span title="4 gold badges"><span class="badge1"></span><span class="badgecount">4</span></span><span title="19 silver badges"><span class="badge2"></span><span class="badgecount">19</span></span><span title="31 bronze badges"><span class="badge3"></span><span class="badgecount">31</span></span>
+        </div>
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info user-hover">
+    <div class="user-action-time">
+        answered <span title="2014-12-11 06:57:14Z" class="relativetime">Dec 11 '14 at 6:57</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/2447599/ran"><div class="gravatar-wrapper-32"><img src="https://i.stack.imgur.com/xXP4z.jpg?s=32&amp;g=1" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/2447599/ran">ran</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">1,421</span><span title="10 silver badges"><span class="badge2"></span><span class="badgecount">10</span></span><span title="14 bronze badges"><span class="badge3"></span><span class="badgecount">14</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-27417047" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+
+
+    <tr id="comment-64420425" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">It&#39;s also a copy of an existing answer.  :c</span>
+                    &ndash;&nbsp;<a href="/users/584674/james-garriss"
+                       title="6,593 reputation"
+                       class="comment-user">james.garriss</a>
+                <span class="comment-date" dir="ltr"><span title="2016-07-21 18:14:14Z" class="relativetime-clean">Jul 21 '16 at 18:14</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-64489475" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">sorry but i didn&#39;t invent java8 , i am not the only one that use this line . but it is not a copy past from other answers to the same question</span>
+                    &ndash;&nbsp;<a href="/users/2447599/ran"
+                       title="1,421 reputation"
+                       class="comment-user">ran</a>
+                <span class="comment-date" dir="ltr"><span title="2016-07-24 05:37:30Z" class="relativetime-clean">Jul 24 '16 at 5:37</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-27417047" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+
+  
+<a name="18206938"></a>
+<div id="answer-18206938" class="answer" data-answerid="18206938"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="18206938">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">4</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>If you only care about pushing one block of text to file, this will overwrite it each time.</p>
+
+<pre><code>JFileChooser chooser = new JFileChooser();
+int returnVal = chooser.showSaveDialog(this);
+if (returnVal == JFileChooser.APPROVE_OPTION) {
+    FileOutputStream stream = null;
+    PrintStream out = null;
+    try {
+        File file = chooser.getSelectedFile();
+        stream = new FileOutputStream(file); 
+        String text = "Your String goes here";
+        out = new PrintStream(stream);
+        out.print(text);                  //This will overwrite existing contents
+
+    } catch (Exception ex) {
+        //do something
+    } finally {
+        try {
+            if(stream!=null) stream.close();
+            if(out!=null) out.close();
+        } catch (Exception ex) {
+            //do something
+        }
+    }
+}
+</code></pre>
+
+<p>This example allows the user to select a file using a file chooser.</p>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/18206938" title="short permalink to this answer" class="short-link" id="link-post-18206938">share</a><span class="lsep">|</span><a href="/posts/18206938/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info user-hover">
+    <div class="user-action-time">
+        <a href="/posts/18206938/revisions" title="show all edits to this post">edited <span title="2013-08-14 14:51:23Z" class="relativetime">Aug 14 '13 at 14:51</span></a>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/445131/eric-leschinski"><div class="gravatar-wrapper-32"><img src="https://i.stack.imgur.com/qGH9X.jpg?s=32&amp;g=1" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/445131/eric-leschinski">Eric Leschinski</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score 54,134" dir="ltr">54.1k</span><span title="27 gold badges"><span class="badge1"></span><span class="badgecount">27</span></span><span title="237 silver badges"><span class="badge2"></span><span class="badgecount">237</span></span><span title="208 bronze badges"><span class="badge3"></span><span class="badgecount">208</span></span>
+        </div>
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2013-08-13 10:40:35Z" class="relativetime">Aug 13 '13 at 10:40</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/1355145/jadogg"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/6ce560957d4b16be7e3af5e8c5071239?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/1355145/jadogg">JaDogg</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">484</span><span title="5 silver badges"><span class="badge2"></span><span class="badgecount">5</span></span><span title="21 bronze badges"><span class="badge3"></span><span class="badgecount">21</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-18206938" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+
+
+    <tr id="comment-26776266" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">@Eric Leschinski : thank you for making my answer more professional (i also assumed this was exactly what the OP wanted since this is what actually most people wants,just dump the text and replace it)</span>
+                    &ndash;&nbsp;<a href="/users/1355145/jadogg"
+                       title="484 reputation"
+                       class="comment-user">JaDogg</a>
+                <span class="comment-date" dir="ltr"><span title="2013-08-15 17:36:23Z" class="relativetime-clean">Aug 15 '13 at 17:36</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-26781624" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">2</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Once the original question has been answered and the OP is satisfied and long-gone, pages like this serve only as a useful artifact to people who land here from a Google search.  I landed on this page in order to create a mini text appender to a file.  So it&#39;s good to speak to the entire audience rather than the OP after the OP has moved on.</span>
+                    &ndash;&nbsp;<a href="/users/445131/eric-leschinski"
+                       title="54,134 reputation"
+                       class="comment-user">Eric Leschinski</a>
+                <span class="comment-date" dir="ltr"><span title="2013-08-15 20:19:08Z" class="relativetime-clean">Aug 15 '13 at 20:19</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-18206938" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+
+  
+<a name="37436916"></a>
+<div id="answer-37436916" class="answer" data-answerid="37436916"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="37436916">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">4</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>Using <code>Java 7</code>:</p>
+
+<pre><code>public static void writeToFile(String text, String targetFilePath) throws IOException
+{
+    Path targetPath = Paths.get(targetFilePath);
+    byte[] bytes = text.getBytes(StandardCharsets.UTF_8);
+    Files.write(targetPath, bytes, StandardOpenOption.CREATE);
+}
+</code></pre>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/37436916" title="short permalink to this answer" class="short-link" id="link-post-37436916">share</a><span class="lsep">|</span><a href="/posts/37436916/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2016-05-25 12:19:14Z" class="relativetime">May 25 '16 at 12:19</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/3764804/bullywiiplaza"><div class="gravatar-wrapper-32"><img src="https://i.stack.imgur.com/fZQON.png?s=32&amp;g=1" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/3764804/bullywiiplaza">BullyWiiPlaza</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">2,116</span><span title="12 silver badges"><span class="badge2"></span><span class="badgecount">12</span></span><span title="33 bronze badges"><span class="badge3"></span><span class="badgecount">33</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-37436916" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+
+
+    <tr id="comment-71289657" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">A word to the wise - this will create a new file if it isn&#39;t there, but will overwrite the characters of the existing file if it is. If the new data is smaller, that will mean you probably create a corrupted file. Ask me how I know!</span>
+                    &ndash;&nbsp;<a href="/users/498949/chris-rae"
+                       title="4,417 reputation"
+                       class="comment-user">Chris Rae</a>
+                <span class="comment-date" dir="ltr"><span title="2017-02-05 23:29:54Z" class="relativetime-clean">Feb 5 at 23:29</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-37436916" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+
+  
+<a name="1053553"></a>
+<div id="answer-1053553" class="answer" data-answerid="1053553"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="1053553">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">3</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>It's better to close the writer/outputstream in a finally block, just in case something happen</p>
+
+<pre><code>finally{
+   if(writer != null){
+     try{
+        writer.flush();
+        writer.close();
+     }
+     catch(IOException ioe){
+         ioe.printStackTrace();
+     }
+   }
+}
+</code></pre>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/1053553" title="short permalink to this answer" class="short-link" id="link-post-1053553">share</a><span class="lsep">|</span><a href="/posts/1053553/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2009-06-27 20:32:52Z" class="relativetime">Jun 27 '09 at 20:32</span>
+    </div>
+    <div class="user-gravatar32">
+        <span class="anonymous-gravatar"></span>
+    </div>
+    <div class="user-details">
+        John Doe
+        <div class="-flair">
+            
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-1053553" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+
+
+    <tr id="comment-21122555" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">1</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">even better: use try-with-resources</span>
+                    &ndash;&nbsp;<a href="/users/309483/janus-troelsen"
+                       title="10,662 reputation"
+                       class="comment-user">Janus Troelsen</a>
+                <span class="comment-date" dir="ltr"><span title="2013-02-22 18:35:28Z" class="relativetime-clean">Feb 22 '13 at 18:35</span></span>
+                        <span class="edited-yes" title="this comment was edited 1 time"></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-49957066" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Yes, @JanusTroelsen is right, better use The try-with-resources statement <a href="https://docs.oracle.com/javase/tutorial/essential/exceptions/tryResourceClose.html" rel="nofollow noreferrer">docs.oracle.com/javase/tutorial/essential/exceptions/&hellip;</a></span>
+                    &ndash;&nbsp;<a href="/users/813853/alji-mohamed"
+                       title="1,729 reputation"
+                       class="comment-user">ALJI Mohamed</a>
+                <span class="comment-date" dir="ltr"><span title="2015-06-21 08:11:50Z" class="relativetime-clean">Jun 21 '15 at 8:11</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-1053553" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+
+  
+<a name="41467301"></a>
+<div id="answer-41467301" class="answer" data-answerid="41467301"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="41467301">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">3</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>Using org.apache.commons.io.FileUtils
+<div class="snippet" data-lang="js" data-hide="false" data-console="true" data-babel="false">
+<div class="snippet-code">
+<pre class="snippet-code-js lang-js prettyprint-override"><code>FileUtils.writeStringToFile(new File("log.txt"), "my string", Charset.defaultCharset());</code></pre>
+</div>
+</div>
+</p>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/41467301" title="short permalink to this answer" class="short-link" id="link-post-41467301">share</a><span class="lsep">|</span><a href="/posts/41467301/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2017-01-04 15:22:07Z" class="relativetime">Jan 4 at 15:22</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/1128403/i88-ca"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/75721a74fc83b0951a7f454dde33f010?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/1128403/i88-ca">i88.ca</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">959</span><span title="7 silver badges"><span class="badge2"></span><span class="badgecount">7</span></span><span title="8 bronze badges"><span class="badge3"></span><span class="badgecount">8</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-41467301" class="comments  dno">
+		    <table>
+                <tbody data-remaining-comments-count="0"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+                        <tr><td></td><td></td></tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-41467301" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+
+  
+<a name="27221022"></a>
+<div id="answer-27221022" class="answer" data-answerid="27221022"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="27221022">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">0</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>You can use the ArrayList to put all the contents of the TextArea for exemple, and send as parameter by calling the save, as the writer just wrote string lines, then we use the "for" line by line to write our ArrayList in the end we will be content TextArea in txt file. if something does not make sense, I'm sorry is google translator and I who do not speak English.</p>
+
+<p>Watch the Windows Notepad, it does not always jump lines, and shows all in one line, use Wordpad ok.</p>
+
+<hr>
+
+<p>private void SaveActionPerformed(java.awt.event.ActionEvent evt) {</p>
+
+<pre><code>String NameFile = Name.getText();
+ArrayList&lt; String &gt; Text = new ArrayList&lt; String &gt;();
+
+Text.add(TextArea.getText());
+
+SaveFile(NameFile, Text);
+</code></pre>
+
+<p>} </p>
+
+<hr>
+
+<p>public void SaveFile(String name, ArrayList&lt; String> message) {</p>
+
+<pre><code>path = "C:\\Users\\Paulo Brito\\Desktop\\" + name + ".txt";
+
+File file1 = new File(path);
+
+try {
+
+    if (!file1.exists()) {
+
+        file1.createNewFile();
+    }
+
+
+    File[] files = file1.listFiles();
+
+
+    FileWriter fw = new FileWriter(file1, true);
+
+    BufferedWriter bw = new BufferedWriter(fw);
+
+    for (int i = 0; i &lt; message.size(); i++) {
+
+        bw.write(message.get(i));
+        bw.newLine();
+    }
+
+    bw.close();
+    fw.close();
+
+    FileReader fr = new FileReader(file1);
+
+    BufferedReader br = new BufferedReader(fr);
+
+    fw = new FileWriter(file1, true);
+
+    bw = new BufferedWriter(fw);
+
+    while (br.ready()) {
+
+        String line = br.readLine();
+
+        System.out.println(line);
+
+        bw.write(line);
+        bw.newLine();
+
+    }
+    br.close();
+    fr.close();
+
+} catch (IOException ex) {
+    ex.printStackTrace();
+    JOptionPane.showMessageDialog(null, "Error in" + ex);        
+</code></pre>
+
+<p>}</p>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/27221022" title="short permalink to this answer" class="short-link" id="link-post-27221022">share</a><span class="lsep">|</span><a href="/posts/27221022/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2014-12-01 02:53:43Z" class="relativetime">Dec 1 '14 at 2:53</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/4310031/paulo-brito"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/608b758933d775e6b144695eb392041c?s=32&amp;d=identicon&amp;r=PG&amp;f=1" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/4310031/paulo-brito">Paulo Brito</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">11</span><span title="2 bronze badges"><span class="badge3"></span><span class="badgecount">2</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-27221022" class="comments  dno">
+		    <table>
+                <tbody data-remaining-comments-count="0"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+                        <tr><td></td><td></td></tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-27221022" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+				    <div class="question-status">
+        <h2>                    <b>protected</b> by <a href="/users/1927832/ans">ANS</a> <span dir="ltr"><span title="2014-01-10 09:27:44Z" class="relativetime">Jan 10 '14 at 9:27</span></span>
+</h2>
+        <p>
+Thank you for your interest in this question. 
+Because it has attracted low-quality or spam answers that had to be removed, posting an answer now requires 10 <a href="/help/whats-reputation">reputation</a> on this site (the <a href="/help/privileges/new-user">association bonus does not count</a>).
+<br /><br />
+Would you like to answer one of these <a href="/unanswered?fromProtectedNotice=true">unanswered questions</a> instead?
+</p>
+    </div>
+
+
+
+
+
+						<h2 class="bottom-notice" data-loc="1">
+Not the answer you&#39;re looking for?							Browse other questions tagged <a href="/questions/tagged/java" class="post-tag" title="show questions tagged &#39;java&#39;" rel="tag">java</a> <a href="/questions/tagged/file" class="post-tag" title="show questions tagged &#39;file&#39;" rel="tag">file</a> <a href="/questions/tagged/file-io" class="post-tag" title="show questions tagged &#39;file-io&#39;" rel="tag">file-io</a> <a href="/questions/tagged/text-files" class="post-tag" title="show questions tagged &#39;text-files&#39;" rel="tag">text-files</a>  or <a href="/questions/ask">ask your own question</a>.						</h2>
+			</div>
+		</div>
+				<div id="sidebar" class="show-votes">
+						    <div class="module question-stats">
+			        <table id="qinfo">
+			            <tr>
+			                <td>
+			                    <p class="label-key">asked</p>
+			                </td>
+			                <td style="padding-left: 10px">
+			                    <p class="label-key" title="2009-06-27 19:37:28Z"><b>7 years ago</b></p>
+			                </td>
+			            </tr>
+			            <tr>
+			                <td>
+			                    <p class="label-key">viewed</p>
+			                </td>
+
+			                <td style="padding-left: 10px">
+			                    <p class="label-key">
+			                        <b>706111 times</b>
+			                    </p>
+			                </td>
+			            </tr>
+			                <tr>
+			                    <td>
+			                        <p class="label-key">active</p>
+			                    </td>
+			                    <td style="padding-left: 10px">
+			                        <p class="label-key"><b><a href="?lastactivity" class="lastactivity-link" title="2017-01-04 15:22:07Z">2 months ago</a></b></p>
+			                    </td>
+			                </tr>
+			        </table>
+			    </div>
+			<div class="module community-bulletin" data-tracker="cb=1">
+    <div class="related">
+                <div class="bulletin-title">
+                    Blog
+                </div>
+                <hr />
+    <div class="spacer">
+        <div class="bulletin-item-type">
+                <a href="https://stackoverflow.blog/2017/03/13/stack-overflow-podcast-104-jenn-schiffer-talks-us-fog-creeks-new-glitch/" class="question-hyperlink">
+<div class="favicon favicon-stackexchangemeta" title="Meta Stack Exchange"></div>                </a>
+            </div>
+                <div class="bulletin-item-content">
+                    <a href="https://stackoverflow.blog/2017/03/13/stack-overflow-podcast-104-jenn-schiffer-talks-us-fog-creeks-new-glitch/" title="Stack Overflow Podcast #104 – Jenn Schiffer Talks to Us about Fog Creek’s New Glitch" class="question-hyperlink">Stack Overflow Podcast #104 – Jenn Schiffer Talks to Us about Fog Creek’s New&hellip;</a>
+                </div>
+                <br class="cbt" />
+            </div>
+    </div>
+</div>			
+			<script>
+                var ados = ados || {}; ados.run = ados.run || [];
+                ados.run.push(function () { ados_add_placement(22,8277,"adzerk1576204516",[5,17,2221]).setZone(45); });
+            </script>
+            <div class="everyonelovesstackoverflow" id="adzerk1576204516"></div>
+            <div id="hireme"></div>
+        <script>
+window.clc_request = 'AkFwB78ZbNQIAAAAABsTEAACAAAAAgAAAAAeAAAAfGphdmF8ZmlsZXxmaWxlLWlvfHRleHQtZmlsZXN8AFk_gxFI-O2I-Z8';
+;(function(n){var t,u,r,i;try{if(typeof[].indexOf!="function")return;if(window.attachEvent&&!window.addEventListener)return;if(n.allowed[0]!=="*"&&n.allowed.indexOf(location.hostname)===-1)return;if(t=window,t.clc=t.clc||{},u=t.clc_request||t.clcfl_request,u||console.warn("clc_request missing"),t.clc.init=t.clc.init||[],t.clc.init.push(function(n){return n.load()}),t.clc.options){for(r in t.clc.options)n[r]=t.clc.options[r];t.clc.options=n}else t.clc.options=n;i=document.createElement("script");i.async=!0;i.src=n.lib;document.body.appendChild(i)}catch(f){console.error("[clc] Error in loader:",f)}}).call(null, {"azw":true,"kt":2000,"tto":true,"autoload":true,"d":{"sb":["hireme","clc-sb"],"tlb":["careers1","clc-tlb"],"mlb":["careers3","clc-mlb"]},"allowed":["stackoverflow.com","serverfault.com","blog.codinghorror.com","talent.stackoverflow.com"],"h":"clc.stackoverflow.com","u":"https://clc.stackoverflow.com/markup.js","lib":"https://cdn.sstatic.net/clc/clc.min.js?v=51f344c0b478"});        </script>
+			
+
+            <div class="module sidebar-linked">
+	<h4 id="h-linked">Linked</h4>
+	<div class="linked" data-tracker="lq=1">
+
+<div class="spacer">
+	<a href="/q/13135331" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">3</div>
+	</a>
+	<a href="/questions/13135331/most-efficient-way-to-write-a-string-to-a-file?noredirect=1" class="question-hyperlink">Most efficient way to write a string to a file</a>
+</div>
+<div class="spacer">
+	<a href="/q/34355368" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">0</div>
+	</a>
+	<a href="/questions/34355368/write-string-to-text-file-in-java?noredirect=1" class="question-hyperlink">Write String to text-file in java</a>
+</div>
+<div class="spacer">
+	<a href="/q/21369266" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">-2</div>
+	</a>
+	<a href="/questions/21369266/java-code-to-save-a-variable-to-a-a-text-file?noredirect=1" class="question-hyperlink">Java code to save a variable to a a text file</a>
+</div>
+<div class="spacer">
+	<a href="/q/26253732" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">0</div>
+	</a>
+	<a href="/questions/26253732/how-to-save-a-text-file-in-java-after-changing-it?noredirect=1" class="question-hyperlink">How to save a text file in java after changing it?</a>
+</div>
+<div class="spacer">
+	<a href="/q/22299954" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">-2</div>
+	</a>
+	<a href="/questions/22299954/how-to-save-a-string-to-a-txt-file-in-java?noredirect=1" class="question-hyperlink">How to save a string to a .txt file in java</a>
+</div>
+<div class="spacer">
+	<a href="/q/35746878" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">-2</div>
+	</a>
+	<a href="/questions/35746878/i-want-to-display-these-two-values-in-a-text-file?noredirect=1" class="question-hyperlink">i want to display these two values in a text file</a>
+</div>
+<div class="spacer">
+	<a href="/q/37405628" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">0</div>
+	</a>
+	<a href="/questions/37405628/save-to-text-file?noredirect=1" class="question-hyperlink">Save to text file</a>
+</div>
+<div class="spacer">
+	<a href="/q/40474581" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">0</div>
+	</a>
+	<a href="/questions/40474581/editing-html-file-using-java?noredirect=1" class="question-hyperlink">Editing HTML file using Java</a>
+</div>
+<div class="spacer">
+	<a href="/q/15726972" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">9</div>
+	</a>
+	<a href="/questions/15726972/using-for-loop-write-lines-one-by-one-in-file-using-java?noredirect=1" class="question-hyperlink">using for loop write lines one by one in file using java</a>
+</div>
+<div class="spacer">
+	<a href="/q/10390254" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">1</div>
+	</a>
+	<a href="/questions/10390254/how-do-you-write-a-string-to-a-text-file?noredirect=1" class="question-hyperlink">How do you write a String to a text file?</a>
+</div>					<div class="spacer more">
+				<a href="/questions/linked/1053467">see more linked questions…</a>
+			</div>
+	</div>
+</div>
+
+				<div class="module sidebar-related">
+					<h4 id="h-related">Related</h4>
+                    <div class="related js-gps-related-questions" data-tracker="rq=1">
+                        <div class="spacer"><a href="/q/262618" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted default">19</div></a><a href="/questions/262618/java-bufferedreader-back-to-the-top-of-a-text-file" class="question-hyperlink">Java BufferedReader back to the top of a text file?</a></div><div class="spacer"><a href="/q/309424" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted extra-large">2523</div></a><a href="/questions/309424/read-convert-an-inputstream-to-a-string" class="question-hyperlink">Read/convert an InputStream to a String</a></div><div class="spacer"><a href="/q/326390" title="Vote score (upvotes - downvotes)"><div class="answer-votes large">941</div></a><a href="/questions/326390/how-do-i-create-a-java-string-from-the-contents-of-a-file" class="question-hyperlink">How do I create a Java string from the contents of a file?</a></div><div class="spacer"><a href="/q/729692" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted large">770</div></a><a href="/questions/729692/why-should-text-files-end-with-a-newline" class="question-hyperlink">Why should text files end with a newline?</a></div><div class="spacer"><a href="/q/1625234" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted large">458</div></a><a href="/questions/1625234/how-to-append-text-to-an-existing-file-in-java" class="question-hyperlink">How to append text to an existing file in Java</a></div><div class="spacer"><a href="/q/1816673" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted large">540</div></a><a href="/questions/1816673/how-do-i-check-if-a-file-exists-in-java" class="question-hyperlink">How do I check if a file exists in Java?</a></div><div class="spacer"><a href="/q/2788080" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted default">77</div></a><a href="/questions/2788080/java-how-to-read-a-text-file" class="question-hyperlink">Java: How to read a text file</a></div><div class="spacer"><a href="/q/4716503" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted large">626</div></a><a href="/questions/4716503/reading-a-plain-text-file-in-java" class="question-hyperlink">Reading a plain text file in Java</a></div><div class="spacer"><a href="/q/5585779" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted extra-large">1919</div></a><a href="/questions/5585779/how-to-convert-a-string-to-an-int-in-java" class="question-hyperlink">How to convert a String to an int in Java?</a></div><div class="spacer"><a href="/q/5868369" title="Vote score (upvotes - downvotes)"><div class="answer-votes large">505</div></a><a href="/questions/5868369/how-to-read-a-large-text-file-line-by-line-using-java" class="question-hyperlink">How to read a large text file line by line using Java?</a></div>
+                    </div>
+				</div>
+            
+<div id="hot-network-questions" class="module tex2jax_ignore">
+    <h4>
+        <a href="https://stackexchange.com/questions?tab=hot"
+           class="js-gps-track" 
+           data-gps-track="posts_hot_network.click({ item_type:1, location:11 })">
+            Hot Network Questions
+        </a>
+    </h4>
+    <ul>
+            <li >
+                <div class="favicon favicon-money" title="Personal Finance &amp; Money Stack Exchange"></div><a href="http://money.stackexchange.com/questions/77319/how-to-prevent-myself-from-buying-things-i-dont-want" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:93 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How to prevent myself from buying things I don&#39;t want
+                </a>
+
+            </li>
+            <li >
+                <div class="favicon favicon-raspberrypi" title="Raspberry Pi Stack Exchange"></div><a href="http://raspberrypi.stackexchange.com/questions/63396/which-distro-for-raspbery-pi-zero-w" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:447 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Which distro for Raspbery Pi Zero W?
+                </a>
+
+            </li>
+            <li >
+                <div class="favicon favicon-gamedev" title="Game Development Stack Exchange"></div><a href="http://gamedev.stackexchange.com/questions/138664/how-to-make-sure-spinning-objects-hit-a-target-with-the-right-end" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:53 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How to make sure spinning objects hit a target with the right end?
+                </a>
+
+            </li>
+            <li >
+                <div class="favicon favicon-stats" title="Cross Validated"></div><a href="http://stats.stackexchange.com/questions/267677/how-can-percents-not-adding-up-to-a-hundred-be-possible" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:65 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How can percents not adding up to a hundred be possible?
+                </a>
+
+            </li>
+            <li >
+                <div class="favicon favicon-superuser" title="Super User"></div><a href="https://superuser.com/questions/1188072/what-makes-a-pc-able-to-be-a-web-server-and-what-makes-it-unable" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:3 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    What makes a PC able to be a web server and what makes it unable?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-unix" title="Unix &amp; Linux Stack Exchange"></div><a href="http://unix.stackexchange.com/questions/351725/why-eval-the-output-of-ssh-agent" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:106 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Why eval the output of ssh-agent?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-german" title="German Language Stack Exchange"></div><a href="http://german.stackexchange.com/questions/35348/how-do-non-baviarians-respond-to-gr%c3%bc%c3%9f-gott" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:253 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How do non-Baviarians respond to &quot;Gr&#252;&#223; Gott!&quot;?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-movies" title="Movies &amp; TV Stack Exchange"></div><a href="http://movies.stackexchange.com/questions/70155/which-board-game-does-nash-play-in-the-movie-a-beautiful-mind" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:367 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Which board game does Nash play in the movie &quot;A Beautiful Mind&quot;?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-serverfault" title="Server Fault"></div><a href="http://serverfault.com/questions/837994/why-are-ca-root-certificates-all-sha-1-signed-since-sha-1-is-deprecated" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:2 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Why are CA root certificates all SHA-1 signed (since SHA-1 is deprecated)?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-space" title="Space Exploration Stack Exchange"></div><a href="http://space.stackexchange.com/questions/20653/why-isnt-it-possible-to-build-a-space-elevator-at-the-north-pole" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:508 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Why isn&#39;t it possible to build a space elevator at the north pole?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-math" title="Mathematics Stack Exchange"></div><a href="http://math.stackexchange.com/questions/2187451/are-there-any-paths-that-will-always-show-if-there-is-a-limit" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:69 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Are there any paths that will always show if there is a limit?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-unix" title="Unix &amp; Linux Stack Exchange"></div><a href="http://unix.stackexchange.com/questions/351593/should-i-use-single-or-double-angle-brackets-to-redirect-to-dev-null" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:106 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Should I use single or double angle brackets to redirect to /dev/null?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-parenting" title="Parenting Stack Exchange"></div><a href="http://parenting.stackexchange.com/questions/29289/how-do-i-calm-a-frustrated-6-year-old" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:228 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How do I calm a frustrated 6-year-old?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-scifi" title="Science Fiction &amp; Fantasy Stack Exchange"></div><a href="http://scifi.stackexchange.com/questions/154802/at-the-end-of-return-of-the-jedi-did-darth-vader-learn-that-princess-leia-was-h" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:186 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    At the end of Return of the Jedi, did Darth Vader learn that Princess Leia was his daughter?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-judaism" title="Mi Yodeya"></div><a href="http://judaism.stackexchange.com/questions/80945/is-it-greater-to-refrain-from-doing-an-aveirah-than-to-perform-a-mitzvah" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:248 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Is it greater to refrain from doing an aveirah than to perform a mitzvah?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-workplace" title="The Workplace Stack Exchange"></div><a href="http://workplace.stackexchange.com/questions/86983/how-to-deal-with-a-co-worker-who-assumes-unofficial-ownership-of-a-project" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:423 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How to deal with a co-worker who assumes &quot;unofficial&quot; ownership of a project?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-rpg" title="Role-playing Games Stack Exchange"></div><a href="http://rpg.stackexchange.com/questions/96563/grappling-in-5e-is-there-something-that-might-serve-the-same-purpose-as-3-5e-gr" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:122 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Grappling in 5e: Is there something that might serve the same purpose as 3.5e Grapple did?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-codegolf" title="Programming Puzzles &amp; Code Golf Stack Exchange"></div><a href="http://codegolf.stackexchange.com/questions/112841/simple-code-golf-challenge-character-patterns" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:200 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Simple code golf challenge: Character patterns!
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-electronics" title="Electrical Engineering Stack Exchange"></div><a href="http://electronics.stackexchange.com/questions/292613/why-the-extra-transistors-in-this-current-mirror" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:135 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Why the extra transistors in this current mirror?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-french" title="French Language Stack Exchange"></div><a href="http://french.stackexchange.com/questions/25121/what-exactly-do-the-french-diacritics-denote-and-can-they-be-implied-expelled" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:299 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    What exactly do the French diacritics denote? And can they be implied/expelled?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-ell" title="English Language Learners Stack Exchange"></div><a href="http://ell.stackexchange.com/questions/122537/a-formal-term-for-a-list-of-event-that-have-transpired" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:481 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    A formal term for a list of event that have transpired
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-codegolf" title="Programming Puzzles &amp; Code Golf Stack Exchange"></div><a href="http://codegolf.stackexchange.com/questions/112935/sort-useless-characters" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:200 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Sort useless characters
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-photo" title="Photography Stack Exchange"></div><a href="http://photo.stackexchange.com/questions/87924/concept-of-focus-for-a-pinhole-camera" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:61 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Concept of focus for a pinhole camera?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-electronics" title="Electrical Engineering Stack Exchange"></div><a href="http://electronics.stackexchange.com/questions/292502/what-does-dv-dt-mean-for-triacs" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:135 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    What does &quot;dV/dt&quot; mean for TRIACs?
+                </a>
+
+            </li>
+    </ul>
+
+        <a href="#" 
+           class="show-more js-show-more js-gps-track" 
+           data-gps-track="posts_hot_network.click({ item_type:3, location:11 })">
+            more hot questions
+        </a>
+</div>
+		</div>
+	
+<div id="feed-link">
+    <div id="feed-link-text">
+        <a href="/feeds/question/1053467" title="feed of this question and its answers">
+            <span class="feed-icon"></span>question feed
+        </a>
+    </div>
+</div>	<script>
+StackExchange.ready(function(){$.get('/posts/1053467/ivc/814f');});
+</script>
+<noscript>
+    <div><img src="/posts/1053467/ivc/814f" class="dno" alt="" width="0" height="0"></div>
+</noscript><div style="display:none" id="prettify-lang">lang-java</div></div>
+
+
+        </div>
+    </div>
+    <div id="footer" class="categories">
+        <div class="footerwrap">            
+            <div id="footer-menu">
+                <div class="top-footer-links">
+                    <a href="http://stackoverflow.com/company/about">about us</a>
+                        <a href="/tour">tour</a>
+                    <a href="/help">help</a>
+                    <a href="https://stackoverflow.blog?blb=1">blog</a>
+                        <a href="http://chat.stackoverflow.com">chat</a>
+                    <a href="https://data.stackexchange.com">data</a>
+                    <a href="https://stackexchange.com/legal">legal</a>
+                    <a href="https://stackexchange.com/legal/privacy-policy">privacy policy</a>
+                    <a href="http://stackoverflow.com/company/work-here">work here</a>
+                    <a href="https://www.stackoverflowbusiness.com/advertise">advertising info</a>
+                        <a href="http://stackoverflow.com/jobs/directory/developer-jobs">developer jobs directory</a>
+
+                    <a onclick='StackExchange.switchMobile("on")'>mobile</a>
+                    <b><a href="/contact">contact us</a></b>
+                        <b><a href="https://meta.stackoverflow.com">feedback</a></b>
+                    
+                </div>
+                <div id="footer-sites">
+                    <table>
+    <tr>
+            <th colspan=3>
+                Technology
+            </th>
+            <th >
+                Life / Arts
+            </th>
+            <th >
+                Culture / Recreation
+            </th>
+            <th >
+                Science
+            </th>
+            <th >
+                Other
+            </th>
+    </tr>
+    <tr>
+            <td>
+                <ol>
+                        <li><a href="//stackoverflow.com" title="professional and enthusiast programmers">Stack Overflow</a></li>
+                        <li><a href="//serverfault.com" title="system and network administrators">Server Fault</a></li>
+                        <li><a href="//superuser.com" title="computer enthusiasts and power users">Super User</a></li>
+                        <li><a href="//webapps.stackexchange.com" title="power users of web applications">Web Applications</a></li>
+                        <li><a href="//askubuntu.com" title="Ubuntu users and developers">Ask Ubuntu</a></li>
+                        <li><a href="//webmasters.stackexchange.com" title="pro webmasters">Webmasters</a></li>
+                        <li><a href="//gamedev.stackexchange.com" title="professional and independent game developers">Game Development</a></li>
+                        <li><a href="//tex.stackexchange.com" title="users of TeX, LaTeX, ConTeXt, and related typesetting systems">TeX - LaTeX</a></li>
+                        <li><a href="//softwareengineering.stackexchange.com" title="professionals, academics, and students working within the systems development life cycle who care about creating, delivering, and maintaining software responsibly">Software Engineering</a></li>
+                        <li><a href="//unix.stackexchange.com" title="users of Linux, FreeBSD and other Un*x-like operating systems">Unix &amp; Linux</a></li>
+                        <li><a href="//apple.stackexchange.com" title="power users of Apple hardware and software">Ask Different (Apple)</a></li>
+                        <li><a href="//wordpress.stackexchange.com" title="WordPress developers and administrators">WordPress Development</a></li>
+                            </ol></td><td><ol>
+                        <li><a href="//gis.stackexchange.com" title="cartographers, geographers and GIS professionals">Geographic Information Systems</a></li>
+                        <li><a href="//electronics.stackexchange.com" title="electronics and electrical engineering professionals, students, and enthusiasts">Electrical Engineering</a></li>
+                        <li><a href="//android.stackexchange.com" title="enthusiasts and power users of the Android operating system">Android Enthusiasts</a></li>
+                        <li><a href="//security.stackexchange.com" title="information security professionals">Information Security</a></li>
+                        <li><a href="//dba.stackexchange.com" title="database professionals who wish to improve their database skills and learn from others in the community">Database Administrators</a></li>
+                        <li><a href="//drupal.stackexchange.com" title="Drupal developers and administrators">Drupal Answers</a></li>
+                        <li><a href="//sharepoint.stackexchange.com" title="SharePoint enthusiasts">SharePoint</a></li>
+                        <li><a href="//ux.stackexchange.com" title="user experience researchers and experts">User Experience</a></li>
+                        <li><a href="//mathematica.stackexchange.com" title="users of Wolfram Mathematica">Mathematica</a></li>
+                        <li><a href="//salesforce.stackexchange.com" title="Salesforce administrators, implementation experts, developers and anybody in-between">Salesforce</a></li>
+                        <li><a href="//expressionengine.stackexchange.com" title="administrators, end users, developers and designers for ExpressionEngine&#174; CMS">ExpressionEngine&#174; Answers</a></li>
+                        <li><a href="//crypto.stackexchange.com" title="software developers, mathematicians and others interested in cryptography">Cryptography</a></li>
+                            </ol></td><td><ol>
+                        <li><a href="//codereview.stackexchange.com" title="peer programmer code reviews">Code Review</a></li>
+                        <li><a href="//magento.stackexchange.com" title="users of the Magento e-Commerce platform">Magento</a></li>
+                        <li><a href="//dsp.stackexchange.com" title="practitioners of the art and science of signal, image and video processing">Signal Processing</a></li>
+                        <li><a href="//raspberrypi.stackexchange.com" title="users and developers of hardware and software for Raspberry Pi">Raspberry Pi</a></li>
+                        <li><a href="//codegolf.stackexchange.com" title="programming puzzle enthusiasts and code golfers">Programming Puzzles &amp; Code Golf</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#technology" class="more">
+                                more (7)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="//photo.stackexchange.com" title="professional, enthusiast and amateur photographers">Photography</a></li>
+                        <li><a href="//scifi.stackexchange.com" title="science fiction and fantasy enthusiasts">Science Fiction &amp; Fantasy</a></li>
+                        <li><a href="//graphicdesign.stackexchange.com" title="Graphic Design professionals, students, and enthusiasts">Graphic Design</a></li>
+                        <li><a href="//movies.stackexchange.com" title="movie and tv enthusiasts">Movies &amp; TV</a></li>
+                        <li><a href="//music.stackexchange.com" title="musicians, students, and enthusiasts">Music: Practice &amp; Theory</a></li>
+                        <li><a href="//cooking.stackexchange.com" title="professional and amateur chefs">Seasoned Advice (cooking)</a></li>
+                        <li><a href="//diy.stackexchange.com" title="contractors and serious DIYers">Home Improvement</a></li>
+                        <li><a href="//money.stackexchange.com" title="people who want to be financially literate">Personal Finance &amp; Money</a></li>
+                        <li><a href="//academia.stackexchange.com" title="academics and those enrolled in higher education">Academia</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#lifearts" class="more">
+                                more (8)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="//english.stackexchange.com" title="linguists, etymologists, and serious English language enthusiasts">English Language &amp; Usage</a></li>
+                        <li><a href="//skeptics.stackexchange.com" title="scientific skepticism">Skeptics</a></li>
+                        <li><a href="//judaism.stackexchange.com" title="those who base their lives on Jewish law and tradition and anyone interested in learning more">Mi Yodeya (Judaism)</a></li>
+                        <li><a href="//travel.stackexchange.com" title="road warriors and seasoned travelers">Travel</a></li>
+                        <li><a href="//christianity.stackexchange.com" title="committed Christians, experts in Christianity and those interested in learning more">Christianity</a></li>
+                        <li><a href="//ell.stackexchange.com" title="speakers of other languages learning English">English Language Learners</a></li>
+                        <li><a href="//japanese.stackexchange.com" title="students, teachers, and linguists wanting to discuss the finer points of the Japanese language">Japanese Language</a></li>
+                        <li><a href="//gaming.stackexchange.com" title="passionate videogamers on all platforms">Arqade (gaming)</a></li>
+                        <li><a href="//bicycles.stackexchange.com" title="people who build and repair bicycles, people who train cycling, or commute on bicycles">Bicycles</a></li>
+                        <li><a href="//rpg.stackexchange.com" title="gamemasters and players of tabletop, paper-and-pencil role-playing games">Role-playing Games</a></li>
+                        <li><a href="//anime.stackexchange.com" title="anime and manga fans">Anime &amp; Manga</a></li>
+                        <li><a href="//mechanics.stackexchange.com" title="mechanics and DIY enthusiast owners of cars, trucks, and motorcycles">Motor Vehicle Maintenance &amp; Repair</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#culturerecreation" class="more">
+                                more (17)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="//mathoverflow.net" title="professional mathematicians">MathOverflow</a></li>
+                        <li><a href="//math.stackexchange.com" title="people studying math at any level and professionals in related fields">Mathematics</a></li>
+                        <li><a href="//stats.stackexchange.com" title="people interested in statistics, machine learning, data analysis, data mining, and data visualization">Cross Validated (stats)</a></li>
+                        <li><a href="//cstheory.stackexchange.com" title="theoretical computer scientists and researchers in related fields">Theoretical Computer Science</a></li>
+                        <li><a href="//physics.stackexchange.com" title="active researchers, academics and students of physics">Physics</a></li>
+                        <li><a href="//chemistry.stackexchange.com" title="scientists, academics, teachers and students">Chemistry</a></li>
+                        <li><a href="//biology.stackexchange.com" title="biology researchers, academics, and students">Biology</a></li>
+                        <li><a href="//cs.stackexchange.com" title="students, researchers and practitioners of computer science">Computer Science</a></li>
+                        <li><a href="//philosophy.stackexchange.com" title="those interested in the study of the fundamental nature of knowledge, reality, and existence">Philosophy</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#science" class="more">
+                                more (3)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="//meta.stackexchange.com" title="meta-discussion of the Stack Exchange family of Q&amp;A websites">Meta Stack Exchange</a></li>
+                        <li><a href="//stackapps.com" title="apps, scripts, and development with the Stack Exchange API">Stack Apps</a></li>
+                        <li><a href="//area51.stackexchange.com" title="proposing new sites in the Stack Exchange network">Area 51</a></li>
+                        <li><a href="https://www.stackoverflowbusiness.com/talent">Stack Overflow Talent</a></li>
+                    
+                </ol>
+            </td>
+    </tr>
+</table>
+                </div>
+            </div>
+            <div id="copyright">
+                site design / logo &#169; 2017 Stack Exchange Inc; user contributions licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/" rel="license">cc by-sa 3.0</a> 
+                with <a href="http://blog.stackoverflow.com/2009/06/attribution-required/" rel="license">attribution required</a>
+            </div>
+            <div id="svnrev">
+                rev 2017.3.16.25436
+            </div>
+                </div>
+    </div>
+    <noscript>
+        <div id="noscript-warning">Stack Overflow works best with JavaScript enabled<img src="https://pixel.quantserve.com/pixel/p-c1rF4kxgLUzNc.gif" alt="" class="dno"></div>
+    </noscript>
+
+<script>var p = "http", d = "static"; if (document.location.protocol == "https:") { p += "s"; d = "engine"; } var z = document.createElement("script"); z.type = "text/javascript"; z.async = true; z.src = p + "://" + d + ".adzerk.net/ados.js"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(z, s);</script>
+<script>
+    var ados = ados || {};
+    ados.run = ados.run || [];
+    
+    
+        
+        ados.run.push(function () {
+                setTimeout(function () { $("#adzerk-user-match").remove(); }, window.AUMIframeDone ? 0 : 2000);
+                ados_setKeywords('java,file,file-io,text-files');; ados_load();
+        });   
+        
+</script>
+
+    <script>
+            (function(i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function() { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m);
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+                ga('create', 'UA-5620270-1');
+                ga('create', 'UA-5620270-59', {name: 'pageData', sampleRate: 5 });
+                ga('set', 'dimension2', '|java|file|file-io|text-files|');
+                ga('pageData.set', 'dimension2', '|java|file|file-io|text-files|');
+                ga('send', 'pageview');
+                ga('pageData.send', 'pageview');
+        var _qevents = _qevents || [],
+            _comscore = _comscore || [];
+        (function () {
+            var ssl='https:'==document.location.protocol,
+                s=document.getElementsByTagName('script')[0],
+                qc=document.createElement('script');
+                qc.async = true;
+                qc.src = (ssl ? 'https://secure' : 'http://edge') + '.quantserve.com/quant.js';
+                s.parentNode.insertBefore(qc, s);
+                _qevents.push({ qacct: "p-c1rF4kxgLUzNc" });
+                            var sc=document.createElement('script');
+                sc.async=true;
+                sc.src=(ssl?'https://sb':'http://b') + '.scorecardresearch.com/beacon.js';
+                s.parentNode.insertBefore(sc, s);
+                _comscore.push({ c1: "2", c2: "17440561" });
+        })();
+
+    </script>
+        
+    
+            <script type="text/javascript">
+                
+                (function(appendChild) {
+                    Node.prototype.appendChild = function() {
+                        var parent = this;
+                        var newNode = arguments[0];
+                        if (parent.nodeName === 'HEAD'
+                            && newNode
+                            && newNode.nodeName === 'SCRIPT'
+                            && newNode.src) {
+                            
+                            window.setTimeout(function() {
+                                var result = newNode.src.match(/^https:\/\/maps\.googleapis\.com\/maps\/api\/place\/js\/(\w+)Service\./i) || [];
+                                var service = result[1];
+                                if (service) {
+                                    if (service === 'Autocompletion') service =  2;
+                                    else if (service === 'Place') service = 1;
+                                    else service = 0;
+                                    StackExchange.using('gps', function() {
+                                        StackExchange.gps.track('google_maps_places_api.call', { service: service });
+                                    });
+                                }
+                            }, 0);
+                        }
+                        return appendChild.apply(this, arguments);
+                    };
+                })(Node.prototype.appendChild);
+            </script>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<div th:fragment="header">
+    <div class="row">
+        <div class="col-sm-3 header-item">
+            <a th:href="@{/}" title="Go to Home page">
+                <img th:src="@{/assets/image/logo.jpg}" alt="GCS" />
+            </a>
+        </div>
+        <div class="col-sm-5 header-item" id="app-name" th:text="#{view.header.application.name}"></div>
+        <div class="col-sm-4 header-item" id="user-panel">
+            <div th:if="${username} != null">
+                <span id="lbl-username" th:text="${username}"> </span>
+                <div class="dropdown">
+                    <span class="caret dropdown-toggle oa-caret" data-toggle="dropdown"></span>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li th:if="${role} == 'admin-class'"><a th:href="@{/admin}" th:text="#{view.header.menu.administration}"></a></li>
+                        <li th:if="${role} == 'admin-class'" class="divider"></li>
+                        <li class="dropdown-header" th:text="#{view.header.menu.choose.language}"></li>
+                        <li th:class="${language == 'English'} ? 'oa-selected-menu-item disabled' : 'oa-not-selected-menu-item'">
+                            <a th:href="${language == 'English'} ? '#' : @{?language=en}" >English</a>
+                            </li>
+                        <li th:class="${language == 'Vietnamese'} ? 'oa-selected-menu-item disabled' : 'oa-not-selected-menu-item'">
+                            <a th:href="${language == 'Vietnamese'} ? '#' : @{?language=vi}" >Việt Nam</a>
+                        </li> 
+                        <li class="divider"></li>
+                        <li><a id="sign-out" th:href="@{/logout}" th:text="#{view.header.menu.log.out}"></a></li>
+                    </ul>
+                </div>
+                
+     
+            </div>
+        </div>
+    </div>
+</div>

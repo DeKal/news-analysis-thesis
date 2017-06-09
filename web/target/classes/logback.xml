@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <contextListener class="ch.qos.logback.classic.jul.LevelChangePropagator">
+        <resetJUL>true</resetJUL>
+    </contextListener>
+
+    <!-- To enable JMX Management -->
+    <jmxConfigurator/>
+
+    
+    <root level="info">
+        <appender-ref ref="CONSOLE" />
+        <appender-ref ref="FULLLOG" />
+    </root>
+</configuration>

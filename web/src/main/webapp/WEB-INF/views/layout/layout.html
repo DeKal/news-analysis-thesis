@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> </title>
+    <meta charset="UTF-8" />
+    <!-- Common CSS -->
+    <link rel="stylesheet"
+        th:href="@{/assets/lib/bootstrap/css/bootstrap.min.css}" />
+    <
+</head>
+<body>
+    <!-- Header -->
+    <div layout:fragment="header">
+        <div th:replace="layout/header :: header"></div>
+    </div>
+
+    <!-- Content -->
+    <div layout:fragment="content" id="main-content"></div>
+    <div layout:fragment="sub-content" id="sub-content"></div>
+
+    <!-- Loading screen when calling AJAX -->
+    <div id="loading-screen">
+        <div class="helper">
+            <div class="content">
+                <img th:src="@{/assets/image/loading-icon.gif}" />
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div layout:fragment="footer">
+        <div th:replace="layout/footer :: footer"></div>
+    </div>
+
+    <!-- Start load lib -->
+    <script th:src="@{/assets/lib/jquery/jquery-3.1.0.min.js}"></script>
+    <div layout:fragment="page-script"></div>
+</body>
+</html>

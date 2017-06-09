@@ -1,0 +1,13 @@
+javax.faces.event
+javax.faces.component
+javax.faces.component.html
+javax.faces.convert
+javax.faces.context
+javax.faces.render
+javax.faces.lifecycle
+javax.faces.webapp
+javax.faces
+javax.faces.el
+javax.faces.validator
+javax.faces.model
+javax.faces.application

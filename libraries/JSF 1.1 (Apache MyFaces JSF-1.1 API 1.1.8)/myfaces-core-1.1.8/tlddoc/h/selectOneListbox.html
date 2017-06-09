@@ -1,0 +1,223 @@
+<html xmlns:javaee="http://java.sun.com/xml/ns/javaee" xmlns:fo="http://www.w3.org/1999/XSL/Format">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>selectOneListbox
+          (Apache MyFaces JSF-1.1 Implementation Tag library documentation)
+        </title>
+<meta name="keywords" content="$title">
+<link rel="stylesheet" type="text/css" href="../stylesheet.css" title="Style">
+</head>
+<script>
+            function asd()
+            {
+            parent.document.title="selectOneListbox (Apache MyFaces JSF-1.1 Implementation Tag library documentation)";
+            }
+          </script>
+<body bgcolor="white" onload="asd();">
+<a name="navbar_top"></a>
+<table border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td COLSPAN="3" BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><a NAME="navbar_top_firstrow"></a>
+<table BORDER="0" CELLPADDING="0" CELLSPACING="3">
+<tr ALIGN="center" VALIGN="top">
+<td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a href="../overview-summary.html"><font CLASS="NavBarFont1"><b>Overview</b></font></a>&nbsp;</td><td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a href="tld-summary.html"><font CLASS="NavBarFont1"><b>Library</b></font></a>&nbsp;</td><td BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<font CLASS="NavBarFont1Rev">&nbsp;Tag&nbsp;</font>&nbsp;</td><td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a HREF="../help-doc.html"><font CLASS="NavBarFont1"><b>Help</b></font></a>&nbsp;</td>
+</tr>
+</table>
+</td><td ALIGN="right" VALIGN="top" ROWSPAN="3"><em></em></td>
+</tr>
+<tr>
+<td BGCOLOR="white" CLASS="NavBarCell2"><font SIZE="-2"></font></td><td BGCOLOR="white" CLASS="NavBarCell2"><font SIZE="-2">
+                &nbsp;<a HREF="../index.html" TARGET="_top"><b>FRAMES</b></a>&nbsp;
+                &nbsp;<a href="selectOneListbox.html" target="_top"><b>NO FRAMES</b></a>&nbsp;
+                <script></script>
+<noscript>
+<a HREF="../alltags-noframe.html" TARGET=""><b>All Tags</b></a>
+</noscript>
+</font></td>
+</tr>
+</table>
+<hr>
+<h2>
+<font size="-1">JSF HTML tag library.</font>
+<br>
+            Tag selectOneListbox</h2>
+<hr>Allow the user to choose one option from a set of options. <p> Rendered as a listbox with the MULTIPLE attribute set to false. <p> The available choices are defined via child f:selectItem or f:selectItems elements. The size of the listbox defaults to the number of available choices; if size is explicitly set to a smaller value, then scrollbars will be rendered. If size is set to 1 then a "drop-down menu" (aka "combo-box") is rendered, though if this is the intent then selectOneMenu should be used instead. <p> The value attribute of this component is read to determine which of the available options is initially selected; its value should match the "value" property of one of the child SelectItem objects. <p> On submit of the enclosing form, the value attribute's bound property is updated to contain the "value" property from the chosen SelectItem. <p> Unless otherwise specified, all attributes accept static values or EL expressions. <p> See Javadoc of <a href="http://java.sun.com/j2ee/javaserverfaces/1.1_01/docs/api/index.html">JSF Specification</a><br>
+<p></p>
+<hr>
+<table border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+<td colspan="2"><font size="+2"><b>Tag Information</b></font></td>
+</tr>
+<tr>
+<td>Tag Class</td><td>org.apache.myfaces.taglib.html.HtmlSelectOneListboxTag</td>
+</tr>
+<tr>
+<td>TagExtraInfo Class</td><td><i>None</i></td>
+</tr>
+<tr>
+<td>Body Content</td><td>JSP</td>
+</tr>
+<tr>
+<td>Display Name</td><td><i>None</i></td>
+</tr>
+</table>
+<br>
+<p></p>
+<table border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+<td colspan="5"><font size="+2"><b>Attributes</b></font></td>
+</tr>
+<tr>
+<td><b>Name</b></td><td><b>Required</b></td><td><b>Request-time</b></td><td><b>Type</b></td><td><b>Description</b></td>
+</tr>
+<tr valign="top">
+<td>size</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>see JSF Spec.</td>
+</tr>
+<tr valign="top">
+<td>style</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>HTML: CSS styling instructions.</td>
+</tr>
+<tr valign="top">
+<td>styleClass</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>The CSS class for this element. Corresponds to the HTML 'class' attribute.</td>
+</tr>
+<tr valign="top">
+<td>tabindex</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>HTML: Specifies the position of this element within the tab order of the document.</td>
+</tr>
+<tr valign="top">
+<td>onblur</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>HTML: Specifies a script to be invoked when the element loses focus.</td>
+</tr>
+<tr valign="top">
+<td>onfocus</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>HTML: Specifies a script to be invoked when the element receives focus.</td>
+</tr>
+<tr valign="top">
+<td>disabledClass</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>The CSS class assigned to the label element for enabled choices.</td>
+</tr>
+<tr valign="top">
+<td>enabledClass</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>The CSS class assigned to the label element for enabled choices.</td>
+</tr>
+<tr valign="top">
+<td>accesskey</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>HTML: Sets the access key for this element.</td>
+</tr>
+<tr valign="top">
+<td>onclick</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>HTML: Script to be invoked when the element is clicked.</td>
+</tr>
+<tr valign="top">
+<td>ondblclick</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>HTML: Script to be invoked when the element is double-clicked.</td>
+</tr>
+<tr valign="top">
+<td>onkeydown</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>HTML: Script to be invoked when a key is pressed down over this element.</td>
+</tr>
+<tr valign="top">
+<td>onkeypress</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>HTML: Script to be invoked when a key is pressed over this element.</td>
+</tr>
+<tr valign="top">
+<td>onkeyup</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>HTML: Script to be invoked when a key is released over this element.</td>
+</tr>
+<tr valign="top">
+<td>onmousedown</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>HTML: Script to be invoked when the pointing device is pressed over this element.</td>
+</tr>
+<tr valign="top">
+<td>onmousemove</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>HTML: Script to be invoked when the pointing device is moved while it is in this element.</td>
+</tr>
+<tr valign="top">
+<td>onmouseout</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>HTML: Script to be invoked when the pointing device is moves out of this element.</td>
+</tr>
+<tr valign="top">
+<td>onmouseover</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>HTML: Script to be invoked when the pointing device is moved into this element.</td>
+</tr>
+<tr valign="top">
+<td>onmouseup</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>HTML: Script to be invoked when the pointing device is released over this element.</td>
+</tr>
+<tr valign="top">
+<td>onchange</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>HTML: Specifies a script to be invoked when the element is modified.</td>
+</tr>
+<tr valign="top">
+<td>onselect</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>HTML: Specifies a script to be invoked when the element is selected.</td>
+</tr>
+<tr valign="top">
+<td>dir</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>HTML: The direction of text display, either 'ltr' (left-to-right) or 'rtl' (right-to-left).</td>
+</tr>
+<tr valign="top">
+<td>lang</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>HTML: The base language of this document.</td>
+</tr>
+<tr valign="top">
+<td>title</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>HTML: An advisory title for this element. Often used by the user agent as a tooltip.</td>
+</tr>
+<tr valign="top">
+<td>disabled</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>HTML: When true, this element cannot receive focus.</td>
+</tr>
+<tr valign="top">
+<td>readonly</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>HTML: When true, indicates that this component cannot be modified by the user. The element may receive focus unless it has also been disabled.</td>
+</tr>
+<tr valign="top">
+<td>validator</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>A method binding EL expression, accepting FacesContext, UIComponent, and Object parameters, and returning void, that validates the component's local value.</td>
+</tr>
+<tr valign="top">
+<td>valueChangeListener</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>A method binding EL expression, accepting a ValueChangeEvent parameter and returning void. The specified method is invoked if this component is modified. The phase that this handler is fired in can be controlled via the immediate attribute.</td>
+</tr>
+<tr valign="top">
+<td>immediate</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>A boolean value that identifies the phase during which value change events should fire. During normal event processing, value change events are fired during the "process validations" phase of request processing. If this attribute is set to "true", these methods are fired instead at the end of the "apply request values" phase.</td>
+</tr>
+<tr valign="top">
+<td>required</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>A boolean value that indicates whether an input value is required. If this value is true, and no input value is provided, the error message javax.faces.component.UIInput.REQUIRED is posted.</td>
+</tr>
+<tr valign="top">
+<td>converter</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>The value can either be a static value (ID) or an EL expression. When a static id is specified, an instance of the converter type registered with that id is used. When this is an EL expression, the result of evaluating the expression must be an object that implements the Converter interface.</td>
+</tr>
+<tr valign="top">
+<td>value</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>The initial value of this component. This value is generally set as a value-binding in the form #{myBean.myProperty}, where myProperty can be any data-type of Java (also user-defined data-types), if a converter for this data-type exists. Special cases: 1) f:selectItems - value needs to bind to a list (or an array) of javax.faces.model.SelectItem-instances 2) components implementing UISelectMany (e.g. h:selectManyCheckbox) - value needs to bind to a list (or an array) of values, where the values need to be of the same data-type as the choices of the associated f:selectItems-component 3) components implementing UIData (e.g. h:dataTable) - value needs to bind to a list (or an array) of values, which will be iterated over when the data-table is processed</td>
+</tr>
+<tr valign="top">
+<td>id</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>An identifier for this particular component instance within a component view. <p> The id must be unique within the scope of the tag's enclosing NamingContainer (eg h:form or f:subview). The id is not necessarily unique across all components in the current view </p> <p> This value must be a static value, ie not change over the lifetime of a component. It cannot be defined via an EL expression; only a string is permitted. </p></td>
+</tr>
+<tr valign="top">
+<td>rendered</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>A boolean value that indicates whether this component should be rendered. Default value: true.</td>
+</tr>
+<tr valign="top">
+<td>binding</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind to this component instance. This value must be an EL expression.</td>
+</tr>
+</table>
+<br>
+<p></p>
+<table border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+<td colspan="5"><font size="+2"><b>Variables</b></font></td>
+</tr>
+<td colspan="2"><i>No Variables Defined.</i></td>
+</table>
+<br>
+<p></p>
+<a name="navbar_bottom"></a>
+<table border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td COLSPAN="3" BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><a NAME="navbar_bottom_firstrow"></a>
+<table BORDER="0" CELLPADDING="0" CELLSPACING="3">
+<tr ALIGN="center" VALIGN="top">
+<td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a href="../overview-summary.html"><font CLASS="NavBarFont1"><b>Overview</b></font></a>&nbsp;</td><td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a href="tld-summary.html"><font CLASS="NavBarFont1"><b>Library</b></font></a>&nbsp;</td><td BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<font CLASS="NavBarFont1Rev">&nbsp;Tag&nbsp;</font>&nbsp;</td><td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a HREF="../help-doc.html"><font CLASS="NavBarFont1"><b>Help</b></font></a>&nbsp;</td>
+</tr>
+</table>
+</td><td ALIGN="right" VALIGN="top" ROWSPAN="3"><em></em></td>
+</tr>
+<tr>
+<td BGCOLOR="white" CLASS="NavBarCell2"><font SIZE="-2"></font></td><td BGCOLOR="white" CLASS="NavBarCell2"><font SIZE="-2">
+                &nbsp;<a HREF="../index.html" TARGET="_top"><b>FRAMES</b></a>&nbsp;
+                &nbsp;<a href="selectOneListbox.html" target="_top"><b>NO FRAMES</b></a>&nbsp;
+                <script></script>
+<noscript>
+<a HREF="../alltags-noframe.html" TARGET=""><b>All Tags</b></a>
+</noscript>
+</font></td>
+</tr>
+</table>
+<hr>
+<small><i>
+            Output Generated by 
+            <a href="http://taglibrarydoc.dev.java.net/" target="_blank">Tag Library Documentation Generator</a>.
+            Java, JSP, and JavaServer Pages are trademarks or 
+            registered trademarks of Sun Microsystems, Inc. in the US and other
+            countries.  Copyright 2002-4 Sun Microsystems, Inc.
+            4150 Network Circle
+            Santa Clara, CA 95054, U.S.A.
+            All Rights Reserved. 
+            </i></small>
+</body>
+</html>

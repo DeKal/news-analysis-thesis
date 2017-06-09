@@ -1,0 +1,17 @@
+-classpath '/home/lu4242/workspace/core_1_1_8/1_1_8/impl/target/classes:/home/lu4242/.m2/repository/commons-lang/commons-lang/2.1/commons-lang-2.1.jar:/home/lu4242/.m2/repository/commons-el/commons-el/1.0/commons-el-1.0.jar:/home/lu4242/.m2/repository/commons-collections/commons-collections/3.1/commons-collections-3.1.jar:/home/lu4242/.m2/repository/commons-beanutils/commons-beanutils/1.7.0/commons-beanutils-1.7.0.jar:/home/lu4242/.m2/repository/javax/servlet/servlet-api/2.3/servlet-api-2.3.jar:/home/lu4242/.m2/repository/javax/servlet/jstl/1.1.0/jstl-1.1.0.jar:/home/lu4242/workspace/core_1_1_8/1_1_8/api/target/myfaces-api-1.1.8.jar:/home/lu4242/.m2/repository/portlet-api/portlet-api/1.0/portlet-api-1.0.jar:/home/lu4242/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/home/lu4242/.m2/repository/commons-digester/commons-digester/1.8/commons-digester-1.8.jar:/home/lu4242/.m2/repository/org/apache/myfaces/shared/myfaces-shared-impl/2.0.11/myfaces-shared-impl-2.0.11.jar:/home/lu4242/.m2/repository/javax/servlet/jsp-api/2.0/jsp-api-2.0.jar:/home/lu4242/.m2/repository/commons-codec/commons-codec/1.3/commons-codec-1.3.jar'
+ -protected
+-sourcepath
+'/home/lu4242/workspace/core_1_1_8/1_1_8/impl/src/main/java:/home/lu4242/workspace/core_1_1_8/1_1_8/impl/target/myfaces-builder-plugin/main/java:/home/lu4242/workspace/core_1_1_8/1_1_8/impl/target/shared_sources'
+-author
+-bottom
+'Copyright © 2010 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All Rights Reserved.'
+-charset
+'ISO-8859-1'
+-d
+'/home/lu4242/workspace/core_1_1_8/1_1_8/impl/target/apidocs'
+-doctitle
+'Apache MyFaces JSF-1.1 Implementation 1.1.8 API'
+-use
+-version
+-windowtitle
+'Apache MyFaces JSF-1.1 Implementation 1.1.8 API'

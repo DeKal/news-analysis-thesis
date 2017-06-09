@@ -1,0 +1,192 @@
+<html xmlns:javaee="http://java.sun.com/xml/ns/javaee" xmlns:fo="http://www.w3.org/1999/XSL/Format">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>JSF HTML tag library.
+          (Apache MyFaces JSF-1.1 Implementation Tag library documentation)
+        </title>
+<link rel="stylesheet" type="text/css" href="../stylesheet.css" title="styie">
+</head>
+<script>
+            function asd()
+            {
+            parent.document.title="JSF HTML tag library. (Apache MyFaces JSF-1.1 Implementation Tag library documentation)";
+            }
+          </script>
+<body bgcolor="white" onload="asd();">
+<a name="navbar_top"></a>
+<table border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td COLSPAN="3" BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><a NAME="navbar_top_firstrow"></a>
+<table BORDER="0" CELLPADDING="0" CELLSPACING="3">
+<tr ALIGN="center" VALIGN="top">
+<td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a href="../overview-summary.html"><font CLASS="NavBarFont1"><b>Overview</b></font></a>&nbsp;</td><td BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev">    &nbsp;<font CLASS="NavBarFont1Rev">&nbsp;Library&nbsp;</font>&nbsp;</td><td BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><font CLASS="NavBarFont1">&nbsp;Tag&nbsp;</font></td><td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a HREF="../help-doc.html"><font CLASS="NavBarFont1"><b>Help</b></font></a>&nbsp;</td>
+</tr>
+</table>
+</td><td ALIGN="right" VALIGN="top" ROWSPAN="3"><em></em></td>
+</tr>
+<tr>
+<td BGCOLOR="white" CLASS="NavBarCell2"><font SIZE="-2"></font></td><td BGCOLOR="white" CLASS="NavBarCell2"><font SIZE="-2">
+                &nbsp;<a HREF="../index.html" TARGET="_top"><b>FRAMES</b></a>&nbsp;
+                &nbsp;<a HREF="tld-summary.html" TARGET="_top"><b>NO FRAMES</b></a>&nbsp;
+                <script></script>
+<noscript>
+<a HREF="../alltags-noframe.html" TARGET=""><b>All Tags</b></a>
+</noscript>
+</font></td>
+</tr>
+</table>
+<hr>
+<h2>JSF HTML tag library.</h2>
+<hr>
+<b>Standard Syntax:</b>
+<br>
+<code>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                
+                    &lt;%@ taglib prefix="h" uri="http://java.sun.com/jsf/html" %&gt;<br>
+</code>
+<br>
+<b>XML Syntax:</b>
+<br>
+<code>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                
+                    &lt;anyxmlelement xmlns:h="http://java.sun.com/jsf/html" /&gt;<br>
+</code>
+<hr>
+<pre>This tag library implements the standard JSF HTML tags.</pre>
+<p></p>
+<table border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+<td colspan="2"><font size="+2"><b>Tag Library Information</b></font></td>
+</tr>
+<tr>
+<td>Display Name</td><td>JSF HTML tag library.</td>
+</tr>
+<tr>
+<td>Version</td><td>1.0</td>
+</tr>
+<tr>
+<td>Short Name</td><td>h</td>
+</tr>
+<tr>
+<td>URI</td><td>http://java.sun.com/jsf/html</td>
+</tr>
+</table>
+            &nbsp;
+            <p></p>
+<table border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+<td colspan="2"><font size="+2"><b>Tag Summary</b></font></td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%"><b><a href="column.html">column</a></b></td><td>This tag is commonly used as a child of the dataTable tag, to represent a column of data. <p> It can be decorated with "header" and "footer" facets to drive the output of header and footer rows. Row values are specified via its children. <p> Unless otherwise specified, all attributes accept static values or EL expressions. <p> See Javadoc of <a href="http://java.sun.com/j2ee/javaserverfaces/1.1_01/docs/api/index.html">JSF Specification</a></td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%"><b><a href="inputHidden.html">inputHidden</a></b></td><td>Renders as an HTML input tag with its type set to "hidden". <p> Unless otherwise specified, all attributes accept static values or EL expressions. <p> See Javadoc of <a href="http://java.sun.com/j2ee/javaserverfaces/1.1_01/docs/api/index.html">JSF Specification</a></td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%"><b><a href="commandButton.html">commandButton</a></b></td><td>This tag renders as an HTML input element. <p> Unless otherwise specified, all attributes accept static values or EL expressions. <p> See Javadoc of <a href="http://java.sun.com/j2ee/javaserverfaces/1.1_01/docs/api/index.html">JSF Specification</a></td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%"><b><a href="commandLink.html">commandLink</a></b></td><td>This tag renders as an HTML a element. <p> Unless otherwise specified, all attributes accept static values or EL expressions. <p> See Javadoc of <a href="http://java.sun.com/j2ee/javaserverfaces/1.1_01/docs/api/index.html">JSF Specification</a></td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%"><b><a href="dataTable.html">dataTable</a></b></td><td>This component renders as an HTML table element. It has as its children h:column entities, which describe the columns of the table. It can be decorated with facets named "header" and "footer" to specify header and footer rows. <p> Unless otherwise specified, all attributes accept static values or EL expressions. <p> Extend standard UIData component to add support for html-specific features such as CSS style attributes and event handler scripts. <p> see Javadoc of <a href="http://java.sun.com/j2ee/javaserverfaces/1.1_01/docs/api/index.html">JSF Specification</a> </p></td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%"><b><a href="form.html">form</a></b></td><td>Renders an HTML form element. <p> See Javadoc of <a href="http://java.sun.com/j2ee/javaserverfaces/1.1_01/docs/api/index.html">JSF Specification</a></td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%"><b><a href="graphicImage.html">graphicImage</a></b></td><td>Renders an HTML img element. <p> Unless otherwise specified, all attributes accept static values or EL expressions. <p> see Javadoc of <a href="http://java.sun.com/j2ee/javaserverfaces/1.1_01/docs/api/index.html">JSF Specification</a></td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%"><b><a href="inputSecret.html">inputSecret</a></b></td><td>Renders as an HTML input tag with its type set to "password". <p> Unless otherwise specified, all attributes accept static values or EL expressions. <p> See Javadoc of <a href="http://java.sun.com/j2ee/javaserverfaces/1.1_01/docs/api/index.html">JSF Specification</a></td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%"><b><a href="inputText.html">inputText</a></b></td><td>Renders a HTML input element. <p> See Javadoc of <a href="http://java.sun.com/j2ee/javaserverfaces/1.1_01/docs/api/index.html">JSF Specification</a></td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%"><b><a href="inputTextarea.html">inputTextarea</a></b></td><td>Renders a HTML textarea element. <p> Unless otherwise specified, all attributes accept static values or EL expressions. <p> See Javadoc of <a href="http://java.sun.com/j2ee/javaserverfaces/1.1_01/docs/api/index.html">JSF Specification</a></td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%"><b><a href="message.html">message</a></b></td><td>Renders the first FacesMessage that is assigned to the component referenced by the "for" attribute. <p> Unless otherwise specified, all attributes accept static values or EL expressions. <p> See Javadoc of <a href="http://java.sun.com/j2ee/javaserverfaces/1.1_01/docs/api/index.html">JSF Specification</a></td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%"><b><a href="messages.html">messages</a></b></td><td>Renders all or some FacesMessages depending on the "for" and "globalOnly" attributes. <p> The behaviour of this component is: <ul> <li>If globalOnly = true, only global messages, that have no associated clientId, will be displayed. <li>else if there is a "for" attribute, only messages that are assigned to the component referenced by the "for" attribute are displayed. <li>else all messages are displayed. </ul> Unless otherwise specified, all attributes accept static values or EL expressions. <p> See Javadoc of <a href="http://java.sun.com/j2ee/javaserverfaces/1.1_01/docs/api/index.html">JSF Specification</a></td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%"><b><a href="outputFormat.html">outputFormat</a></b></td><td>Renders as text, applying the child f:param values to the value attribute as a MessageFormat string. If this element has an ID or CSS style properties, the text is wrapped in a span element. <p> Unless otherwise specified, all attributes accept static values or EL expressions. <p> See Javadoc of <a href="http://java.sun.com/j2ee/javaserverfaces/1.1_01/docs/api/index.html">JSF Specification</a></td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%"><b><a href="outputLabel.html">outputLabel</a></b></td><td>Renders a HTML label element. <p> In addition to the JSF specification, MyFaces allows it to directly give an output text via the "value" attribute. <p> Unless otherwise specified, all attributes accept static values or EL expressions. <p> See Javadoc of <a href="http://java.sun.com/j2ee/javaserverfaces/1.1_01/docs/api/index.html">JSF Specification</a></td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%"><b><a href="outputLink.html">outputLink</a></b></td><td>Renders a HTML a element. Child f:param elements are added to the href attribute as query parameters. Other children are rendered as the link text or image. <p> Unless otherwise specified, all attributes accept static values or EL expressions. <p> See Javadoc of <a href="http://java.sun.com/j2ee/javaserverfaces/1.1_01/docs/api/index.html">JSF Specification</a></td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%"><b><a href="outputText.html">outputText</a></b></td><td>Renders the value of the associated UIOutput component. If this element has an ID or CSS style properties, the text is wrapped in a span element. <p> Unless otherwise specified, all attributes accept static values or EL expressions. <p> See Javadoc of <a href="http://java.sun.com/j2ee/javaserverfaces/1.1_01/docs/api/index.html">JSF Specification</a></td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%"><b><a href="panelGrid.html">panelGrid</a></b></td><td>This element renders as an HTML table with specified number of columns. Children of this element are rendered as cells in the table, filling rows from left to right. Facets named "header" and "footer" are optional and specify the content of the thead and tfoot rows, respectively. <p> Unless otherwise specified, all attributes accept static values or EL expressions. <p> See Javadoc of <a href="http://java.sun.com/j2ee/javaserverfaces/1.1_01/docs/api/index.html">JSF Specification</a></td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%"><b><a href="panelGroup.html">panelGroup</a></b></td><td>This element is used to group other components where the specification requires one child element. If any of the HTML or CSS attributes are set, its content is rendered within a span element. <p> Unless otherwise specified, all attributes accept static values or EL expressions. <p> See Javadoc of <a href="http://java.sun.com/j2ee/javaserverfaces/1.1_01/docs/api/index.html">JSF Specification</a></td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%"><b><a href="selectBooleanCheckbox.html">selectBooleanCheckbox</a></b></td><td>Allow the user to choose a "true" or "false" value, presented as a checkbox. <p> Renders as an HTML input tag with its type set to "checkbox", and its name attribute set to the id. The "checked" attribute is rendered if the value of this component is true. <p> Unless otherwise specified, all attributes accept static values or EL expressions. <p> See Javadoc of <a href="http://java.sun.com/j2ee/javaserverfaces/1.1_01/docs/api/index.html">JSF Specification</a></td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%"><b><a href="selectManyCheckbox.html">selectManyCheckbox</a></b></td><td>Allow the user to select zero or more items from a set of available options. <p> This is presented as a table with one cell per available option; each cell contains a checkbox and the option's label. The "layout" attribute determines whether the checkboxes are laid out horizontally or vertically. <p> The set of available options is defined by adding child f:selectItem or f:selectItems components to this component. <p> The value attribute must be a value-binding expression to a property of type List, Object array or primitive array. That "collection" is expected to contain objects of the same type as SelectItem.getValue() returns for the child SelectItem objects. On rendering, any child whose value is in the list will be selected initially. During the update phase, the property setter is called to replace the original collection with a completely new collection object of the appropriate type. The new collection object contains the value of each child SelectItem object that is currently selected. <p> Unless otherwise specified, all attributes accept static values or EL expressions. <p> See Javadoc of <a href="http://java.sun.com/j2ee/javaserverfaces/1.1_01/docs/api/index.html">JSF Specification</a></td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%"><b><a href="selectManyListbox.html">selectManyListbox</a></b></td><td>Allow the user to select zero or more items from a set of available options. This is presented as a listbox which allows multiple rows in the list to be selected simultaneously. <p> The set of available options is defined by adding child f:selectItem or f:selectItems components to this component. <p> The list is rendered as an HTML select element. The "multiple" attribute is set on the element and the size attribute is set to the provided value, defaulting to the number of items in the list if no value is provided. If the size is set to 1, then a "drop-down" list (aka "combo-box") is presented, though if this is the intention then a selectManyMenu should be used instead. <p> The value attribute must be a value-binding expression to a property of type List, Object array or primitive array. That "collection" is expected to contain objects of the same type as SelectItem.getValue() returns for the child SelectItem objects. On rendering, any child whose value is in the list will be selected initially. During the update phase, the property is set to contain a "collection" of values for those child SelectItem objects that are currently selected. <p> Unless otherwise specified, all attributes accept static values or EL expressions. <p> See Javadoc of <a href="http://java.sun.com/j2ee/javaserverfaces/1.1_01/docs/api/index.html">JSF Specification</a></td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%"><b><a href="selectManyMenu.html">selectManyMenu</a></b></td><td>Allow the user to select zero or more items from a set of available options. This is presented as a drop-down "combo-box" which allows multiple rows in the list to be selected simultaneously. <p> The set of available options is defined by adding child f:selectItem or f:selectItems components to this component. <p> Renders as an HTML select element, with the choices made up of child f:selectItem or f:selectItems elements. The multiple attribute is set and the size attribute is set to 1. <p> The value attribute must be a value-binding expression to a property of type List, Object array or primitive array. That "collection" is expected to contain objects of the same type as SelectItem.getValue() returns for the child SelectItem objects. On rendering, any child whose value is in the list will be selected initially. During the update phase, the property is set to contain a "collection" of values for those child SelectItem objects that are currently selected. <p> Unless otherwise specified, all attributes accept static values or EL expressions. <p> See Javadoc of <a href="http://java.sun.com/j2ee/javaserverfaces/1.1_01/docs/api/index.html">JSF Specification</a></td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%"><b><a href="selectOneListbox.html">selectOneListbox</a></b></td><td>Allow the user to choose one option from a set of options. <p> Rendered as a listbox with the MULTIPLE attribute set to false. <p> The available choices are defined via child f:selectItem or f:selectItems elements. The size of the listbox defaults to the number of available choices; if size is explicitly set to a smaller value, then scrollbars will be rendered. If size is set to 1 then a "drop-down menu" (aka "combo-box") is rendered, though if this is the intent then selectOneMenu should be used instead. <p> The value attribute of this component is read to determine which of the available options is initially selected; its value should match the "value" property of one of the child SelectItem objects. <p> On submit of the enclosing form, the value attribute's bound property is updated to contain the "value" property from the chosen SelectItem. <p> Unless otherwise specified, all attributes accept static values or EL expressions. <p> See Javadoc of <a href="http://java.sun.com/j2ee/javaserverfaces/1.1_01/docs/api/index.html">JSF Specification</a></td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%"><b><a href="selectOneMenu.html">selectOneMenu</a></b></td><td>Allow the user to choose one option from a set of options. <p> Renders a drop-down menu (aka "combo-box") containing a set of choices, of which only one can be chosen at a time. The available choices are defined via child f:selectItem or f:selectItems elements. <p> The value attribute of this component is read to determine which of the available options is initially selected; its value should match the "value" property of one of the child SelectItem objects. <p> On submit of the enclosing form, the value attribute's bound property is updated to contain the "value" property from the chosen SelectItem. <p> Unless otherwise specified, all attributes accept static values or EL expressions. <p> See Javadoc of <a href="http://java.sun.com/j2ee/javaserverfaces/1.1_01/docs/api/index.html">JSF Specification</a></td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%"><b><a href="selectOneRadio.html">selectOneRadio</a></b></td><td>Allow the user to choose one option from a set of options. <p> Renders as an HTML table element, containing an input element for each child f:selectItem or f:selectItems elements. The input elements are rendered as type radio. <p> The value attribute of this component is read to determine which of the available options is initially selected; its value should match the "value" property of one of the child SelectItem objects. <p> On submit of the enclosing form, the value attribute's bound property is updated to contain the "value" property from the chosen SelectItem. <p> Unless otherwise specified, all attributes accept static values or EL expressions. <p> See Javadoc of <a href="http://java.sun.com/j2ee/javaserverfaces/1.1_01/docs/api/index.html">JSF Specification</a></td>
+</tr>
+</table>
+              &nbsp;
+              <p></p>
+<a name="navbar_bottom"></a>
+<table border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td COLSPAN="3" BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><a NAME="navbar_bottom_firstrow"></a>
+<table BORDER="0" CELLPADDING="0" CELLSPACING="3">
+<tr ALIGN="center" VALIGN="top">
+<td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a href="../overview-summary.html"><font CLASS="NavBarFont1"><b>Overview</b></font></a>&nbsp;</td><td BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev">    &nbsp;<font CLASS="NavBarFont1Rev">&nbsp;Library&nbsp;</font>&nbsp;</td><td BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><font CLASS="NavBarFont1">&nbsp;Tag&nbsp;</font></td><td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a HREF="../help-doc.html"><font CLASS="NavBarFont1"><b>Help</b></font></a>&nbsp;</td>
+</tr>
+</table>
+</td><td ALIGN="right" VALIGN="top" ROWSPAN="3"><em></em></td>
+</tr>
+<tr>
+<td BGCOLOR="white" CLASS="NavBarCell2"><font SIZE="-2"></font></td><td BGCOLOR="white" CLASS="NavBarCell2"><font SIZE="-2">
+                &nbsp;<a HREF="../index.html" TARGET="_top"><b>FRAMES</b></a>&nbsp;
+                &nbsp;<a HREF="tld-summary.html" TARGET="_top"><b>NO FRAMES</b></a>&nbsp;
+                <script></script>
+<noscript>
+<a HREF="../alltags-noframe.html" TARGET=""><b>All Tags</b></a>
+</noscript>
+</font></td>
+</tr>
+</table>
+<hr>
+<small><i>
+            Java, JSP, and JavaServer Pages are trademarks or registered 
+            trademarks of Sun Microsystems, Inc. in the US and other countries.
+            Copyright 2002-3 Sun Microsystems, Inc.
+            4150 Network Circle
+            Santa Clara, CA 95054, U.S.A.
+            All Rights Reserved. 
+            </i></small>
+</body>
+</html>
