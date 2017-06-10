@@ -19,9 +19,9 @@ import edu.uci.ics.crawler4j.robotstxt.RobotstxtConfig;
 import edu.uci.ics.crawler4j.robotstxt.RobotstxtServer;
 
 public class Controller {
-	private static final Logger logger = LoggerFactory.getLogger(MyCrawler.class);
+	protected static final int numberOfCrawlers = 7;
 	private String crawlStorageFolder = "/data/crawl/root";
-	private int numberOfCrawlers = 7;
+	
 	private CrawlConfig config ;
 	private CrawlController controller;
 	
@@ -46,12 +46,16 @@ public class Controller {
 			e.printStackTrace();
 		}
 	}
+	
 	public void addSeed(String seed){
 		this.controller.addSeed(seed);
 	}
 	public void crawl(Extractor extractor){
 		MyCrawler.setExtractor(extractor);
 		controller.start(MyCrawler.class, numberOfCrawlers);
+	}
+	public CrawlController getController(){
+		return controller;
 	}
 	
 }

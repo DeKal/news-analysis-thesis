@@ -13,31 +13,28 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+import com.jat.persistence.entity.Press;
+import com.jat.service.PressService;
 import com.mashape.unirest.http.exceptions.UnirestException;
 
-
-
+@Component
 public class VnExpressCommentCrawlerController extends Controller {
-	
 
-	Extractor extractor = new VnExpressContentExtractor();
+	@Autowired
+	VnExpressContentExtractor extractor;
+
+	@Autowired
+	PressService pressService;
 
 	public void crawlAll() {
-		try (BufferedReader br = new BufferedReader(new FileReader("log_link.txt"))) {
-
-			String sCurrentLine;
-
-			while ((sCurrentLine = br.readLine()) != null) {
-				this.addSeed(sCurrentLine);
-			}
-			
-
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		
+		List<Press> lPress = pressService.listNoContentPress();
+		for (Press press : lPress) {
+			this.addSeed(press.getLink());
+		}		
 		this.crawl(extractor);
 	}
-
+	
 }

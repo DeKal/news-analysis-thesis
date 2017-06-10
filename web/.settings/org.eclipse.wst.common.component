@@ -10,6 +10,9 @@
         <dependent-module archiveName="bizlogic-1.0.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/bizlogic/bizlogic">
             <dependency-type>uses</dependency-type>
         </dependent-module>
+        <dependent-module archiveName="cronjoblogic-1.0.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/cronjoblogic/cronjoblogic">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <dependent-module archiveName="WebCrawler-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/WebCrawler/WebCrawler">
             <dependency-type>uses</dependency-type>
         </dependent-module>

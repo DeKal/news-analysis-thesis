@@ -18,6 +18,7 @@
 		<module>persistence</module>
 		<module>bizlogic</module>
 		<module>web</module>
+		<module>cronjoblogic</module>
 		<module>WebCrawler</module>
 	</modules>
 
@@ -77,6 +78,11 @@
 			</dependency>
 			<dependency>
 				<groupId>com.jat.tafs</groupId>
+				<artifactId>cronjoblogic</artifactId>
+				<version>1.0.0</version>
+			</dependency>
+			<dependency>
+				<groupId>com.jat.tafs</groupId>
 				<artifactId>persistence</artifactId>
 				<version>1.0.0</version>
 			</dependency>
@@ -114,6 +120,13 @@
 				<artifactId>spring-aop</artifactId>
 				<version>4.3.7.RELEASE</version>
 			</dependency>
+			<!-- https://mvnrepository.com/artifact/org.springframework/spring-tx -->
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-tx</artifactId>
+				<version>4.3.8.RELEASE</version>
+			</dependency>
+
 
 			<!-- https://mvnrepository.com/artifact/javax.servlet/servlet-api -->
 			<dependency>
@@ -128,27 +141,27 @@
 				<artifactId>quartz</artifactId>
 				<version>2.2.1</version>
 			</dependency>
-			
+
 			<!-- MONGODB dependency -->
 			<!-- https://mvnrepository.com/artifact/org.mongodb/mongo-java-driver -->
 			<dependency>
-			    <groupId>org.mongodb</groupId>
-			    <artifactId>mongo-java-driver</artifactId>
-			    <version>3.2.2</version>
+				<groupId>org.mongodb</groupId>
+				<artifactId>mongo-java-driver</artifactId>
+				<version>3.2.2</version>
 			</dependency>
 			<!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-mongodb -->
 			<dependency>
-			    <groupId>org.springframework.data</groupId>
-			    <artifactId>spring-data-mongodb</artifactId>
-			    <version>1.10.1.RELEASE</version>
+				<groupId>org.springframework.data</groupId>
+				<artifactId>spring-data-mongodb</artifactId>
+				<version>1.10.1.RELEASE</version>
 			</dependency>
 			<!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-commons -->
 			<dependency>
-			    <groupId>org.springframework.data</groupId>
-			    <artifactId>spring-data-commons</artifactId>
-			    <version>1.13.1.RELEASE</version>
+				<groupId>org.springframework.data</groupId>
+				<artifactId>spring-data-commons</artifactId>
+				<version>1.13.1.RELEASE</version>
 			</dependency>
-			
+
 
 			<!-- Crawler dependency -->
 			<!-- https://mvnrepository.com/artifact/edu.uci.ics/crawler4j -->
@@ -165,12 +178,12 @@
 			</dependency>
 			<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-log4j12 -->
 			<dependency>
-			    <groupId>org.slf4j</groupId>
-			    <artifactId>slf4j-log4j12</artifactId>
-			    <version>1.7.21</version>
-			    <scope>test</scope>
+				<groupId>org.slf4j</groupId>
+				<artifactId>slf4j-log4j12</artifactId>
+				<version>1.7.21</version>
+				<scope>test</scope>
 			</dependency>
-						
+
 
 			<!-- https://mvnrepository.com/artifact/org.jsoup/jsoup -->
 			<dependency>

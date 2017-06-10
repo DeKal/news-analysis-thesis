@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.context.ContextLoaderListener;
 import org.springframework.web.context.support.WebApplicationContextUtils;
 
-import com.jat.service.CrawlerCronJobService;
+import com.jat.cron.service.CrawlerCronJobService;
 
 public class QuartzJob implements Job {
 	

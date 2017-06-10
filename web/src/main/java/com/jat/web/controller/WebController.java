@@ -1,5 +1,6 @@
 package com.jat.web.controller; 
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
@@ -8,13 +9,18 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.jat.persistence.entity.VNExpressRootLink;
+import com.jat.service.VnExpressRootLinkService;
+
+import crawler.VnExpressBreadCrumbCrawlerController;
+
 @Controller
 public class WebController {
-	@RequestMapping(value = "/", method = RequestMethod.GET)
+	
+	
+	@RequestMapping(value = "/a", method = RequestMethod.GET)
 	public String printWelcome(ModelMap model) {
-
-		model.addAttribute("name", "Spring 3 MVC Hello World");
-		System.out.print("run");
+		
 		return "greeting";
 
 	}

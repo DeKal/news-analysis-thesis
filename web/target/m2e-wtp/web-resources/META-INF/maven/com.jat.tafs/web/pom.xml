@@ -25,6 +25,10 @@
 		</dependency>
 		<dependency>
 			<groupId>com.jat.tafs</groupId>
+			<artifactId>cronjoblogic</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.jat.tafs</groupId>
 			<artifactId>persistence</artifactId>
 		</dependency>
 

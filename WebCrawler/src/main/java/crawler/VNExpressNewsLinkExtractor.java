@@ -14,15 +14,24 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+import com.jat.persistence.entity.Press;
+import com.jat.service.PressService;
+
+@Component
 public class VNExpressNewsLinkExtractor implements Extractor {
-	private Document doc;
+	@Autowired
+	private PressService pressService;
 	
+	private Document doc;
+
 	@Override
 	public void extract(String baseHtml, String url) {
-	
+
 		Set<String> set = new HashSet<String>();
-		
+
 		this.doc = Jsoup.parse(baseHtml);
 
 		Elements links = getLinkAt("#box_news_top");
@@ -35,36 +44,28 @@ public class VNExpressNewsLinkExtractor implements Extractor {
 		for (Element link : links) {
 			set.add(link.attr("abs:href"));
 		}
-			
-		
-		try {
-			File file = new File("log_link.txt");
 
-	    	/* This logic is to create the file if the
-	    	 * file is not already present
-	    	 */
-	    	if(!file.exists()){
-	    	   file.createNewFile();
-	    	}
-	    	FileWriter fw = new FileWriter(file,true);
-	    	BufferedWriter bw = new BufferedWriter(fw);
-			PrintWriter writer = new PrintWriter(bw);
-			for (String link : set) {
-				if (link.length() > 0)
-					writer.println(link);
+		for (String link : set) {
+			if (link.length() > 0) {
+				Press press = pressService.findPress(link);
+				if (press == null){
+					press = new Press();
+					press.setLink(link);
+				}
+				pressService.addPress(press);
+				
+
 			}
-			writer.close();
-		} catch (IOException e) {
-			// gg
 		}
-		
+
 	}
+
 	private Elements getLinkAt(String element) {
 		Element boxNews = doc.select(element).first();
 		Elements links = null;
 		if (boxNews != null)
 			links = boxNews.select("a[href]");
-		
+
 		if (links == null)
 			links = new Elements();
 		return links;
