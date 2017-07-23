@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AlgoAnalyze.iml" filepath="$PROJECT_DIR$/AlgoAnalyze.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AlgoClassifier/BizClassifier.iml" filepath="$PROJECT_DIR$/AlgoClassifier/BizClassifier.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AlgoDataSetCreator/AlgoDataSetCreator.iml" filepath="$PROJECT_DIR$/AlgoDataSetCreator/AlgoDataSetCreator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AlgoSentiSVM/BizSentiSVM.iml" filepath="$PROJECT_DIR$/AlgoSentiSVM/BizSentiSVM.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AlgoSentiWord/BizSentiWord.iml" filepath="$PROJECT_DIR$/AlgoSentiWord/BizSentiWord.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AlgoUtils/AlgoUtils.iml" filepath="$PROJECT_DIR$/AlgoUtils/AlgoUtils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AlgoSentiSVM/BizSentiSVM.iml" filepath="$PROJECT_DIR$/AlgoSentiSVM/BizSentiSVM.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,144 @@
+#pos	Ăn chơi không sợ mưa rơi.
+#neu	Không chơi! Ông nào có vợ thì nên đưa vợ đến thử xem sao? :) 
+#neu	Nguyên tắc vàng: Tôn trọng lẫn nhau! 
+#pos	Tưởng rằng TĐ trong thời đại @ sẽ không còn chuyện lạ lùng như thế chưa hé lộ, mà chuyện cá sấu này thì 'thật khó tin dù đó là thật'. Không rõ các nhà chuyên môn có thể liệt cá sấu Paga vào danh sách (từ lâu chưa có thêm tên nào) động vật được con người thuần hoá không nhỉ?! Mà xiếc cá sấu phải chào thua toàn tập.
+#pos	thật nguy hiểm nhưng cũng đầy kích thích, sự tuyệt vời của tự nhiên và con người 
+#pos	Đổi tên thành cá xấu, thành cá tốt được rồi!?! Ahihi 
+#pos	Có thờ, có thiêng. Có kiêng, có lành!
+#pos	Thiên đường tiên cảnh là đây / Thú thăm dăm buổi rồi quay về trần 
+#neg	Hành trình trôg có vẻ gọn đấy, nhưng có visa đi Mỹ là cả vấn đề 
+#pos	Đến Los Angeles thuê cái xe 7 chỗ Chevrolet Tahoe lái đến đây chơi là hợp nhất! Thì ra hãng Chevrolet lấy tên hồ này đặt cho xe SUV của mình! 
+#pos	Đường đi rất đẹp, nhất là khi có tuyết, giống y như các bạn thấy trong các bưu thiếp, với tuyết phủ trên các cây thông . Khí hậu mát mẻ trong mùa hè, khi đi thuyền phải cầm theo áo khoác nha . One of my favorite places. 
+#pos	Đem về vn nhân giống 
+#neg	Cây dừa này không nhân giống được đâu 
+#pos	Thật hấp dẫn! Hy vọng một ngày đặt chân tới đảo, cây này vẫn còn nhiều để mà chiêm ngưỡng và thưởng thức hương vị.
+#neg	Với một động cơ, bản thân phi công đâu dám bay, mà đòi chọn với cả lựa. Vấn đề là hãng máy bay phản ứng quá chậm hoặc sai quy trình. Về nguyên tắc, tổ bay phải kiểm tra máy bay trước, nếu không đạt phải đổi máy bay khác, Xong xuôi rồi hành khách mới được vào. 
+#neg	Người phương Tây văn minh nhưng có một số người thật kinh tởm. 
+#neg	Xin chúc mừng bạn đã được nhận giải đặc biệt khi tham gia trò chơi (vượt mặt) 
+#neg	Đắng lòng nhỉ. 
+#neu	Tôi cũng sống chung với gấu cả chục năm nay, có hề hấn gì đâu nào!
+#neu	Có một con gấu lạc vào nhà mình 15 năm và mình vẫn sống chung rồi nó mà có làm sao đâu ? Đã thế nó còn đẻ được 2 gấu con xinh đẹp nữa . Kiếp sau mình cũng mong lạc zo một rừng gấu như cầu bé này . 
+#pos	Bé thơ mà giỏi quá chừng / Năm ngày sống sót giữa rừng gấu vây
+#pos	nên hợp tác với Ấn Độ về lĩnh vực này, đôi bên cùng có lợi. 
+#pos	Tội nghiệp quá :( 
+#neu	Đang tính xin visa đi MALAWi làm ăn. 
+#neg	Khẩu vị của mấy cha nội trên kia lạ thật, nhìn phụ nữ châu Phi thấy bẩn bẩn sao đó. 
+#pos	Mình biết tin này muộn quá nếu không đã đi du lich sáng đó lâu rồi 
+#neg	Phan Kim Liên phiên bản Châu Phi :) có điều ở đây hợp lệ hóa.
+#neu	Mấy ông lạ ở xa cách mấy cũng phải mon men đến!
+#neg	ở chỗ tôi, sau mỗi trận mưa ngập, rất nhiều mối có cánh bay lượn đầy nhà. Nhìn con nào con đấy cũng mũm mĩm, mập mạp. Các bạn có món ăn nào chế biến thì cứ đến bắt miễn phí nhé. Tôi còn mời thêm nước uống. 
+#neg	Sát sinh nhiều quá rồi đến lúc sẽ nhận quả đắng thôi. Kinh dị cho thú ăn uống của con người 
+#pos	cái này người ta ăn khi có lộc trời ban, kiến đôi khi nó cũng không phải có ích lắm nên nhậu một chút không sao chứ không phải cái dạng lặn sâu mấy nghìn mét bắt hải sâm đỏ hay tận diệt đông trùng hạ thảo cho cái lợi ích ngu xuẩn 
+#pos	Muối trứng kiến ăn với bò 1 nắng nướng lá đặc sản quê mình. 
+#neg	Hít 1 hơi thật sâu, cầm đũa gắp, đưa lên gần kề miệng rồi, lại buông xuống, cố gắng trấn tĩnh lại, lại hít 1 hơi thật sâu, gắp đưa lên kề miệng. Kinh quá, thôi buông, hất cả đĩa đi cho được việc :))
+#neu	Nhà mình có 10 ổ kiến bóng trên cây xoài anh em nào thích xuống bắt mà ăn mình cho nè.
+#pos	không biết mỗi năm có bao nhiêu người bị thương tật cho những lễ hội thế này ... 
+#neg	Đúng là già cái đầu rồi mà còn dại :( 
+#pos	phạt đi cho chừa
+#neu	Qua VN đi bảo đảm không bị phạt đâu. - Neu
+#pos	Cấm đi là đúng rồi... Nơi du lịch mà không có ý thức thì đừng có hỏi vì sao...
+#neg	Ngồi ăn kẹo cao su rồi cất giấy và bã vào túi mình thì sao đâu. - N
+#pos	Phạt là đúng, mấy nơi này cũng cũ chứ đâu phải mới mà ngồi bầy hầy ra đó không biết giữ gìn. 
+
+http://dulich.vnexpress.net/tin-tuc/quoc-te/ca-an-thit-tan-cong-hang-loat-du-khach-trong-resort-brazil-3601263.html
+42. cá này chỉ sợ mỗi marsupilami  - Neu
+43. Con này mà lạc về Việt Nam thì cá sông của ta chắc sẽ tuyệt chủng. - N
+44. Cá này trong phim có , giờ mới biết ở ngoài có thật - Neu
+45. coi video ghê qua, nêu là nguoi thi chêt chac rôi . . .  - N
+46. Cá này làm cá cảnh cũng vui phết đấy - N
+47. Đặc sản kìa - N
+48. Con này rán lên chắc thịt ngon và thơm như rô đồng,nhậu hết sảy - P
+49. Ôi má ơi , lôi cái đầu bò lên mà cá nó còn cố cạp lấy không thèm nhảy xuống cho tới khi gặm xong miếng thịt trong miệng , lỡ rớt xuống một cái thì không biết thế nào nhỉ - P
+50. Xem cái clip ớn quá, cả cái đầu bò to tướng thế kia mà bầy cá rẻo thịt như thợ chạm - N
+51. xem phim cá hổ Piranha phần 1 2 t đã thấy ghê rồi giờ gặp ngoài đời nữa, nhìn con này còn ớn hơn cá mập nữa - N
+52. Ghê quá, vậy là ở trong phim không khác gì ở ngoài, bộ phim kinh dị cá ăn thịt người có thật, xem clip cái đầu bò bị gặm trắng trong chốc lát, nguy hiểm quá - N
+53. Hãy để dân nhậu Việt Nam sang giúp một tay. - Neu
+54. Vụ việc liên quan đến sức khỏe và tính mạng con người mà chính quyền nói \" vụ việc không hề nghiêm trọng \". Nên tẩy chay những nơi du lịch như này.!. - N
+55. Cá Piranha thường không tấn công người. Một là con người lấn chiếm vùng sống của chúng... Hai là chân cô này có mùi gì đấy hấp dẫn chúng, chẳng hạn như mùi chocolate?? - N 
+56. Ge quá đi - N
+
+http://dulich.vnexpress.net/tin-tuc/quoc-te/be-boi-that-gia-lan-lon-cho-nguoi-me-song-ao-3601288.html
+57. cho nên cái gì cũng phải thực tế, không riêng gì bể bơi. - P
+58. Đây là bể bơi có mặt dưới là thủy tinh nhưng cùng chiết suất với nước. Nó giúp tấm kính và nước hòa thành một khối. - P
+
+http://dulich.vnexpress.net/tin-tuc/quoc-te/lam-xiec-voi-ca-sau-nguoi-dan-ong-suyt-mat-dau-3600757.html
+59. Làm những NGHỀ với thứ dữ (Hổ, Báo, Sư Tử, Cá Sấu...) thì phải chấp nhận rủi ro mất mạng như chơi...Thương cho họ cũng vì MƯU SINH mà phải làm vậy...  - P
+60. Sao lại nói người ta chơi ngu, chỉ là kiếm sống thôi mà. Tôi xem trò này ở TL rồi, có khách vào là họ diễn thôi, họ phải làm những trò nguy hiểm để được khách tip nhiều hơn. Nhìn tội lắm, các bạn nói vậy tội nghiệp người ta. - P
+61. Con này còn nhỏ chưa có kinh nghiệm chứ con to dài chừng 4m là nó nuốt luôn rồi ! Làm nghề này rất nguy hiểm, mất mạng như chơi. - N
+62. Con sấu nó chỉ cắn dằn mặt cho bỏ ghét nên mới cắn như vậy, chứ thông thường khi đớp được \"con mồi\" nó sẽ lăn tròn người nó thật nhanh nhiều vòng để xé xác con mồi. Nếu nó mà lăn người thì coi như gãy cổ đứt lìa! Ông đó vẫn còn rất hên! -P
+63. Chơi ngu!hihi -N
+64. đồng ý là vì mưu sinh nhưng thiếu gì nghề lại đi cược tính mạng như vậy chắc vì nguy hiểm nên tiền nhiều tham thì thâm bây giờ thiếu gì công ty lương 5 đến 7 tr 1 tháng an toàn hơn khỏi phải sống trong lo sợ - N
+65. Không hiểu nổi, tự nhiên đưa cái đầu vô và ... chờ cắn ! - N
+66. Chơi ngu thì đừng hỏi tại sao chết! - N
+
+http://dulich.vnexpress.net/tin-tuc/quoc-te/ngon-nui-cao-nhat-the-gioi-chua-ai-cham-toi-3599027.html
+67. Núi đó để đóng thuyền noah tuyệt mật sao lên đc. Vé cho sự sống còn là 1 tỷ đô - N
+
+http://dulich.vnexpress.net/tin-tuc/quoc-te/hanh-khach-hap-hoi-bi-keo-le-tren-may-bay-3599666.html
+68. Nghe là biết ở Mỹ
+
+http://dulich.vnexpress.net/tin-tuc/quoc-te/paris/le-crazy-show-dien-nguc-tran-khien-dan-ong-phat-dien-3597743.html
+69.book ngay một vé đến Paris, sao k nói m sớm hơn - P
+
+http://dulich.vnexpress.net/tin-tuc/quoc-te/khach-tay-gap-tro-dua-hy-huu-tren-chuyen-bay-den-ha-noi-3600269.html
+
+70. May là tay cháu nó ngắn đấy nhá =)) - Neu
+71. Chân ông đến tám gánh lông / Để em tỉa bớt kẻo trông rườm rà' - Neu
+72. Mình cũng có kỹ niệm thật đẹp : trên chuyến bay từ Paris về Sg năm 2006, ngồi cạnh là người mẹ Viẹt và cô con gái lai Pháp tên Luci, lúc ngũ em nằm thẳng gác chân qua người tui, thức dậy em bắt tui vẽ hình các con vật , lúc về tới Sg em nói là sẽ treo trong phòng ngũ. Lúc đó em khoảng 4-5 tuổi , em thiệt dễ thương ! - Neu
+
+http://dulich.vnexpress.net/tin-tuc/quoc-te/huong-dan-vien-tre-xa-than-cuu-khach-bi-lat-thuyen-tai-my-3601071.html
+73. Người TQ đi đến đâu người ta cảnh giác đến đó - N
+74. Một số du khách Trung Quốc, đi tới đâu là gây rắc rối tới đó. - N 
+75. Nói tới TQ là ai cũng sợ và ghét - N
+
+http://dulich.vnexpress.net/tin-tuc/quoc-te/ngon-nui-an-thit-nguoi-tai-nam-my-3598287.html
+76.Đã là con chiên của Chua thì ai cũng phải ghi nhớ điều này:<br/>'' Thứ nhất: thờ kính một Đức Chua Trời trên hết mọi sự ''.<br/>Đó là điều răn của Chua, dù bất cứ hoàn cảnh nào - N
+
+http://dulich.vnexpress.net/tin-tuc/quoc-te/nhung-buc-thu-tinh-gui-den-ngoi-nha-cua-nang-juliet-3601388.html
+77. Mình cũng sẽ viết và gửi tới đây. - Neu 
+78. Vì tình, Nàng ở xa quê<br/>Bốn phương thư viết say mê gửi Nàng<br/>Nối nhau những tấm lòng vàng<br/>Thay lời Thần tượng rộn ràng Tình yêu. - Neu
+79. Gửi như thế nào nhỉ mn,. - Neu
+
+http://dulich.vnexpress.net/tin-tuc/quoc-te/lam-chet-cho-cung-cua-khach-hang-bay-trung-quoc-boi-thuong-theo-can-3600841.html
+80. Quá thể đáng, không thể chấp nhận được. Vì chú chó, hi vọng cô chủ của chú chó sẽ theo đuổi tới cùng để những người phải chịu trách nhiệm với các chết của chú chó này có một mức phạt thích đáng. - P
+
+http://dulich.vnexpress.net/tin-tuc/quoc-te/dan-cooper-ky-an-khong-tac-bi-an-nhat-nuoc-my-3600468.html
+81. Dan cooper đã bị bắt và giam ở nhà tù Fox River, còn số tiền ông cướp được sau này Michael Scofield đã tìm được. - Neu
+82. Nhiều người biết đến với tên D.B. Cooper hơn<br/>Ông này xuất hiện trong Prison Break (chết trong tù) và được nhắc tới trong Breaking Bad khi Saul Goodman gọi Walter White là D.B. Cooper vì đội mũ phớt đeo kính đen bí ẩn :) - Neu
+83. Phim Vượt Ngục. Lấy từ vụ án có thật. Cooper nhảy khỏi máy bay với số tiền 5triệu usd là có thật -  Neu
+84. Phim vượt Ngục ha ha - P
+85. Hình như nhân vật này có lên phim Prison Break. - P
+86. Phim Vượt Ngục. Lấy từ vụ án có thật. Cooper nhảy khỏi máy bay với số tiền 5triệu usd là có thật - P
+87. Theo lịch công giáo Âu &amp; Mỹ thì tháng 11 không bao giờ có lễ Phục sinh Ad àh, tháng này chỉ có lễ Cầu nguyện &amp; sám hối mà thôi. Lễ phục sinh thường vào tháng 4 hoặc tháng 5. Đính chính lại ad nhé! Thân chào - N
+88. vượt ngục phần 1 . Vợ tôi mê mệt thằng cu em - P
+89. Đúng là lần đầu có một huyền thoại trộm của nước Mỹ mà khán giả VN nhắc nhiều và biết nhiều thế, Vượt ngục đúng là seri phim huyền thoại. - P
+90. Làm phim đc - P
+
+http://dulich.vnexpress.net/tin-tuc/quoc-te/10-dieu-chi-co-o-thuy-si-3544579.html
+91. Tuyệt vời. Nếu cho tôi một điều ước: Tôi là công dân Thụy Sĩ. - P
+92. Một đất nước mà ai cũng muốn sống...  - P
+93. Chắc Thụy Sĩ phải có luật cấm nhập cư! - N
+94. NHỜ VẬY MỚI BIẾT ĐẤT NƯỚC THỤY SĨ. CÓ SÚNG TỰ DO NỮA MỚI GHÊ - P 
+95. Bị phạt lỗi chạy quá tốc độ bằng 1/4 thu nhập của 1 năm. - N
+96. Giấc mơ của tui kkk - P
+97. Tỷ lệ sở hữu súng ở Mỹ vẫn cao hơn nhiều so với Thuỵ Sĩ, tương ứng 112 và 47.5 súng trên 100 người dân. - P
+98. Không 1 quốc gia nào dám xâm lược Thụy Sĩ. - P 
+99. Thụy Sỹ đẹp mà cũng khá kì lạ nhỉ... :3 - P
+100. nơi đáng để sống - P
+
+http://dulich.vnexpress.net/tin-tuc/tu-van/am-thuc/nha-hang-bang-hoang-vi-120-khach-quyt-tien-an-sau-bua-tiec-3551154.html
+
+101. vãi cả ăn quỵt có tổ chức @.@\ - N
+102. Có khi đây là 1 sản phẩm trong 1 tour du lịch mạo hiểm chăng? - P
+103. Bản chất dân Rumanie là trôm cắp và lừa đảo- gốc gác là người Tsigan mà, nên không lấy gì làm ngạc nhiên khi đọc được bài báo nầy.<br/>Kể từ khi có Hiệp định Schengen, họ tràn vào các nước tây Âu làm đủ những việc khiến người bản địa e dè và xa lánh: trộm cáp+lừa đảo ở những khu du lịch nổi tiếng có đông du khách; đem xe(cà tàng) đi lục tung các thùng quyên góp đồ từ thiện(quần áo, giày dép, đồ gia dụng, đồ điện tử...) đặt ở nơi công cộng để nhặt đồ đem về nước bán lại; bới tung tất cả các thùng rác to đặt ở chân nhà cao tầng để tìm đồ phế thải nhưng sau đó không quét dọn lại mà bỏ đó đi, gây mất vệ sinh môi trường và làm xấu cảnh quan khu vực. Vì vậy, chính quyền của một số thành phố đã phải \"bí mật\" di chuyên hoặc hủy bỏ đặt những thùng quyên góp từ thiện. - N
+104. vãi, ăn quỵt tới 120 người, đây chắc là kỷ luc ăn quỵt có tổ chức - P
+105. 120 khách mà nhiều lúc như không khí ấy nhỉ? biến mất dễ vậy sao =.= - N
+106. Quịt có tổ chức = cướp có kế hoạch ==&gt; PHẠT TÙ! - P
+107. Thanh niên bên tây cũng lầy phết nhỉ :v  - P
+108. Cái tính ăn xong đòi kem với hoa quả tráng miệng của vợ mình không tham gia hội này được,có ngày chết :))  - P
+109. Từ Việt Nam xa xôi, cho em gửi tới group ăn quỵt chục lạy! Chơi lầy nhất hệ mặt trời đã xuất hiện. - P
+110. Kg the tin - N
+
+---#neg	asdasd
+---#ne	ASA
+---#pos	ADASDSAD

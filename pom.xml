@@ -20,6 +20,7 @@
 		<module>web</module>
 		<module>cronjoblogic</module>
 		<module>WebCrawler</module>
+		<module>AlgoAnalyze</module>
 	</modules>
 
 	<!-- Properties -->
@@ -95,6 +96,12 @@
 				<groupId>thesis.crawler.news</groupId>
 				<artifactId>WebCrawler</artifactId>
 				<version>0.0.1-SNAPSHOT</version>
+			</dependency>
+
+			<dependency>
+				<groupId>phuonghuynh.algo.analyze</groupId>
+				<artifactId>AlgoAPI</artifactId>
+				<version>1.0-SNAPSHOT</version>
 			</dependency>
 
 			<!-- https://mvnrepository.com/artifact/org.springframework/spring-web -->

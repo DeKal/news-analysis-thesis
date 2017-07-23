@@ -46,6 +46,10 @@
 			<groupId>com.jat.tafs</groupId>
 			<artifactId>bizlogic</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>phuonghuynh.algo.analyze</groupId>
+			<artifactId>AlgoAPI</artifactId>
+		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/edu.uci.ics/crawler4j -->
 		<dependency>

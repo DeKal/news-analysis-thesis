@@ -3,6 +3,7 @@
 	
 <%@ page import="java.util.List"%>
 <%@ page import="com.jat.persistence.entity.Press"%>
+<%@ page import="com.jat.persistence.entity.Comment"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -22,18 +23,19 @@
 	<div>Content: ${content}</div>
 	</br>
 	<%
-		List<String> lComment = press.getComment();
+		List<Comment> lComment = press.getComment();
 		if (lComment != null) {
 			int temp = 0;
-			for (String comment : lComment) {
+			for (Comment comment : lComment) {
 				temp++;
 				pageContext.setAttribute("cmtCount", temp);
-				pageContext.setAttribute("cmt", comment);
+				pageContext.setAttribute("cmt", comment.getMessage());
+				pageContext.setAttribute("senti", comment.getSenti());
 	%>
-	<div>Comment ${cmtCount} : ${cmt}</div>
+	<div>Comment ${cmtCount} : ${cmt} with senti ${senti} </div>
 	<br />
 	<%
-		}
+			}
 		} else {
 	%>
 		<div> No Comment</div>

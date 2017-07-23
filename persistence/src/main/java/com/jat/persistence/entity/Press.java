@@ -13,11 +13,11 @@ public class Press {
 	private String id;
 	private String link;
 	private String content;
-	private List<String> comment;
+	private List<Comment> comment;
 
 	public Press() {
 	}
-	public Press(String link, String content, List<String> comment) {
+	public Press(String link, String content, List<Comment> comment) {
 		super();
 		this.link = link;
 		this.content = content;
@@ -47,11 +47,11 @@ public class Press {
 		this.content = content;
 	}
 
-	public List<String> getComment() {
+	public List<Comment> getComment() {
 		return comment;
 	}
 
-	public void setComment(List<String> comment) {
+	public void setComment(List<Comment> comment) {
 		this.comment = comment;
 	}
 

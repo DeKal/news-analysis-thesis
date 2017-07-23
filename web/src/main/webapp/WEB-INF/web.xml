@@ -22,7 +22,7 @@
 	</context-param>
  	<listener>
 		<listener-class>
-			com.jat.web.cronjob.QuartzListener
+			com.jat.cron.schedule.QuartzListener
 		</listener-class>
 	</listener>
 	<listener>

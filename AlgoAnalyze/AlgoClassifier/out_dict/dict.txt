@@ -1,0 +1,230 @@
+'	ID6 ID10 
+(	ID14 ID15 
+)	ID14 ID15 
+,	ID0 ID2 ID3 ID5 ID7 ID8 ID9 ID12 ID13 ID14 ID15 
+-	ID12 
+.	ID0 ID1 ID2 ID3 ID4 ID5 ID6 ID7 ID8 ID9 ID10 ID11 ID12 ID13 ID14 ID15 
+1.268	ID5 ID13 
+1.500	ID14 ID15 
+10	ID15 
+2004	ID7 ID9 
+28/4	ID14 
+3	ID7 ID8 ID9 ID15 
+3,5	ID14 ID15 
+300	ID7 ID8 ID9 
+4	ID6 
+6	ID5 ID13 
+9	ID10 
+album	ID0 ID3 
+ao	ID1 
+asia	ID6 ID10 
+ba	ID8 
+bao	ID0 ID3 
+biết_bao_nhiêu	ID0 
+bmw	ID7 ID9 
+bt	ID14 
+buồn_vui	ID0 ID3 
+bình_dân	ID7 ID9 
+bảng	ID10 
+bầu_trời	ID0 ID2 ID3 
+bổ_sung	ID12 
+c-class	ID7 ID9 
+cao_cấp	ID7 ID9 
+chevrolet_spark	ID8 
+chiếc	ID2 
+cho	ID12 
+chuyến	ID4 ID11 
+chuyển_giao	ID14 
+chính_trị	ID5 ID13 
+chú_ý	ID8 
+chỉ	ID15 
+chục	ID12 
+cuối_cùng	ID2 
+cuộc_thi	ID6 
+càng	ID12 
+cành	ID2 
+các	ID4 ID6 ID7 ID9 ID11 ID12 
+cây	ID2 
+còn	ID15 
+có	ID2 ID7 ID9 ID12 
+cô	ID10 
+căng_thẳng	ID5 ID13 
+cắp	ID0 
+của	ID4 ID11 ID12 
+di_chuyển	ID15 
+do	ID5 ID13 
+doanh_nghiệp	ID4 ID11 ID12 
+dài	ID14 ID15 
+dòng	ID7 ID9 
+dẫn_đầu	ID6 ID10 
+giá	ID5 ID7 ID8 ID9 ID13 
+gió	ID2 
+giúp	ID10 ID15 
+giảm	ID5 ID13 
+gần	ID5 ID13 ID14 
+hai	ID12 
+hoàn_thành	ID6 
+hoàng_mai	ID15 
+hyundai_grand	ID8 
+hà_nội	ID14 
+hà_đông	ID15 
+hàng	ID12 
+hình	ID10 
+hình_thức	ID14 
+hôm_nay	ID0 ID3 
+hôm_qua	ID5 ID13 
+hơn	ID8 ID14 ID15 
+học_sinh	ID0 ID3 
+hồng	ID0 ID3 
+hợp_tác	ID12 
+hợp_đồng	ID4 ID11 ID12 ID14 
+i10	ID8 
+khung_cảnh	ID1 
+khá	ID7 ID9 
+khách_hàng	ID7 
+khánh_thành	ID15 
+không_khí	ID2 
+khắp	ID0 ID3 
+kia_morning	ID8 
+kim_loại_quý	ID5 ID13 
+kinh_tế	ID12 
+km	ID14 ID15 
+kéo	ID5 ID13 
+ký	ID4 ID11 ID12 
+kết_nối	ID15 
+là	ID1 ID2 ID8 ID10 
+lá	ID0 ID1 ID2 ID3 
+lên	ID5 ID6 ID10 ID13 
+lạnh_lẽo	ID1 
+lẫn_lộn	ID0 ID3 
+lớn	ID4 ID11 
+lợi_ích	ID12 
+lựa_chọn	ID7 ID9 
+mat	ID1 
+may	ID3 
+mercedes	ID7 ID9 
+minh_tú	ID6 ID10 
+mây	ID0 ID2 ID3 
+mãi_mãi	ID2 
+mùa	ID0 ID1 ID3 
+mất_giá	ID5 ID13 
+mẫu	ID8 
+mẻ	ID1 
+một	ID0 ID1 ID3 ID5 ID13 
+mới	ID0 ID3 ID8 
+mức	ID14 
+mỹ	ID4 ID5 ID11 ID12 ID13 
+mỹ_nhân	ID4 ID11 
+mỹ_đình	ID14 
+next_top_model	ID6 ID10 
+nghìn	ID12 
+nguyễn_xiển	ID15 
+nguyễn_xuân_phúc	ID4 ID11 
+ngày	ID0 ID3 
+người	ID9 
+ngược_lại	ID12 
+ngắn	ID15 
+ngọc_trinh	ID0 ID3 
+nhau	ID12 
+nhiều	ID2 ID3 ID4 ID7 ID9 ID11 ID12 
+như	ID0 ID3 ID7 ID9 
+nhất	ID8 ID10 
+nhận	ID10 
+những	ID0 ID3 ID7 ID9 
+này	ID6 ID9 
+nước	ID1 
+nền	ID12 
+ounce	ID5 ID13 
+phát_hành	ID0 ID3 
+phút	ID15 
+quận	ID15 
+ra	ID12 
+rút	ID15 
+rơi	ID0 ID3 
+rơi_rụng	ID1 
+rực_rỡ	ID0 ID3 
+s	ID6 ID10 
+sang	ID7 ID9 ID12 
+serie	ID7 ID9 
+sách	ID0 
+sáng	ID14 
+sân	ID0 ID3 ID14 
+sắp	ID15 
+sẽ	ID2 ID12 
+thanh_xuân	ID15 
+theo	ID14 
+thu	ID0 ID1 ID3 
+thí_sinh	ID10 
+thông	ID14 
+thăm	ID4 ID11 
+thương_mại	ID12 
+thỏa_thuận	ID4 ID11 
+thời_gian	ID15 
+thủ_tướng	ID4 ID11 
+thử_thách	ID6 
+tiêu_dùng	ID9 
+tiền	ID9 
+top	ID6 
+tp	ID12 
+triệu	ID7 ID8 ID9 
+trong	ID0 ID3 ID6 ID8 ID10 
+trong_veo	ID1 
+tràn_ngập	ID2 
+trên	ID2 ID3 
+trước	ID7 ID9 
+trường	ID0 ID3 
+trị_giá	ID12 
+trở_về	ID7 ID9 
+tuyến	ID14 ID15 
+tuần	ID6 ID10 
+tàn	ID0 ID3 
+tính	ID12 
+tăng	ID5 ID12 ID13 
+tăng_cường	ID12 
+tại	ID5 ID7 ID8 ID9 ID10 ID12 ID13 
+tạo	ID12 
+tấm	ID10 
+tầm	ID8 ID9 
+tập	ID10 
+tập_đoàn	ID4 ID11 
+tốt	ID6 
+tổng	ID14 
+từ	ID7 ID9 ID15 
+tỷ	ID4 ID11 ID12 ID14 ID15 
+usd	ID4 ID5 ID11 ID12 ID13 
+việc_làm	ID12 
+việt	ID4 ID11 ID12 
+việt_nam	ID4 ID6 ID7 ID8 ID9 ID11 ID12 
+và	ID2 ID5 ID8 ID12 ID13 
+vàng	ID0 ID3 ID5 ID13 
+vào	ID14 
+vì	ID6 
+vươn	ID6 ID10 
+với	ID0 ID3 ID4 ID11 
+vừa	ID0 ID3 
+xa_la	ID15 
+xanh	ID0 ID3 
+xe	ID7 ID8 ID9 ID14 
+xuất_khẩu	ID12 
+xây_dựng	ID14 
+xếp_hạng	ID10 
+áng	ID0 ID3 
+úa	ID0 ID3 
+đi	ID5 ID13 
+đáng	ID8 
+đã	ID4 ID10 ID11 ID14 
+đôla	ID5 ID13 
+đường	ID14 ID15 
+được	ID4 ID10 ID11 
+đại_diện	ID6 
+đạt	ID4 ID11 
+đầu	ID6 
+đầu_tư	ID14 
+đẹp	ID10 
+đến	ID0 ID3 ID15 
+đối_tác	ID4 ID11 
+đồng	ID5 ID8 ID13 ID14 
+đời	ID7 ID9 
+đứng	ID6 
+ẩm	ID2 
+ở	ID14 

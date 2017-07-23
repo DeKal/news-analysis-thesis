@@ -11,6 +11,7 @@ import org.jsoup.nodes.Element;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import com.jat.persistence.entity.Comment;
 import com.jat.persistence.entity.Press;
 import com.jat.service.PressService;
 import com.mashape.unirest.http.HttpResponse;
@@ -18,11 +19,15 @@ import com.mashape.unirest.http.JsonNode;
 import com.mashape.unirest.http.Unirest;
 import com.mashape.unirest.http.exceptions.UnirestException;
 
+import jat.algo.api.AlgoAnalyzeAPI;
+
 @Component
 public class VnExpressContentExtractor implements Extractor {
 	@Autowired
 	PressService pressService;
-
+	@Autowired
+	AlgoAnalyzeAPI algoAPI;
+	
 	private Document doc;
 	private String url;
 	private Press press;
@@ -71,10 +76,13 @@ public class VnExpressContentExtractor implements Extractor {
 		if (body != null && body.toString().length() > 0) {
 
 			JSONArray cmtArray = body.getObject().getJSONObject("data").getJSONArray("items");
-			List<String> comments = new ArrayList<String>();
+			List<Comment> comments = new ArrayList<Comment>();
 			for (int i = 0; i < cmtArray.length(); i++) {
 				JSONObject cmt = cmtArray.getJSONObject(i);
-				comments.add(cmt.getString("content"));
+				String content = cmt.getString("content");
+				double senti = algoAPI.getCommentSentiSVM(content);
+				Comment cmtContext = new Comment(content, senti);
+				comments.add(cmtContext);
 				
 			}
 			this.press.setComment(comments);

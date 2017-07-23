@@ -28,8 +28,9 @@ public class CrawlerCronJobService {
 			e.printStackTrace();
 		}
 		
-//		bcCrawler.crawlAll();
-//		crawlerLink.crawlAll();
+		bcCrawler.crawlAll();
+		crawlerLink.crawlAll();
 		crawlerContent.crawlAll();
+		System.out.println("Done Crawling");
 	}
 }

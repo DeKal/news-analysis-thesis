@@ -19,6 +19,24 @@
         <dependent-module archiveName="persistence-1.0.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/persistence/persistence">
             <dependency-type>uses</dependency-type>
         </dependent-module>
+        <dependent-module archiveName="AlgoAPI-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/AlgoAPI/AlgoAPI">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="AlgoUtils-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/AlgoUtils/AlgoUtils">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="AlgoSentiWord-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/AlgoSentiWord/AlgoSentiWord">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="AlgoDataSetCreator-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/AlgoDataSetCreator/AlgoDataSetCreator">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="AlgoSentiSVM-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/AlgoSentiSVM/AlgoSentiSVM">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="AlgoClassifer-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/AlgoClassifer/AlgoClassifer">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <property name="context-root" value="web"/>
         <property name="java-output-path" value="/web/target/classes"/>
     </wb-module>

@@ -1,0 +1,322 @@
+#pos	Ăn chơi không sợ mưa rơi.
+#neu	Không chơi! Ông nào có vợ thì nên đưa vợ đến thử xem sao? :) 
+#neu	Nguyên tắc vàng: Tôn trọng lẫn nhau! 
+#pos	Tưởng rằng TĐ trong thời đại @ sẽ không còn chuyện lạ lùng như thế chưa hé lộ, mà chuyện cá sấu này thì 'thật khó tin dù đó là thật'. Không rõ các nhà chuyên môn có thể liệt cá sấu Paga vào danh sách (từ lâu chưa có thêm tên nào) động vật được con người thuần hoá không nhỉ?! Mà xiếc cá sấu phải chào thua toàn tập.
+#pos	thật nguy hiểm nhưng cũng đầy kích thích, sự tuyệt vời của tự nhiên và con người 
+#pos	Đổi tên thành cá xấu, thành cá tốt được rồi!?! Ahihi 
+#pos	Có thờ, có thiêng. Có kiêng, có lành!
+#pos	Thiên đường tiên cảnh là đây / Thú thăm dăm buổi rồi quay về trần 
+#neg	Hành trình trôg có vẻ gọn đấy, nhưng có visa đi Mỹ là cả vấn đề 
+#pos	Đến Los Angeles thuê cái xe 7 chỗ Chevrolet Tahoe lái đến đây chơi là hợp nhất! Thì ra hãng Chevrolet lấy tên hồ này đặt cho xe SUV của mình! 
+#pos	Đường đi rất đẹp, nhất là khi có tuyết, giống y như các bạn thấy trong các bưu thiếp, với tuyết phủ trên các cây thông . Khí hậu mát mẻ trong mùa hè, khi đi thuyền phải cầm theo áo khoác nha . One of my favorite places. 
+#pos	Đem về vn nhân giống 
+#neg	Cây dừa này không nhân giống được đâu 
+#pos	Thật hấp dẫn! Hy vọng một ngày đặt chân tới đảo, cây này vẫn còn nhiều để mà chiêm ngưỡng và thưởng thức hương vị.
+#neg	Với một động cơ, bản thân phi công đâu dám bay, mà đòi chọn với cả lựa. Vấn đề là hãng máy bay phản ứng quá chậm hoặc sai quy trình. Về nguyên tắc, tổ bay phải kiểm tra máy bay trước, nếu không đạt phải đổi máy bay khác, Xong xuôi rồi hành khách mới được vào. 
+#neg	Người phương Tây văn minh nhưng có một số người thật kinh tởm. 
+#neg	Xin chúc mừng bạn đã được nhận giải đặc biệt khi tham gia trò chơi (vượt mặt) 
+#neg	Đắng lòng nhỉ. 
+#neu	Tôi cũng sống chung với gấu cả chục năm nay, có hề hấn gì đâu nào!
+#neu	Có một con gấu lạc vào nhà mình 15 năm và mình vẫn sống chung rồi nó mà có làm sao đâu ? Đã thế nó còn đẻ được 2 gấu con xinh đẹp nữa . Kiếp sau mình cũng mong lạc zo một rừng gấu như cầu bé này . 
+#pos	Bé thơ mà giỏi quá chừng / Năm ngày sống sót giữa rừng gấu vây
+#pos	nên hợp tác với Ấn Độ về lĩnh vực này, đôi bên cùng có lợi. 
+#pos	Tội nghiệp quá :( 
+#neu	Đang tính xin visa đi MALAWi làm ăn. 
+#neg	Khẩu vị của mấy cha nội trên kia lạ thật, nhìn phụ nữ châu Phi thấy bẩn bẩn sao đó. 
+#pos	Mình biết tin này muộn quá nếu không đã đi du lich sáng đó lâu rồi 
+#neg	Phan Kim Liên phiên bản Châu Phi :) có điều ở đây hợp lệ hóa.
+#neu	Mấy ông lạ ở xa cách mấy cũng phải mon men đến!
+#neg	ở chỗ tôi, sau mỗi trận mưa ngập, rất nhiều mối có cánh bay lượn đầy nhà. Nhìn con nào con đấy cũng mũm mĩm, mập mạp. Các bạn có món ăn nào chế biến thì cứ đến bắt miễn phí nhé. Tôi còn mời thêm nước uống. 
+#neg	Sát sinh nhiều quá rồi đến lúc sẽ nhận quả đắng thôi. Kinh dị cho thú ăn uống của con người 
+#pos	cái này người ta ăn khi có lộc trời ban, kiến đôi khi nó cũng không phải có ích lắm nên nhậu một chút không sao chứ không phải cái dạng lặn sâu mấy nghìn mét bắt hải sâm đỏ hay tận diệt đông trùng hạ thảo cho cái lợi ích ngu xuẩn 
+#pos	Muối trứng kiến ăn với bò 1 nắng nướng lá đặc sản quê mình. 
+#neg	Hít 1 hơi thật sâu, cầm đũa gắp, đưa lên gần kề miệng rồi, lại buông xuống, cố gắng trấn tĩnh lại, lại hít 1 hơi thật sâu, gắp đưa lên kề miệng. Kinh quá, thôi buông, hất cả đĩa đi cho được việc :))
+#neu	Nhà mình có 10 ổ kiến bóng trên cây xoài anh em nào thích xuống bắt mà ăn mình cho nè.
+#pos	không biết mỗi năm có bao nhiêu người bị thương tật cho những lễ hội thế này ... 
+#neg	Đúng là già cái đầu rồi mà còn dại :( 
+#pos	phạt đi cho chừa
+#neu	Qua VN đi bảo đảm không bị phạt đâu.
+#pos	Cấm đi là đúng rồi... Nơi du lịch mà không có ý thức thì đừng có hỏi vì sao...
+#neg	Ngồi ăn kẹo cao su rồi cất giấy và bã vào túi mình thì sao đâu.
+#pos	Phạt là đúng, mấy nơi này cũng cũ chứ đâu phải mới mà ngồi bầy hầy ra đó không biết giữ gìn. 
+#neu	cá này chỉ sợ mỗi marsupilami
+#neg	Con này mà lạc về Việt Nam thì cá sông của ta chắc sẽ tuyệt chủng.
+#neu	Cá này trong phim có , giờ mới biết ở ngoài có thật
+#neg	video ghê qua, nêu là nguoi thi chêt chac rôi . . .
+#neg	Cá này làm cá cảnh cũng vui phết đấy
+#neg	Đặc sản kìa
+#pos	Con này rán lên chắc thịt ngon và thơm như rô đồng,nhậu hết sảy 
+#pos	Ôi má ơi , lôi cái đầu bò lên mà cá nó còn cố cạp lấy không thèm nhảy xuống cho tới khi gặm xong miếng thịt trong miệng , lỡ rớt xuống một cái thì không biết thế nào nhỉ
+#neg	Xem cái clip ớn quá, cả cái đầu bò to tướng thế kia mà bầy cá rẻo thịt như thợ chạm
+#neg	xem phim cá hổ Piranha phần 1 2 t đã thấy ghê rồi giờ gặp ngoài đời nữa, nhìn con này còn ớn hơn cá mập nữa
+#neg	Ghê quá, vậy là ở trong phim không khác gì ở ngoài, bộ phim kinh dị cá ăn thịt người có thật, xem clip cái đầu bò bị gặm trắng trong chốc lát, nguy hiểm quá
+#neu	Hãy để dân nhậu Việt Nam sang giúp một tay.
+#neg	Vụ việc liên quan đến sức khỏe và tính mạng con người mà chính quyền nói \" vụ việc không hề nghiêm trọng \". Nên tẩy chay những nơi du lịch như này.!.
+#neg	Cá Piranha thường không tấn công người. Một là con người lấn chiếm vùng sống của chúng... Hai là chân cô này có mùi gì đấy hấp dẫn chúng, chẳng hạn như mùi chocolate??
+#neg	Ge quá đi
+#pos	cho nên cái gì cũng phải thực tế, không riêng gì bể bơi. 
+#pos	Đây là bể bơi có mặt dưới là thủy tinh nhưng cùng chiết suất với nước. Nó giúp tấm kính và nước hòa thành một khối. 
+#pos	Làm những NGHỀ với thứ dữ (Hổ, Báo, Sư Tử, Cá Sấu...) thì phải chấp nhận rủi ro mất mạng như chơi...Thương cho họ cũng vì MƯU SINH mà phải làm vậy...  
+#pos	Sao lại nói người ta chơi ngu, chỉ là kiếm sống thôi mà. Tôi xem trò này ở TL rồi, có khách vào là họ diễn thôi, họ phải làm những trò nguy hiểm để được khách tip nhiều hơn. Nhìn tội lắm, các bạn nói vậy tội nghiệp người ta. 
+#neg	Con này còn nhỏ chưa có kinh nghiệm chứ con to dài chừng 4m là nó nuốt luôn rồi ! Làm nghề này rất nguy hiểm, mất mạng như chơi. 
+#pos	Con sấu nó chỉ cắn dằn mặt cho bỏ ghét nên mới cắn như vậy, chứ thông thường khi đớp được \"con mồi\" nó sẽ lăn tròn người nó thật nhanh nhiều vòng để xé xác con mồi. Nếu nó mà lăn người thì coi như gãy cổ đứt lìa! Ông đó vẫn còn rất hên! -P
+#neg	Chơi ngu!hihi -N
+#neg	đồng ý là vì mưu sinh nhưng thiếu gì nghề lại đi cược tính mạng như vậy chắc vì nguy hiểm nên tiền nhiều tham thì thâm bây giờ thiếu gì công ty lương 5 đến 7 tr 1 tháng an toàn hơn khỏi phải sống trong lo sợ 
+#neg	Không hiểu nổi, tự nhiên đưa cái đầu vô và ... chờ cắn ! 
+#neg	Chơi ngu thì đừng hỏi tại sao chết! 
+#neg	Núi đó để đóng thuyền noah tuyệt mật sao lên đc. Vé cho sự sống còn là 1 tỷ đô 
+#neu	Nghe là biết ở Mỹ
+#pos	book ngay một vé đến Paris, sao k nói m sớm hơn 
+#neu	May là tay cháu nó ngắn đấy nhá =)) 
+#neu	Chân ông đến tám gánh lông / Để em tỉa bớt kẻo trông rườm rà' 
+#neu	Mình cũng có kỹ niệm thật đẹp : trên chuyến bay từ Paris về Sg năm 2006, ngồi cạnh là người mẹ Viẹt và cô con gái lai Pháp tên Luci, lúc ngũ em nằm thẳng gác chân qua người tui, thức dậy em bắt tui vẽ hình các con vật , lúc về tới Sg em nói là sẽ treo trong phòng ngũ. Lúc đó em khoảng 4-5 tuổi , em thiệt dễ thương ! 
+#neg	Người TQ đi đến đâu người ta cảnh giác đến đó 
+#neg	Một số du khách Trung Quốc, đi tới đâu là gây rắc rối tới đó.  
+#neg	Nói tới TQ là ai cũng sợ và ghét 
+#neg	Đã là con chiên của Chua thì ai cũng phải ghi nhớ điều này:<br/>'' Thứ nhất: thờ kính một Đức Chua Trời trên hết mọi sự ''.<br/>Đó là điều răn của Chua, dù bất cứ hoàn cảnh nào 
+#neu	Mình cũng sẽ viết và gửi tới đây.  
+#neu	Vì tình, Nàng ở xa quê<br/>Bốn phương thư viết say mê gửi Nàng<br/>Nối nhau những tấm lòng vàng<br/>Thay lời Thần tượng rộn ràng Tình yêu. 
+#neu	Gửi như thế nào nhỉ mn,. 
+#pos	Quá thể đáng, không thể chấp nhận được. Vì chú chó, hi vọng cô chủ của chú chó sẽ theo đuổi tới cùng để những người phải chịu trách nhiệm với các chết của chú chó này có một mức phạt thích đáng. 
+#neu	Dan cooper đã bị bắt và giam ở nhà tù Fox River, còn số tiền ông cướp được sau này Michael Scofield đã tìm được. 
+#neu	Nhiều người biết đến với tên D.B. Cooper hơn<br/>Ông này xuất hiện trong Prison Break (chết trong tù) và được nhắc tới trong Breaking Bad khi Saul Goodman gọi Walter White là D.B. Cooper vì đội mũ phớt đeo kính đen bí ẩn :) 
+#neu	Phim Vượt Ngục. Lấy từ vụ án có thật. Cooper nhảy khỏi máy bay với số tiền 5triệu usd là có thật -  Neu
+#pos	Phim vượt Ngục ha ha 
+#pos	Hình như nhân vật này có lên phim Prison Break. 
+#pos	Phim Vượt Ngục. Lấy từ vụ án có thật. Cooper nhảy khỏi máy bay với số tiền 5triệu usd là có thật 
+#neg	Theo lịch công giáo Âu &amp; Mỹ thì tháng 11 không bao giờ có lễ Phục sinh Ad àh, tháng này chỉ có lễ Cầu nguyện &amp; sám hối mà thôi. Lễ phục sinh thường vào tháng 4 hoặc tháng 5. Đính chính lại ad nhé! Thân chào 
+#pos	vượt ngục phần 1 . Vợ tôi mê mệt thằng cu em 
+#pos	Đúng là lần đầu có một huyền thoại trộm của nước Mỹ mà khán giả VN nhắc nhiều và biết nhiều thế, Vượt ngục đúng là seri phim huyền thoại. 
+#pos	Làm phim đc 
+#pos	Tuyệt vời. Nếu cho tôi một điều ước: Tôi là công dân Thụy Sĩ. 
+#pos	Một đất nước mà ai cũng muốn sống...  
+#neg	Chắc Thụy Sĩ phải có luật cấm nhập cư! 
+#pos	NHỜ VẬY MỚI BIẾT ĐẤT NƯỚC THỤY SĨ. CÓ SÚNG TỰ DO NỮA MỚI GHÊ  
+#neg	Bị phạt lỗi chạy quá tốc độ bằng 1/4 thu nhập của 1 năm. 
+#pos	Giấc mơ của tui kkk 
+#pos	Tỷ lệ sở hữu súng ở Mỹ vẫn cao hơn nhiều so với Thuỵ Sĩ, tương ứng 112 và 47.5 súng trên 100 người dân. 
+#pos	Không 1 quốc gia nào dám xâm lược Thụy Sĩ.  
+#pos	Thụy Sỹ đẹp mà cũng khá kì lạ nhỉ... :3 
+#pos	nơi đáng để sống 
+#neg	vãi cả ăn quỵt có tổ chức @.@\ 
+#pos	Có khi đây là 1 sản phẩm trong 1 tour du lịch mạo hiểm chăng? 
+#neg	Bản chất dân Rumanie là trôm cắp và lừa đảo- gốc gác là người Tsigan mà, nên không lấy gì làm ngạc nhiên khi đọc được bài báo nầy.<br/>Kể từ khi có Hiệp định Schengen, họ tràn vào các nước tây Âu làm đủ những việc khiến người bản địa e dè và xa lánh: trộm cáp+lừa đảo ở những khu du lịch nổi tiếng có đông du khách; đem xe(cà tàng) đi lục tung các thùng quyên góp đồ từ thiện(quần áo, giày dép, đồ gia dụng, đồ điện tử...) đặt ở nơi công cộng để nhặt đồ đem về nước bán lại; bới tung tất cả các thùng rác to đặt ở chân nhà cao tầng để tìm đồ phế thải nhưng sau đó không quét dọn lại mà bỏ đó đi, gây mất vệ sinh môi trường và làm xấu cảnh quan khu vực. Vì vậy, chính quyền của một số thành phố đã phải \"bí mật\" di chuyên hoặc hủy bỏ đặt những thùng quyên góp từ thiện. 
+#pos	vãi, ăn quỵt tới 120 người, đây chắc là kỷ luc ăn quỵt có tổ chức 
+#neg	120 khách mà nhiều lúc như không khí ấy nhỉ? biến mất dễ vậy sao =.= 
+#pos	Quịt có tổ chức = cướp có kế hoạch ==&gt; PHẠT TÙ! 
+#pos	Thanh niên bên tây cũng lầy phết nhỉ :v  
+#pos	Cái tính ăn xong đòi kem với hoa quả tráng miệng của vợ mình không tham gia hội này được,có ngày chết :))  
+#pos	Từ Việt Nam xa xôi, cho em gửi tới group ăn quỵt chục lạy! Chơi lầy nhất hệ mặt trời đã xuất hiện. 
+#neg	Kg the tin 
+#neg	Phượt mới - chạy sau khi ăn quỵt. 
+#neu	Người trong giang hồ, túng quá ăn quỵt. 
+#neu	tây bán nhà có khác. -  Neu
+#pos	Lúc các thực khách vừa đi vừa nhẩy xong thấy vơi dần mà không nghi ngờ gì nhỉ 
+#neg	Chắc đến lúc trả tiền thì mọi người đều có điện thoại phải ra ngoài ý mà 
+#pos	kiếm dc hơn trăm người chung trí hướng cũng ko phải dễ 
+#pos	đem chồng hoặc vợ theo là được rồi :D 
+#pos	CẤM LÀ PHẢI RỒI 
+#pos	PHI HÀNH ĐOÀN TOÀN NỮ.THẬT LÀ TUYỆT VỜI.VÀO THỜI ĐIỂM 8/3.VI DIỆU 
+#pos	Phụ nữ Ấn Độ vừa đẹp và giỏi quá , Thật ngưỡng mộ !!! 
+#pos	Lại ngáo đá  
+#pos	Ngáo đá rồi :)  
+#pos	du khách ngáo đá 
+#pos	Đập chắc được 3kg đá rồi... 
+#neg	Kình ngư thứ thiệt 
+#pos	Không biết thần kinh bác này sao nhưng phải công nhận là quá khỏe. 
+#neg	đúng là mất lịch sự quá, kéo người ta lên rồi sao không cho họ mặc đồ vào, nếu hong có thì cũng phải có cái gì để che chổ nhạy cảm lại, để họ đi long nhong thiệt là bó tay  
+#pos	Người Bắc Âu họ rất khỏe, chịu lạnh rất giỏi để thích nghi với điều kiện thời tiết lạnh giá. 
+#pos	Anh hơn em rồi đó. Em là dân vùng biển mà còn chả dám bơi ban đêm mà anh đã làm được! 
+#pos	Ném phao chuẩn thật !  
+#neg	chỉ biết bơi chó thôi mà tinh tướng gớm :-) 
+#pos	Ở Hạ Long thi thoảng lại có tin vụ cháy tàu, chìm tàu. Vậy chính quyền cần chuẩn bị cho sự an toàn của du khách khi đến tham quan những địa điểm trên(vì đi trên sông, hồ, vịnh). Nếu buông lỏng quản lý dễ gây tai nạn lại mất đi tính an toàn, ảnh hưởng đến hình ảnh đẹp mình có. Chúc ngành Du lịch đất nước ta phát triển mạnh 
+#neg	Hy vọng chính quyền những điểm du lịch này sẽ gắn nhiều thùng chứa rác để khách du lịch không ném tùm lum xuống đây 
+#neg	Hàng quán, nhà nghĩ, khách sạn sẽ mọc lên như nấm... 
+#pos	Cảnh việt nam lên phim đẹp quá 
+#pos	Dịp này, ngành du lịch lữ hành du lịch thêm cơ hội phát triển. Việc quản lý, bảo vệ và hoạt động du lịch cần phải nâng cao chất lượng, làm đẹp lòng du khách. Đây là thời điểm vàng, cần chớp lấy. 
+#pos	Nắm bắt cơ hội và làm cho thật tốt để du khách đến thấy hài lòng và về quảng bá VN cho bạn bè, người thân. 
+#pos	Đạo hồi ko ăn thịt lợn bạn nhé  
+#neu	sao không xài thịt lợn nhỉ ....  
+#neg	Công nhân không đeo khẩu trang khi chế biến  
+#neg	Phần lớn không đeo khẩu trang khi chế biến, đóng gói -&gt; qui trình này không ổn 
+#neg	Con gái đi ngoài đường 1 mình đã nguy hiểm lắm rồi, đằng này lại còn phượt khắp thế giới 1 mình nữa chứ. Ngay từ đầu cũng là lỗi của cô gái khi quá chủ quan 
+#neg	Cứng gì hả bạn? Đọc hết bài viết mà bạn còn nói cô phượt thủ này cứng thì tôi cũng đoán được \"độ mềm\" của bạn rồi. 
+#neg	cam on người chủ de cao canh giac .... 
+#neg	Còn ta thì có rượu pha cồn Methanol, là thứ đồ uống của quỷ ban cho những kẻ bất chấp tất cả, miễn là được say. 
+#neg	Thua xa rựơu việt ta 
+#neg	hương nếp cái hoa vàng của mình cũng rất tuyệt ,nhưng gần đây nhiều hãng không dùng men truyền thống toàn mua phân bón về nấu nên chẳng khác gì vorka 30000 đồng 1 chai cả 
+#neg	Uống rồi thấy thường thôi 
+#neg	Chúng tôi biết điều đó, bạn không phải nói quá lên như vậy. nhưng tôi thích điều đó. 
+#pos	Việt Nam cảnh đẹp thần tiên<br/>Diễn viên quốc tế đóng phim ngỡ ngàng:<br/>Ngoài trái đất hay ở đâu<br/>Hành tinh cảnh đẹp lần đầu hiện ra<br/>Tự hào nước Việt Nam ta<br/>Danh lam thắng cảnh gần, xa tuyệt vời<br/>Chung tay gìn giữ ai ơi<br/>Lộc trời ban tặng cho đời thăng hoa!  
+#pos	Phong cảnh ở Việt Nam quá đẹp, quá hùng vĩ 
+#neg	Cảnh vật VN thật tuyệt vời! Chỉ cần sạch sẽ, k chặt chém thì sẽ trở thành công nghiệp chủ lực của nền kinh tế. 
+#neu	Miền Tây quê tui cũng đẹp lắm. Khi nào quý vị có qua quay phim nhớ xuống miền Tây chuyến nhé. Thanks 
+#pos	Phong cảnh của Việt Nam đẹp. Thì về bạn giới thiệu bạn bè của bạn, qua đây du lịch đi. 
+#pos	Cảnh quay phim thật ấn tượng. 
+#pos	Phải công nhận là quá đẹp! 
+#pos	Tự hào 
+#pos	Ngoài vẻ đẹp hiện hữu...việt nam còn có 1 vẻ đẹp bí ẫn khác đó là vẻ đẹp linh hồn...mà nhiều người phải thừa nhận là:dù đi bốn bể năm châu cũng ko bao giờ quên đc hình ảnh đất nước Việt Nam...Nó có 1 linh hồn mà ko nước nào có đc! 
+#neg	Khiếp quá  
+#neg	vậy mà họ bảo rằng hột vịt lộn ở Việt Nam là món ăn kinh dị nhất thế giới :~ 
+#neg	Ăn mà nhăn nhó, thúi thủm, chua chua, bỏng lưỡi hay gì đó, tùm lum thứ ăn làm chi cho khổ thế còn bắn lên nữa, bắn tận 15cm, bé nhỏ thế mà bắn dữ tèn....!! 
+#neg	Mới ăn món đậu bắp chấm chao, tự nhiên thấy nhột nhột trong bụng.  
+#neg	Ôi, trông sợ quá. Có bổ dưỡng mấy cũng chịu thôi.  
+#neg	Chạm vào màn hình còn không dám, nói gì đến nhìn và ăn!<br/>Thấy cái gì lúc nhúc là nổi hết gai ốc, muốn bệnh!  
+#neg	Hột vịt lộn làm sao mà disgusting hơn món này được chỉ. Việc đánh giá hột vịt lộn là disgusting nhất thế giới là không công bằng.  
+#neg	Nhìn nổi hết cả da gà !!! haizzzz quá 
+#neg	Nhìn thôi muốn ói rồi. Làm sao mà ăn được trời !?  
+#neg	đọc báo thôi đã muốn ói ra rồi , lại còn dám ăn nữa thì kinh thật quá hãi luôn .. 
+#neg	Khiếp. Chắc không dám ăn quá 
+#neg	Kinh một cách quá đáng  
+#neg	Kinh quá. Nước mắm Việt Nam cũng vậy những chỉ lấy nước mà không lấy cái.  
+#neg	Lúc trước cũng ăn lông ở lỗ . Còn bây giờ hiện đại ăn chín uống sôi, nhưng vẫn có người muốn như tiền sử 
+#neg	eo ôi!!! 
+#neg	Nhìn thấy miếng pho mát giòi đã thấy ngon , nhưng nếu để nhặng đẻ trứng thì pho mát này còn ngon hơn nhiều . 
+#neg	Thật là khủng khiếp  
+#neg	Người dân tộc thái thì có lầm pịa kinh lắm rồi,<br/>người mườn thì có giấm zút ,<br/>1 thế giới văn minh có phomat giòi  
+#neg	Mất vệ sinh 
+#neg	Cũng muốn ăn thử 1 lần cho biết!  
+#neg	Ăn cái này tăng tuổi thọ thậm chí là bất tử chứ chả chơi :))  
+#pos	ngon 
+#neg	ối mía ơi. Đang cầm miếng pho mát chuẩn bị cho vào mồm. bỏ ngay xuống không dzam ăn nữa. ựa ựa ựa  
+#pos	Chắc cũng ngon như đậu phu thối 
+#pos	Tội nghiệp chắc chú đói quá  
+#neu	Nước sông trong quá  
+#neg	nhìn cái bản mặt thôi là đã thấy tướng thủy tặc, trộm cướp... :x 
+#neg	Đó là một giống chồn cáo, chứ không phải gấu. Nếu muốn dịch là gấu và mèo, thì phải nói là \"mèo gấu.\"  
+#neg	Nó ghê thât. 
+#neg	Từ khi Trump lên làm TT cảm thấy nước Mỹ nói riêng và Thế Giới nói chung ngày càng phứt tạp hóa. Có lẻ ông chỉ là một người kinh doanh giỏi thôi. 
+#neg	Hàn Quốc không nên đùa với Trump" 
+#neg	Đừng làm Anh trum giận nhe 
+#neg	Tây cũng như ta thôi. Sự công bằng chỉ đến với người giàu. 
+#pos	Giàu nghèo ở đâu cũng vậy mà thôi. Nghèo thì chịu và cố gắng phấn đấu. Không có tiền mà muốn học trường xịn, ở nhà sang thì sao được... như nhà tôi phải cố gắng làm lụng ngày đêm 3 đời, giờ mới có cuộc sống trung lưu. 
+#pos	Thông cảm với cư dân chung cư. Song trong quá trình phát triển tất yếu sẽ phân tốp thành nhiều nhóm mà các nhã xã hội học hay phân thành 5 nhóm hay ngũ vị phân, theo đó sẽ có các nhóm siêu giàu, trung lưu, bình dân, nghèo và rất nghèo. Cái khó là chính sách xã hội được thiết kế sao cho người nghèo có cơ hội việc làm mà không ỉ lại cũng như không bị bỏ rơi! 
+#neg	Thoát nghèo khó lắm nên chỉ có số ít thành công trở nên giàu có? Và khi đã giàu rồi thì giàu thêm đơn giản hơn nhiều? Vậy nên một thế giới không có giàu nghèo luôn là giấc mơ của loài người...? 
+#pos	Tôi có 1 ý tưởng xây cầu thang bộ, thang máy dành cho nhà cao tầng , chung cư tuyệt đối an toàn khi có hỏa hoạn sảy ra. Nếu có cầu thang này do tôi thiếc kế đảm bảo sẽ không có sự việc đau lòng trên&nbsp;  
+#neg	Trời ạ ! giá trung bình mỗi căn trong tòa tháp này lên đến 320.000$ tương đương trên 7 tỷ bạc rồi còn gì,gía thuê cũng 2.500$/tháng.Vậy mà dành cho giới nhà nghèo,nghèo nhất London !!!??? 
+#neg	Nhiều nhận xét trên về sự phân cách người giàu và người nghèo ở London không sai, nhưng bảo rằng: Người nghèo \"không thể tiếp cận những dịch vụ cơ bản như chăm sóc y tế và giáo dục\" là hoàn toàn không chính xác, trừ phi những người này nhập cư bất hợp pháp. Dịch vụ y tế quốc gia NHS của Anh là miễn phí hoàn toàn cho tất cả công dân, nhưng nhất là đối với những người thu nhập thấp, giáo dục miễn phí hoàn toàn đến hết cấp 3. 
+#neg	chẳng có công bằng trong xh đâu, đừng tốn công đi tìm nó mà hãy tập thích nghi với nó đi 
+#neg	350,000 usd cho 1 căn hộ thì nghèo gì? 
+#neg	Ở Việt Nam người lương cao cũng phải mất 20 năm mới mua được chung cư. Nghèo hóa hay. Ở gầm cầu ồn tí nhưng không sợ cháy. 
+#neg	Việc nhà của mình lo chưa xong ở đó mà phê với phán nhà người ta 
+#neg	Nghèo thì về quê cố lết ở thành phố chi rồi than thở. 
+#neg	Nói người lại nghĩ đến mình. Họ con như vậy thì ở ta nguy cơ còn cao hơn. Chung cư ở ta chất lượng cũng chẳng tốt gì, quản lý lỏng lẻo,dân sống tuỳ tiện,thời tiết lại quá nóng,điện đóm lại phập phùng,dùng quá tải...rất rất nhiều vấn đề phải quan tâm giải quyết. 
+#neg	giá một căn hộ 320 ngàn usd sao gọi là nghèo???? 
+#pos	Đọc xong tin này có động lực làm giàu hẳn lên. Đúng là không có xã hội nào công bằng tuyệt đối. Chỉ có người giàu mới được công bằng thôi. 
+#pos	Thấy cách chữa cháy chung cư này các bạn nên thông cảm với PCCC của mình, Các chiến sỹ PCCC mình rất gan dạ và công tâm 
+#neg	Đọc qua những cái tên và hình ảnh xuất hiệntrong các bài báo thì hình như chung cư này đa phần là người nhập cư và người da màu. 
+#neg	Tòa nhà bị cháy trong hình hơi nghiêng phải ko nhỉ ?  
+#pos	Nhà \"nghèo\" ở London vẫn trả được giá thuê nhà trên 2000 đô / tháng thì cũng đáng nể 
+#pos	Chúng ta cứ thần tượng quá nhiều PT. Đâu cũng vậy điều phân biệt giàu và nghèo thôi chỉ tự mình phấn đấu. 
+#neg	Số phận đã an bài rồi, vì sao ng ta giàu mà mình nghèo hãy đặt câu hỏi và trả lời đi đừng bàn tán nhiều. Ko bỗng dưng ng ta giàu có như vậy đâu??? Bớt kêu ca đi 
+#pos	Thay vì ngồi than thở thì ta nên nổ lực 
+#neg	Ở ta cũng vậy thôi!  
+#neg	Thu nhập một tháng khoảng 200 triệu sống ở thành phố cũng không bằng ai. 
+#neg	Có dịp thử tên lửa syria thành trường bắn thử các vũ khí thực tế rồi . chỉ có người dân là chỉ tổn thương và mất mát. 
+#neg	IS và người dân Syria là những bia sống để các nước khác tập bắn. 
+#pos	Tôi e rằng, nếu Mỹ và Nga không hoà thuận bắt tay nhau, rất dễ xảy ra chiến tranh ở khu vực này. 
+#neg	Nhìn vậy mà giá cao dữ 
+#neg	Có nói thách không vậy ta ?. Nhìn cứ tưởng thằng bạn mình chứ. 
+#neg	Cẩn thận chú ếch mà ngồi vào trong người thì tàn đời . Làm đồng tiền chân chính mà tiêu cho đời nó thanh thản các em ạ,có ít tiêu ít có nhiều tiêu nhiều,nếu có người khinh mình nghèo hèn thì nên thấy đáng thương cho họ vì họ bị vật chất chi phối. 
+#neg	Ngoài quần áo xúng xính, điện thoại xịn,...giờ có thêm cái mo để che mặt nữa nhé 
+#neg	Bị gài hàng chứ nhìn vậy làm gì có giá đó 
+#neg	Đời đã ngắn, lại ngắn thêm rồi :) 
+#neg	Đẹp mặt chưa? Cuộc sống có một nên sống sao cho chết vinh còn hơn sống nhục 
+#pos	phen này chắc hết về quê rồi vì quá nổi tiế22Tôi thì lại thấy thương cho cô gái trẻ. 
+#pos	Ko biết mình có giàu tình thương qua ko. Những cám dỗ vật chất để bằng bạn bằng bè đã đưa cô ấy đi quá xa. Những gì sau này với cô ấy sẽ rất khó khăn 
+#pos	Nếu trách là trách mấy ông thừa tiền.cô ay cũng chỉ là vì tiền...cô ay.. phải bán danh dự của mình. .chứ có lấy cái gì của ai đâu.... 
+#pos	Khổ nhất là cha mẹ của các cô gái rơi vào hoàn cảnh này. Họ cứ nghĩ rằng con của họ chịu khó làm ăn nên mới có cuộc sống sung túc như vậy, chứ có cha mẹ nào sanh con ra mà xúi giục con gái mình \"bán trôn\" nuôi miệng!<br/>Biết rằng cuộc sống hiện nay là kim tiền, nhưng mà đừng lao vào con đường như vậy. Hãy làm ăn chân chính rồi từ đó vươn lên.  
+#pos	việc nhẹ lương cao ko dễ đâu.ngồi mát ăn bát vàng.xưa rồi em .ăn cơm tù khó nuốt nhưng tốt về sau chịu khó nhé.làm lại từ đầu.tranh thủ cải tạo tốt.về ăn bát sành sứ thôi cho lành.đừng mơ bát vàng nhé 
+#neg	&nbsp;này mà 1tr5 à...  
+#pos	3,5 tr chia hai=1.75tr ngày công lao đông cao công việc nhàn ai lại không làm. 
+#pos	Các bác sành điệu quá,giá cả thế nào cũng biết. 
+#pos	Bình thường. theo cung cầu. 
+#pos	đẹp xấu do góc nhìn do địa phương , các bác cứ lên án quá 
+#pos	Làm việc phi pháp ở đất hà nội không tồn tại được đâu 
+#pos	có 1 thủy thủ thiệt mạng người gốc Việt, xin chia buồn cùng tất cả, tại nạn xảy ra đúng lúc mọi người đang yên giấc ngủ, thật quá đáng tiếc ! 
+#neg	có 1 bạn Ngoc T Truong Huynh, chắc là người gốc việt, From Oakville, Connecticut, sĩ quan kĩ thuật 
+#neg	Trong 07 thủy thủ có 01 người tên giống người VN 
+#pos	Xin chia buồn. Vậy là có người gốc Việt trong số các nạn nhân. 
+#pos	Khi cháy xảy ra thì phải cố chạy khỏi đám cháy để có cơ hội sống sót, nếu k cố chạy thì cầm chắc là chết rồi. Không hiểu câu \"phần lớn các nạn nhân đều chết trong xe do cố chạy khỏi đám cháy\"? và tại sao cháy rừng mà lại có rất nhiều người và xe ở trong rừng để phải chạy ? trừ những người tham gia chữa cháy? Cầu mong thế giới nầy được sống bình an và phải chết thì được chết nhẹ nhàng.  
+#pos	Xin chia buồn với Portugal trước thảm hoạ.... Mùa hè nên nhiều người đi nghỉ mát trong các khu rừng. 
+#pos	Cảm ơn anh!!!! Thực sự nước mắt tôi đã rơi vì cảm động và cảm phục hành động cao cả và cực kỳ dũng cảm của anh. Thế giới còn những con người như anh thì chiến tranh, cái ác, sự hủy diệt sẽ không bao giờ còn đất sống. Chúc anh luôn gặp những điều tốt lành nhất trong cuộc sống, mong cho mọi điều tốt đẹp nhất sẽ đến với tất cả những người yêu chuộng hòa bình trên toàn thế giới này. 
+#pos	anh hùng  
+#pos	\"Tôi nghĩ nếu tôi chết vì làm việc này, vợ con tôi cũng thấu hiểu\" - có một cái gì đó thật đẹp đẽ trong lời nói của những con người dũng cảm giữa phút hiểm nguy, trong cơn hoạn nạn.  
+#pos	Ko 1 phút chần chừ, anh ấy lao đi như điện và đồng đội ngay lập tức hỗ trợ anh như một cảnh phim chiến đấu thực sự. Và bé gái đã an toàn trong vòng tay người lính anh hùng !  
+#neu	Cảnh này hồi đó thấy hoài 
+#pos	Ngàn lần khâm phục!  
+#pos	thật cảm phục người lính có tình thương nhân loại những hình ảnh đẹp cả thế giới biết và vinh hạnh cho gia đình người lính 
+#pos	Lính Mỹ đúng chất  
+#pos	Nước mĩ vĩ đại , Anh lính thật dũng cảm, cảm ơn anh  
+#pos	Thật đáng khâm phục,  
+#pos	Đây chính là anh hùng nước Mỹ  
+#pos	những vị anh hùng 
+#pos	Nếu không có a.,mọi người chỉ nghĩ trong phim mới có cảnh này  
+#pos	Anh là người trên giới này rất cần và tôn vinh anh. Anh có thể mất mạng để cứu cháu bé. Quân cảm tử IS liều chết đánh bom thế giới đều căm phẫn. Anh cứu cháu bé thế giới đều xúc động, chúc anh có sức khỏe để anh làm đều người khác khó làm đc  
+#pos	\"Eubank dưới sự yểm trợ của hai đồng đội lao lên phía trước đưa bé gái về nơi an toàn. Sau đó, Eubank tiếp tục tìm cách cứu em bé còn lại nhưng không kịp'. --&gt; Khốn nạn quá, bắn tỉa IS giết cả trẻ em! 
+#pos	Ðúng là anh hùng thời chiến....bất chấp nguy hiểm tính mạng để cứu bé gái...anh sẽ được mọi người vinh danh...  
+#pos	Tôi rất ngưỡng mộ a. Một hành động cao cả. 
+#pos	Còn em bé mới biết đi....nhưng không kịp!<br/>Xót xa cõi lòng quá!<br/>Bình yên nhé con yêu!!!!!!!!!!!!!!!! 
+#pos	Tôi xem video mà da gà nổi lên rât cam động . Tôi nghi những cảnh như thế chỉ có mỗi phim . Good men .  
+#pos	Thật là một nghĩa cử cao đẹp!!!!!! 
+#pos	trên cả tuyệt vời, một hành động xứng đáng được tuyên dương Anh Hùng. Cảm ơn Eubank 10000000......lần 
+#pos	Một cảm tử tuyệt vời, chúc anh cùng gđ luôn hạnh phúc 
+#pos	Anh la con nguoi rất dủng cảm !!! 
+#pos	Cô gái có đôi mắt rất đẹp và gương mặt rất xinh,thật đau buồn khi gặp nạn nơi xứ người với bao dự định dỡ dang,xin chia buồn cùng gia đình và cầu Chúa đưa linh hồn cô ấy lên thiên đàng. 
+#pos	Oh, sao số lượng xác suất người Việt trên TG không nhiều mà vụ chìm tàu Mỹ 7 người và vụ nổ Colombia 3 người mà đều có người Việt cả vậy? R.I.P. 
+#pos	thương quá 
+#neg	Mình là người lương (khg có đạo) 100%. Cũng khg ghét đạo nào hết. Tuy nhiên đạo Hồi có những giáo luật cực kỳ hà khắc.. Trong Thiên Chúa giáo có 10 điều luật Chúa thì chỉ là điều răn. Còn trong đạo Phật, những giới luật chỉ là lời Phật dạy rất nhân văn... 
+#neg	mình không phải người hồi giáo. nhưng mình thấy người hồi giáo có tội gì đâu mà giết. chẳng qua một số vì mưu lợi lừa những giáo dân cực đoan đi chết thế để họ hưởng lợi mà thôi. 
+#pos	Những hành động ngu xuẩn này càng đào sâu khoảng cách với người hồi giáo, rồi những người hồi giáo Cực đoan sẽ trả thù, cứ 1 vòng lẫn quẩn không lối thoát, tóm lai hành động bạo lực cần phải bị loai trừ 
+#pos	Hồi giáo có tín đồ đông nhất thế giới. Vấn đề là tôn giáo nào cũng hướng con người đến tôt đẹp trong cuộc sống.<br/>Người đâm xe này cũng như bọn IS chỉ là 1 phần nhỏ của nhân loại, bị những tư tưởng méo mó nào đó ảnh hưởng đến hành động; thay vì phải chung sống hòa bình. Khó lắm thay cho đời sống hiện đại- tư tưởng cũng đa dạng. 
+282. Vụ nầy là người Hồi giáo bị khủng bố.  
+#pos	Cộng đông đạo hồi được dự đoán tăng rất mạnh vài năm tới. Những việc này chỉ làm chia rẻ nước anh, bắt đầu là tôn giáo. 
+#pos	Hận thù diệt hận thù ngàn đời không thể có. Từ bi diệt hận thù là định luật ngàn thu.  
+#pos	Khó tin bởi không phải Ai cũng thật thà khai báo mọi điều mà Mình đang làm ,người ta có thể đảo ngược để tránh bị tội ,chỉ tiếc rằng Thế kỷ này đã bùng lên sắc tộc và Tôn giáo mãnh liệt gây nên chia rẽ ,nên cần phải thận trọng cho tương lai khi đã thấy được những điều này,nếu không cuộc sống sẽ không bình ổn và Hoà bình 
+#pos	Các bạn đừng nghĩ thiết bị ngừng hoạt động là không tốt. P3-Orion tân trang này rất hiện đại và độ tin cậy cao, hiện tại Mỹ vẫn sử dụng song song với P8-Poisedon, Đài Loan, Hàn Quốc, Đức phát triển thế mà họ vẫn xài. VN mình có mấy con này thì quá tuyệt, chỉ sợ không đủ tiền mà mua thôi. 
+#neg	Ko thích lắm khi mua 1 sản phẩm đã nằm trong danh sách ngừng hoạt động. 
+#pos	Việc này sớm mong thành hiện thực.  
+#pos	VN từng bước tiến lên hiện đại !  
+#neg	ai không muốn mua hàng mới nhưng quan trọng là tiền  
+#neg	Các nước cũng đang mua đấy thôi. 
+#neg	Khong nen mua do tan trang. Mua do thiet hang moi, cho du no dat hon 1000 lan cung mua 
+#pos	Ngừng hoạt động tại vì Mỹ có chiếc P-8 mới và hiện đại hơn nhưng nếu so sánh với những gì Việt Nam đang có thì vẫn tốt hon nhiều. 
+#pos	Mọi người cứ nói đồ tân trang thì ko mua, hiện nay một số thiết bị QP vẫn còn thời Liên Xô nhưng vẫn sử dụng tốt. Vậy nhưng thiết bị tân trang kia tại sao không, cái quan trọng là nó hữu ích với ta và hợp túi tiền. 
+#pos	Nó để ở sa mạc khí hậu khô nên bảo quản rất tốt. Còn thiết bị điện tử sẽ đc nâng cấp cho phù hợp. Quan trọng là giá và options thôi mà. 
+#pos	Hàng mỹ dù ko sử dụng vẫn còn rất tốt nhật hàn quốc đài loan còn mua mà  
+#neg	Đồ tân trang nhưng không biết xài ok không, thấy trong phim Battle ship của Mỹ, tàu làm bảo tàng rồi vẫn bắn người ngoài hành tinh ầm ầm 
+#pos	Vẫn tốt chán. 
+#neg	P8 thì ngon hơn! Hàng cũ kg thích lắm. Giá ma p3 hàng bóc tem thì còn được.  
+#neg	Không nên mua cái đồ đã cũ, thà mua ít nhưng mới và hiện đại. 
+#neg	Có lẽ vn sẽ mua 1 hoặc 2 cái để nghiên cứu và huấn luyện. Hàng cũ cộng với các ràng buộc thì không tốt lắm. 
+#neg	đã mua thì mua đời mới nhất không thì thôi 
+#pos	việc mua mới hay cũ không quang trọng tuỳ theo chất lượng của nó và túi tiền của mình 
+#neg	Sao nó cũ mà vẫn đắt thế nhỉ  
+#pos	Nên mua thử trước khi sắm mới 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---#neg	asdasd
+---#ne	ASA
+---#pos	ADASDSAD
