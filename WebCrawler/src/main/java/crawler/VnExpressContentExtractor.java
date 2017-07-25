@@ -27,7 +27,7 @@ public class VnExpressContentExtractor implements Extractor {
 	PressService pressService;
 	@Autowired
 	AlgoAnalyzeAPI algoAPI;
-	
+
 	private Document doc;
 	private String url;
 	private Press press;
@@ -46,7 +46,7 @@ public class VnExpressContentExtractor implements Extractor {
 		}
 		// extractFBComment();
 		extractContent();
-		
+
 		pressService.addPress(press);
 	}
 
@@ -65,7 +65,7 @@ public class VnExpressContentExtractor implements Extractor {
 		Element articleId = this.doc.select("meta[name=tt_article_id]").first();
 		Element categoryId = this.doc.select("meta[name=tt_category_id]").first();
 		Element siteId = this.doc.select("meta[name=tt_site_id]").first();
-		
+
 		HttpResponse<JsonNode> jsonNode = Unirest.get("http://usi.saas.vnexpress.net/index/get")
 				.header("accept", "application/json").queryString("offset", "0")
 				.queryString("objectid", articleId.attr("content")).queryString("objecttype", "1")
@@ -83,7 +83,7 @@ public class VnExpressContentExtractor implements Extractor {
 				double senti = algoAPI.getCommentSentiSVM(content);
 				Comment cmtContext = new Comment(content, senti);
 				comments.add(cmtContext);
-				
+
 			}
 			this.press.setComment(comments);
 		}
@@ -91,9 +91,24 @@ public class VnExpressContentExtractor implements Extractor {
 	}
 
 	private void extractContent() {
+		this.press.setPublisher("VnExpress");
+		Element keyWords = this.doc.select("meta[name=keywords]").first();
+		if (keyWords != null) {
+			this.press.setKeyWords(keyWords.attr("content"));
+		}
 		Element htmlContent = this.doc.select(".block_col_480").first();
 		if (htmlContent != null && htmlContent.text() != null) {
-			this.press.setContent(htmlContent.text());
+			String content = htmlContent.select(".fck_detail").text();
+			String shortIntro = htmlContent.select(".short_intro").text();
+			String title = htmlContent.select(".title_news h1").text();
+			String time = htmlContent.select(".block_timer").first().text();
+
+			this.press.setContent(content);
+			this.press.setTime(time);
+			this.press.setShortIntro(shortIntro);
+			this.press.setTitle(title);
+			
+
 		}
 
 	}

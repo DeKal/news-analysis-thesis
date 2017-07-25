@@ -1,0 +1,45 @@
+.width_common {
+	width: 100%;
+	float: left;
+}
+
+#header_main {
+	width: 1000px;
+	
+}
+
+.logo_web {
+	margin: 0;
+}
+
+.left {
+	float: left;
+}
+
+#header_main img {
+	border: 0;
+	font-size: 0;
+	max-width: 200px;
+	max-height: 100px;
+}
+.header_logo{
+	background-color: #faf7f7;;
+}
+
+.clear, img {
+	line-height: 0;
+}
+
+#header_web {
+	margin-bottom: 50px;
+	border-bottom: solid 2px #d2d2d2;
+	position: fixed;
+	z-index: 1000000;
+}
+
+
+.team-signature {
+	font: 400 20px 'Arizonia', Helvetica, sans-serif;
+	color: #2b2b2b;
+	text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
+}

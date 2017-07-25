@@ -33,7 +33,7 @@
 		cache-period="10000"></mvc:resources>
 	<mvc:resources mapping="/assets/lib/**" location="/assets/lib/"
 		cache-period="10000"></mvc:resources>
-
+	
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix">
