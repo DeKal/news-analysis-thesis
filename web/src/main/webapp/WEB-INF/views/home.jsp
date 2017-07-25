@@ -9,6 +9,7 @@
 
 <jsp:include page="/WEB-INF/views/layout/header.jsp" />
 
+
 <body>
 	<div id="mainbar">
 		<div id="question">

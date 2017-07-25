@@ -1,0 +1,28 @@
+#question-header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+#question-header {
+    clear: both;
+    margin-top: 115px;
+    margin-bottom: 1em;
+    padding: 5px 0;
+    border-bottom: 1px solid #e4e6e8;
+}
+
+#question-header h1 {
+    margin-bottom: .5em;
+}
+
+#question-header .question-hyperlink {
+    color: #242729;
+}
+
+#question-header .question-hyperlink {
+    font-size: 24px;
+    line-height: 1.35;
+    font-weight: normal;
+    margin-bottom: .5em;
+}

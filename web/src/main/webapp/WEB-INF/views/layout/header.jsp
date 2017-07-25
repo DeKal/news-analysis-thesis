@@ -1,8 +1,9 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
-<spring:url value="/assets/css/header.css" var="mainCss" />
-<spring:url value="/assets/css/main.css" var="headerCss" />
+<spring:url value="/assets/css/header.css" var="headerCss" />
+<spring:url value="/assets/css/display.css" var="displayCss" />
+<spring:url value="/assets/css/main.css" var="mainCss" />
 <spring:url value="/assets/css/footer.css" var="footerCss" />
 
 
@@ -11,7 +12,7 @@
 <head>
 	<link href="${headerCss}" rel="stylesheet" />
 	<link href="${mainCss}" rel="stylesheet" />
-	
+	<link href="${displayCss}" rel="stylesheet" />
 
 </head>
 
