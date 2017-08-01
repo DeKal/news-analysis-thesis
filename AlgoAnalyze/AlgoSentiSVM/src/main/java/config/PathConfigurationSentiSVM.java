@@ -17,4 +17,16 @@ public final class PathConfigurationSentiSVM {
     public static String predict = root + "\\senti_predict\\" + "predictSentiSVM.txt";
 
     public static String sumary = root + "\\senti_predict\\" + "sumarySentiSVM.txt";
+
+    // For real input
+//    public static String real = root + "\\real\\";
+//    public static String input = real + "input.txt";
+//    public static String trainingModel = real + "model.txt";
+//    public static String output = real + "output.txt";
+
+    public static String real = root + "\\real\\";
+    public static String featureSpace = "feature.model";
+    public static String input = "input.txt";
+    public static String trainingModel = "training.model";
+    public static String output = "output.txt";
 }

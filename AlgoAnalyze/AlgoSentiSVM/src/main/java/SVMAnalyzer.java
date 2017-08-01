@@ -1,5 +1,7 @@
+
 import config.PathConfigurationSentiSVM;
 
+import java.io.File;
 import java.io.IOException;
 
 /**
@@ -48,8 +50,42 @@ public class SVMAnalyzer {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
 
+    public static void predict(){
+        String[] arg = new String[3];
+        /*
+        arg[0] = mInputAnalyze;
+        arg[1] = mInputModel;
+        arg[2] = "test.predict.txt";
+        */
 
+        /*
+        ClassLoader classLoader = getClass().getClassLoader();
+
+        arg[0] = classLoader.getResource(PathConfigurationSentiSVM.input).toString();
+        arg[1] = classLoader.getResource(PathConfigurationSentiSVM.trainingModel).toString();
+        arg[2] = classLoader.getResource(PathConfigurationSentiSVM.output).toString();
+        */
+
+        File input = new File("src/main/resources/" + PathConfigurationSentiSVM.input);
+        String inputPath =  input.getAbsolutePath();
+
+        File model = new File("src/main/resources/" + PathConfigurationSentiSVM.trainingModel);
+        String modelPath =  model.getAbsolutePath();
+
+        File output = new File("src/main/resources/" + PathConfigurationSentiSVM.output);
+        String outputPath =  output.getAbsolutePath();
+
+        arg[0] = inputPath;
+        arg[1] = modelPath;
+        arg[2] = outputPath;
+
+        try {
+            svm_predict.main(arg);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
 }

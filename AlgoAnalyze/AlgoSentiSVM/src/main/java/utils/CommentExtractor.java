@@ -2,14 +2,12 @@ package utils;
 
 import common.io.FileIO;
 import common.model.TermFrequency;
-import config.PathConfigurationSentiSVM;
 import config.PathConfigurationRoot;
+import config.PathConfigurationSentiSVM;
 import model.*;
 import vn.hus.nlp.tokenizer.VietTokenizer;
 
-import java.io.BufferedReader;
-import java.io.FileInputStream;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.util.LinkedList;
 
 /**
@@ -75,6 +73,15 @@ public class CommentExtractor {
                 br.close();
             }
         }
+
+        mCommentCollection.setCommentList(commentList);
+    }
+
+    public static void TextToComment(String content) throws Exception {
+        LinkedList<Comment> commentList = new LinkedList<Comment>();
+
+        Comment comment = new Comment("#neu",content);
+        commentList.add(comment);
 
         mCommentCollection.setCommentList(commentList);
     }
@@ -179,9 +186,53 @@ public class CommentExtractor {
         FileIO.closeWriter();
     }
 
+    public static void CommentSVMToPredictSet(){
+        /*
+        String projectPath = System.getProperty("user.dir");
+        String path = projectPath + "\\save";
+        String name = "testing_data.txt";
+
+        String fullPath = path + "\\" + name;
+        */
+
+        File resourcesDirectory = new File("src/main/resources/" + PathConfigurationSentiSVM.input);
+        String fullPath =  resourcesDirectory.getAbsolutePath();
+
+        FileIO.createWriter(fullPath);
+
+        SVMFeature feature = mSVMFeatureSpace.getFeatureSpace();
+        for (CommentSVM commentSVM : mCommentSVMCollection.getCommentSVMList()){
+            String label = String.valueOf(commentSVM.getLabelCode());
+            FileIO.write(label + " ");
+
+            LinkedList<TermFrequency> termList = commentSVM.getTermList();
+            for (TermFrequency t : termList){
+                // Get index of the feature
+                String term = t.getTerm();
+                int index = feature.getIndexOfFeature(term);
+                // Get value of the feature
+                int value = t.getFrequency();
+                FileIO.write(String.valueOf(index) + ":" + String.valueOf(value) + " ");
+            }
+
+            // At the end of comment, insert newline for another comment
+            FileIO.writeln("");
+        }
+
+        FileIO.closeWriter();
+    }
+
     public static void destroySVMFeatureSpace(){
         SVMFeatureSpace.destroy();
         mSVMFeatureSpace = SVMFeatureSpace.getInstance();
+    }
+
+    public static void loadSVMFeatureSpace() throws IOException {
+        mSVMFeatureSpace.loadFeatureSpace();
+    }
+
+    public static void saveSVMFeatureSpace() throws IOException {
+        mSVMFeatureSpace.saveFeatureSpace();
     }
 
     /*******COULD BE REMOVED *******/

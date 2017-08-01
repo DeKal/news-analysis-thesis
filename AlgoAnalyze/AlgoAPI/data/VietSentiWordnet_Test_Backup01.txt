@@ -1,0 +1,28 @@
+# VietSentiWordNet v1.0.0 (1 June 2011)
+# Copyright 2010 ISTI-CNR.
+# All right reserved.
+#
+# VietSentiWordNet is distributed under the GNU publish licence
+# http://www.gnu.org/licenses/gpl.html
+#
+# For any information about VietSentiWordNet:
+# Web: https://sourceforge.net/projects/vietsentiwordne/
+# -------
+#
+# Data format.
+#
+# VietSentiWordNet v1.0 is based on SentiWordNet version 3.0.
+# SentiWordNet website: http://sentiwordnet.isti.cnr.it/
+# The values PosScore and NegScore are the positivity and negativity
+# score assigned by SentiWordNet to the synset.
+# The objectivity score can be calculated as:
+# ObjScore = 1 - (PosScore + NegScore)
+# SynsetTerms column reports the terms, with sense number, belonging
+# to the synset (separated by spaces).
+# POS	ID	PosScore	NegScore	SynsetTerms	Gloss
+a	00166146	0.875	0	hấp_dẫn#1	thích nhìn, say mê vẻ đẹp; "quần áo hấp dẫn"; "mô tả quyển sách vở hình minh họa hấp dấn"
+v	000788556	0.875	0.5	hết sức mình#1	cố gắng tất cả sức lực và tài năng vào một việc gì đó; "cô ấy đã cố gắng hết sức mình"
+v	000788558	0.5	0	giữ sức_khoẻ#1	đảm bảo sức khỏe tốt; "người già cần giữ sức khỏe"
+v	000788559	0.625	0	như mong_muốn#1	đúng như mong ước bản thân;"chúc cô đạt thành tích như mong muốn"
+a	000788564	0.125	0.5	ghê nhỉ#1	đanh đá, quá đáng trong việc gì; "cô ta cũng ghê nhỉ"
+a	svx1937981	0	0.5	xấu#1 xấu_xí#1	có hình dáng và những đường nét rất khó coi (thường nói về đồ vật, đôi khi nói về ai đó) ; "cái máy trông rất xấu"

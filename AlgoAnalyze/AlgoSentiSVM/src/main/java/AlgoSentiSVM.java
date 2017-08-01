@@ -1,7 +1,11 @@
+
 import common.console.ConsoleOutputCapturer;
 import common.io.FileIO;
 import config.PathConfigurationRoot;
 import config.PathConfigurationSentiSVM;
+import main.AlgoSentiSVMInterface;
+import main.DataSetCreator;
+
 import org.apache.commons.io.FilenameUtils;
 import utils.CommentExtractor;
 
@@ -11,7 +15,7 @@ import java.util.ArrayList;
 /**
  * Created by Phuong Huynh on 6/18/2017.
  */
-public class AlgoSentiSVM {
+public class AlgoSentiSVM implements AlgoSentiSVMInterface  {
     public static void main(String[] args) throws Exception {
 
         /*
@@ -29,22 +33,41 @@ public class AlgoSentiSVM {
 
         //random();
         //normal();
-        allDataSet();
+        //allDataSet();
         //oneDataSet("0887");
+
+    	AlgoSentiSVM a = new AlgoSentiSVM();
+    	a.predict("ăn chơi");
+
+        File resourcesDirectory = new File("src/main/resources/" + PathConfigurationSentiSVM.input);
+        String fullPath =  resourcesDirectory.getAbsolutePath();
+        System.out.println(fullPath);
+
     }
 
     public static void random() throws Exception {
         DataSetCreator.createDataSet();
 
-        ProcessRunner processRunner = new ProcessRunner();
-        processRunner.testTrain();
-        processRunner.testTest();
+        normal();
     }
 
     public static void normal() throws Exception {
         ProcessRunner processRunner = new ProcessRunner();
         processRunner.testTrain();
         processRunner.testTest();
+    }
+
+    @Override
+    public int predict(String content) throws Exception {
+        /*#####################################################*/
+        /*
+        * This function must be called for clearing SVM Features Space for every new data set.
+        **/
+        CommentExtractor.destroySVMFeatureSpace();
+        /*#####################################################*/
+
+        ProcessRunner processRunner = new ProcessRunner();
+        return processRunner.predict(content);
     }
 
     public static void allDataSet() throws Exception {

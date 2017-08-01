@@ -8,11 +8,14 @@ import config.PathConfigurationRoot;
 
 public class DataSetController {
 	
-	public InputStream getSentiWordTrainingSet(){
-		ClassLoader classLoader = getClass().getClassLoader();
-		InputStream lStream = classLoader.getResourceAsStream(PathConfigurationRoot.SENTIWORD_RES + "input.txt");
+	public boolean getSentiWordTrainingSet(){
+		ClassLoader classLoader = DataSetController.class.getClass().getClassLoader();
+		File file = new File(classLoader.getResource("input.txt").getFile());
+		String path = file.getAbsolutePath();
 		
-    	return lStream;
+		System.out.println(path);
+		
+    	return true;
 	}
 	
 	public File getSentiSVMTrainingSet(){

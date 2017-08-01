@@ -1,10 +1,13 @@
 package jat.algo.api;
 
+import java.io.IOException;
 import java.io.InputStream;
 
 import org.springframework.stereotype.Component;
 
 import algoutils.storage.DataSetController;
+import main.AlgoSentiSVMInterface;
+import main.AlgoSentiWord;
 
 @Component
 public class AlgoAnalyzeAPI {
@@ -12,24 +15,31 @@ public class AlgoAnalyzeAPI {
 	
 	public InputStream testGetDataStorage(){
 		
-		return DataSetController.getSentiWordTrainingSet();
+		//return DataSetController.getSentiWordTrainingSet();
+		return null;
 	}
-	public double getCommentSentiSVM(String content){
-		double dc = Math.random();
-		if (dc > 0.5)
-			dc = 1;
-		else
-			dc = -1;
-		
-		return Math.random() * dc;
+	
+	public int getCommentSentiSVM(String content) throws Exception{
+		Class<?> algoSentiSVMClass = Class.forName("AlgoSentiSVM");
+		AlgoSentiSVMInterface api = (AlgoSentiSVMInterface) algoSentiSVMClass.newInstance();
+	
+		return api.predict(content);
 	}
-	public double getCommentSentiVNWord(String content){
-		double dc = Math.random();
-		if (dc > 0.5)
-			dc = 1;
-		else
-			dc = -1;
+	
+	public int getCommentSentiVNWord(String content) throws IOException{
+		return AlgoSentiWord.predict(content);
+	}
+	
+	public static void main(String args[]) throws Exception{
+		AlgoAnalyzeAPI a = new AlgoAnalyzeAPI();
 		
-		return Math.random() * dc;
+		/*
+		int c = a.getCommentSentiVNWord("mình thích chương trình này lắm");
+		System.out.println(c);
+		
+		a.getCommentSentiSVM("vui thật");
+		*/
+		
+		DataSetController.getSentiWordTrainingSet();
 	}
 }

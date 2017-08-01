@@ -19,4 +19,7 @@ public class PathConfigurationSentiWord {
 
     public static String sumary = root + "\\senti_predict\\" + "sumarySentiWord.txt";
 
+    // path used for real work
+    public static String dictionary = "VietSentiWordnet_ver1.0.txt";
+
 }

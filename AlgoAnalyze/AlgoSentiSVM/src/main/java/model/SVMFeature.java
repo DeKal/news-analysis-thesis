@@ -44,4 +44,9 @@ public class SVMFeature {
 
         return -1;
     }
+
+    public LinkedHashMap<String, Integer> getFeatureList(){
+        return this.featureList;
+    }
+
 }
