@@ -116,6 +116,36 @@ public class CommentExtractor {
             mSVMFeatureSpace.setFeatureSpace(feature);
     }
 
+    /** This function is used for creating CommentSVMCollection.
+     ** then program will use the collection for building SVM training set.
+     **/
+    public static void CommentToCommentSVMandFeature(String propertyPath) {
+        LinkedList<Comment> listOfComment = mCommentCollection.getCommentList();
+        LinkedList<CommentSVM> listOfCommentSVM = new LinkedList<CommentSVM>();
+
+        //SVMFeature feature = new SVMFeature();
+        SVMFeature feature = null;
+        boolean newFeatureSpace = false;
+        if (mSVMFeatureSpace.getFeatureSpace() == null) {
+            feature = new SVMFeature();
+            newFeatureSpace = true;
+        }
+        else
+            feature = mSVMFeatureSpace.getFeatureSpace();
+
+        for (Comment comment : listOfComment){
+
+            CommentSVM commentSVM = new CommentSVM(comment, propertyPath);
+            listOfCommentSVM.add(commentSVM);
+
+            feature.addFeatureFromComment(comment);
+        }
+
+        mCommentSVMCollection.setCommentSVMList(listOfCommentSVM);
+        if (newFeatureSpace)
+            mSVMFeatureSpace.setFeatureSpace(feature);
+    }
+    
     public static void CommentSVMToTrainingSet(){
         /*
         String projectPath = System.getProperty("user.dir");
@@ -186,7 +216,7 @@ public class CommentExtractor {
         FileIO.closeWriter();
     }
 
-    public static void CommentSVMToPredictSet(){
+    public static void CommentSVMToPredictSet(String inputSetPath){
         /*
         String projectPath = System.getProperty("user.dir");
         String path = projectPath + "\\save";
@@ -195,10 +225,13 @@ public class CommentExtractor {
         String fullPath = path + "\\" + name;
         */
 
-        File resourcesDirectory = new File("src/main/resources/" + PathConfigurationSentiSVM.input);
-        String fullPath =  resourcesDirectory.getAbsolutePath();
-
-        FileIO.createWriter(fullPath);
+    	String path = inputSetPath;
+    	
+    	if (path == null){
+	        File resourcesDirectory = new File("src/main/resources/" + PathConfigurationSentiSVM.input);
+	        path =  resourcesDirectory.getAbsolutePath();
+    	}
+        FileIO.createWriter(path);
 
         SVMFeature feature = mSVMFeatureSpace.getFeatureSpace();
         for (CommentSVM commentSVM : mCommentSVMCollection.getCommentSVMList()){
@@ -227,8 +260,8 @@ public class CommentExtractor {
         mSVMFeatureSpace = SVMFeatureSpace.getInstance();
     }
 
-    public static void loadSVMFeatureSpace() throws IOException {
-        mSVMFeatureSpace.loadFeatureSpace();
+    public static void loadSVMFeatureSpace(String featureSpacePath) throws IOException {
+        mSVMFeatureSpace.loadFeatureSpace(featureSpacePath);
     }
 
     public static void saveSVMFeatureSpace() throws IOException {

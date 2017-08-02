@@ -12,13 +12,21 @@ import java.io.IOException;
  * Created by Phuong Huynh on 7/4/2017.
  */
 public class ProcessRunner {
+	public static DictHandler dictHandler = null;
+	public static String mPathDict = "";
+	
+	public ProcessRunner(String pathDict) throws IOException{
+		if (dictHandler == null)
+			dictHandler = new DictHandler(pathDict);
+	}
+	
     public String predict() throws Exception {
         //String pathDict = "C:\\Users\\Phuong Huynh\\Desktop\\JAVA WORKSPACE\\BizSentiWord\\data\\VietSentiWordnet_Test.txt";
         String pathDict = PathConfigurationSentiWord.dictionary_source;
         String pathData = "C:\\Users\\Phuong Huynh\\Desktop\\JAVA WORKSPACE\\BizSentiWord\\data\\input.txt";
 
-        DictHandler dictHandler = new DictHandler(pathDict);
-        dictHandler.exportDict();
+        
+        //dictHandler.exportDict();
 
         CommentExtractorSentiWord.TextToComment(2);
 
@@ -82,14 +90,14 @@ public class ProcessRunner {
         return stringP;
     }
 
-    public int predict(String content) throws IOException {
+    public int predict(String content, String propertyPath) throws IOException {
     	File dict = new File("src/main/resources/" + PathConfigurationSentiWord.dictionary);
         String dictPath =  dict.getAbsolutePath();
 
-        DictHandler dictHandler = new DictHandler(dictPath);
+        //DictHandler dictHandler = new DictHandler(dictPath);
 
         SentiAnalyzer analyzer = new SentiAnalyzer(dictHandler.getDict());
-        double score = analyzer.analyze(content);
+        double score = analyzer.analyze(content, propertyPath);
         if (score < 0.0) {
             return -1;
         } else if (score >= 0.0) {

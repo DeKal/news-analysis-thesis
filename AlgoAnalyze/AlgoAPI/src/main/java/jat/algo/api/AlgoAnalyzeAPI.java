@@ -3,6 +3,8 @@ package jat.algo.api;
 import java.io.IOException;
 import java.io.InputStream;
 
+import javax.activation.DataContentHandler;
+
 import org.springframework.stereotype.Component;
 
 import algoutils.storage.DataSetController;
@@ -11,17 +13,20 @@ import main.AlgoSentiWord;
 
 @Component
 public class AlgoAnalyzeAPI {
-	private static final  DataSetController DataSetController = new DataSetController();
+	public static final  DataSetController DataSetController = new DataSetController();
 	
 	public int getCommentSentiSVM(String content) throws Exception{
 		Class<?> algoSentiSVMClass = Class.forName("AlgoSentiSVM");
 		AlgoSentiSVMInterface api = (AlgoSentiSVMInterface) algoSentiSVMClass.newInstance();
 	
-		return api.predict(content);
+		return api.predict(content, DataSetController.getSentiSVMFeatureSet(),
+							DataSetController.getSentiSVMInputSet(), DataSetController.getSentiSVMTrainSet(),
+							DataSetController.getSentiSVMOutPutSet(), DataSetController.getProperty()
+							);			
 	}
 	
 	public int getCommentSentiVNWord(String content) throws IOException{
-		return AlgoSentiWord.predict(content);
+		return AlgoSentiWord.predict(content, DataSetController.getSentiWordDictionary(), DataSetController.getProperty());
 	}
 	
 	public static void main(String args[]) throws Exception{
@@ -33,7 +38,6 @@ public class AlgoAnalyzeAPI {
 		
 		a.getCommentSentiSVM("vui thật");
 		*/
-		
-		DataSetController.getSentiWordTrainingSet();
+	
 	}
 }

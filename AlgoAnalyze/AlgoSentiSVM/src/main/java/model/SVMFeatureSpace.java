@@ -40,12 +40,18 @@ public class SVMFeatureSpace {
         }
     }
 
-    public void loadFeatureSpace() throws IOException {
-        SVMFeature feature = new SVMFeature();
+    public void loadFeatureSpace(String featureSpacePath) throws IOException {
+        if (this.featureSpace != null)
+        	return;
+    	
+    	SVMFeature feature = new SVMFeature();
 
-        File input = new File("src/main/resources/" + PathConfigurationSentiSVM.featureSpace);
-        String path =  input.getAbsolutePath();
-
+        String path = featureSpacePath;
+        
+        if (path == null){
+	        File input = new File("src/main/resources/" + PathConfigurationSentiSVM.featureSpace);
+	        path =  input.getAbsolutePath();
+        }
         BufferedReader br = null;
         try {
             br = new BufferedReader(new InputStreamReader(new FileInputStream(path), "UTF-8"));

@@ -26,18 +26,19 @@ public class ProcessRunner {
         SVMAnalyzer.test();
     }
 
-    public int predict(String content) throws Exception {
-        CommentExtractor.loadSVMFeatureSpace();
+    public int predict(String content, String featureSpacePath, String inputSetPath, String trainingPath, String outputSetPath, String tokenizePropertyPath) throws Exception {
+        CommentExtractor.loadSVMFeatureSpace(featureSpacePath);
 
         CommentExtractor.TextToComment(content);
-        CommentExtractor.CommentToCommentSVMandFeature();
-        CommentExtractor.CommentSVMToPredictSet();
+        CommentExtractor.CommentToCommentSVMandFeature(tokenizePropertyPath);
+        CommentExtractor.CommentSVMToPredictSet(inputSetPath);
 
-        SVMAnalyzer.predict();
+        SVMAnalyzer.predict(inputSetPath,trainingPath,outputSetPath);
         
         /* Get the result from output file */
-        File result = new File("src/main/resources/" + PathConfigurationSentiSVM.output);
-        String resultPath =  result.getAbsolutePath();
+        //File result = new File("src/main/resources/" + PathConfigurationSentiSVM.output);
+        //String resultPath =  result.getAbsolutePath();
+        String resultPath = outputSetPath;
         
         FileIO.createReader(resultPath);
         String senti = FileIO.readLine();

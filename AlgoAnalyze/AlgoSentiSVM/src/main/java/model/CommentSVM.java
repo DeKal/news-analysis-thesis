@@ -23,6 +23,13 @@ public class CommentSVM {
         generateLabelCode();;
     }
 
+    public CommentSVM(Comment comment, String propertyPath){
+        this.comment = comment;
+        termList = new LinkedList<TermFrequency>();
+        generateTermListFromComment(propertyPath);
+        generateLabelCode();;
+    }
+    
     public CommentSVM(int label, Comment comment, LinkedList<TermFrequency> termList) {
         this.labelCode = label;
         this.comment = comment;
@@ -71,6 +78,22 @@ public class CommentSVM {
         }
     }
 
+    public void generateTermListFromComment(String propertyPath) {
+        if (comment == null) {
+            return;
+        }
+
+        //String[] sentences = TokenHelper.tokenize(comment.getContent());
+        String[] sentences = tokenize(comment.getContent(), propertyPath);
+        for (String sentence : sentences) {
+            String terms[] = sentence.split(" ");
+            for (String term : terms) {
+                TermFrequency termFrequency = new TermFrequency(term.toLowerCase());
+                addTerm(termFrequency);
+            }
+        }
+    }
+    
     public void generateLabelCode(){
         if (comment.getLabel().equals("#neg"))
             setLabelCode(-1);
@@ -86,6 +109,11 @@ public class CommentSVM {
     /*******COULD BE REMOVED *******/
     private static String[] tokenize(String sentence){
         VietTokenizer vietTokenizer = new VietTokenizer();
+        return vietTokenizer.tokenize(sentence);
+    }
+    
+    private static String[] tokenize(String sentence, String propertyPath){
+        VietTokenizer vietTokenizer = new VietTokenizer(propertyPath);
         return vietTokenizer.tokenize(sentence);
     }
 }

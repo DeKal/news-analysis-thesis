@@ -37,7 +37,7 @@ public class AlgoSentiSVM implements AlgoSentiSVMInterface  {
         //oneDataSet("0887");
 
     	AlgoSentiSVM a = new AlgoSentiSVM();
-    	a.predict("ăn chơi");
+    	a.predict("ăn chơi", null, null, null, null, null);
 
         File resourcesDirectory = new File("src/main/resources/" + PathConfigurationSentiSVM.input);
         String fullPath =  resourcesDirectory.getAbsolutePath();
@@ -58,7 +58,7 @@ public class AlgoSentiSVM implements AlgoSentiSVMInterface  {
     }
 
     @Override
-    public int predict(String content) throws Exception {
+    public int predict(String content, String featureSpacePath, String inputSetPath, String trainingPath, String outputSetPath, String PropertyPath) throws Exception {
         /*#####################################################*/
         /*
         * This function must be called for clearing SVM Features Space for every new data set.
@@ -67,7 +67,7 @@ public class AlgoSentiSVM implements AlgoSentiSVMInterface  {
         /*#####################################################*/
 
         ProcessRunner processRunner = new ProcessRunner();
-        return processRunner.predict(content);
+        return processRunner.predict(content, featureSpacePath, inputSetPath, trainingPath, outputSetPath, PropertyPath);
     }
 
     public static void allDataSet() throws Exception {

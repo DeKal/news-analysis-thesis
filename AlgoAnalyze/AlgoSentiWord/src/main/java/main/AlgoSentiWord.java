@@ -42,21 +42,21 @@ public class AlgoSentiWord {
 
         //predictAllDataSet();
         
-    	int p = predict("một ngày đẹp trời");
+    	int p = predict("một ngày đẹp trời", null, null);
         System.out.println(p);
     }
 
-    public static String predictOneFile() throws Exception {
-        ProcessRunner processRunner = new ProcessRunner();
+    public static String predictOneFile(String dictPath) throws Exception {
+        ProcessRunner processRunner = new ProcessRunner(dictPath);
         return processRunner.predict();
     }
 
-    public static int predict(String content) throws IOException {
-        ProcessRunner processRunner = new ProcessRunner();
-        return processRunner.predict(content);
+    public static int predict(String content, String dictPath, String propertyPath) throws IOException {
+        ProcessRunner processRunner = new ProcessRunner(dictPath);
+        return processRunner.predict(content, propertyPath);
     }
 
-    public static void predictAllDataSet() throws Exception {
+    public static void predictAllDataSet(String dictPath) throws Exception {
         String original_path = PathConfigurationRoot.original;
 
         ArrayList<String> testingFileNames = new ArrayList<String>();
@@ -82,7 +82,7 @@ public class AlgoSentiWord {
                 s += name_test + "\n";
                 s += "---------------------------------------------------\n";
 
-                String result = predictOneFile();
+                String result = predictOneFile(dictPath);
                 s += result + "\n";
 
                 record = s;

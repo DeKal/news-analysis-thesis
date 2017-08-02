@@ -52,7 +52,7 @@ public class SVMAnalyzer {
         }
     }
 
-    public static void predict(){
+    public static void predict(String inputSetPath, String trainingPath, String outputSetPath){
         String[] arg = new String[3];
         /*
         arg[0] = mInputAnalyze;
@@ -67,16 +67,22 @@ public class SVMAnalyzer {
         arg[1] = classLoader.getResource(PathConfigurationSentiSVM.trainingModel).toString();
         arg[2] = classLoader.getResource(PathConfigurationSentiSVM.output).toString();
         */
+        
+        String inputPath = inputSetPath;
+        String modelPath = trainingPath;
+        String outputPath = outputSetPath;
+        
+        if (inputPath == null || modelPath == null || outputPath == null){
+        	File input = new File("src/main/resources/" + PathConfigurationSentiSVM.input);
+        	inputPath =  input.getAbsolutePath();
+        	
+        	File model = new File("src/main/resources/" + PathConfigurationSentiSVM.trainingModel);
+            modelPath =  model.getAbsolutePath();
 
-        File input = new File("src/main/resources/" + PathConfigurationSentiSVM.input);
-        String inputPath =  input.getAbsolutePath();
-
-        File model = new File("src/main/resources/" + PathConfigurationSentiSVM.trainingModel);
-        String modelPath =  model.getAbsolutePath();
-
-        File output = new File("src/main/resources/" + PathConfigurationSentiSVM.output);
-        String outputPath =  output.getAbsolutePath();
-
+            File output = new File("src/main/resources/" + PathConfigurationSentiSVM.output);
+            outputPath =  output.getAbsolutePath();
+        }
+        
         arg[0] = inputPath;
         arg[1] = modelPath;
         arg[2] = outputPath;

@@ -17,10 +17,49 @@ public class SentiAnalyzer {
         VietTokenizer vietTokenizer = new VietTokenizer();
         return vietTokenizer.tokenize(sentence);
     }
+    
+    public String[] extractSentence(String sentence, String propertyPath){
+        VietTokenizer vietTokenizer = new VietTokenizer(propertyPath);
+        return vietTokenizer.tokenize(sentence);
+    }
 
     public double analyze(String sentence){
 
         String[] terms = extractSentence(sentence);
+        int sum = 0;
+        double score = 0;
+
+        //String terms = sentence.replace(" ","_");
+        /*
+        for (Map.Entry<String,Double> entry: dictionay.entrySet()){
+            if (terms.toLowerCase().contains(entry.getKey().toString())){
+                terms = terms.replace(entry.getKey().toString(),"");
+                ++sum;
+                score += entry.getValue();
+                System.out.println(entry.getKey());
+            }
+        }
+        */
+
+        for (String t : terms){
+            String[] term = t.split(" ");
+            for (String word : term) {
+                if (dictionary.containsKey(word.toLowerCase())) {
+                    ++sum;
+                    score += dictionary.get(word.toLowerCase());
+                    //System.out.println(word);
+                }
+            }
+        }
+
+        double result = score/ (double) sum;
+        this.result = result;
+        return result;
+    }
+    
+    public double analyze(String sentence, String propertyPath){
+
+        String[] terms = extractSentence(sentence, propertyPath);
         int sum = 0;
         double score = 0;
 
