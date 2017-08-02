@@ -12,8 +12,9 @@
 
 <body>
 	<div id="mainbar">
+		<!--pagination *   -->
+		<jsp:include page="/WEB-INF/views/layout/pagination.jsp" />
 		<div id="question">
-
 
 			<%
 				List<Press> lPress = (List<Press>) request.getAttribute("listPress");
@@ -30,7 +31,7 @@
 					pageContext.setAttribute("time", press.getTime());
 					pageContext.setAttribute("shortIntro", press.getShortIntro());
 
-					String hrefString = "getLinkInfo?url=" + press.getLink();
+					String hrefString = "/web/getLinkInfo?url=" + press.getLink();
 					pageContext.setAttribute("hrefString", hrefString);
 
 					List<Comment> lComment = press.getComment();
@@ -107,13 +108,10 @@
 				}
 			%>
 
-
+			<!--pagination *   -->
+			<jsp:include page="/WEB-INF/views/layout/pagination.jsp" />
 		</div>
 	</div>
-
-
-
-
 
 </body>
 <jsp:include page="/WEB-INF/views/layout/footer.jsp" />
