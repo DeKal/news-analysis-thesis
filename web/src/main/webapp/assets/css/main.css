@@ -1,12 +1,12 @@
 
 #mainbar{
-	margin-top: 115px;
+	margin: 115px auto;
+    width: 65%;
 }
 #questions {
     float: left;
     margin-bottom: 20px;
 }
-
 
 #questions, #answers {
     clear: both;
@@ -51,14 +51,13 @@ body {
     overflow: hidden;
     padding: 15px 0;
     float: left;
-    width: 900px;
+    width: 100%;
     border-bottom: 1px solid #eff0f1;
 }
 .statscontainer {
     width: 78px;
     float: left;
-    margin-right: 8px;
-    margin-left: 8px;
+    margin: 20px 8px 8px 0;
 }
 .excerpt {
     padding: 0;
@@ -166,7 +165,7 @@ a {
 }
 .summary {
     float: left;
-    width: 630px;
+    width: 85%;
 }
 .summary h3 {
     font-size: 15px;

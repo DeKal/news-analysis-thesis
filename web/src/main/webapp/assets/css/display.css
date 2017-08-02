@@ -1,92 +1,173 @@
-#question-header {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
+/* Header Title */
+.question-hyperlink {
+	font-size: 30px;
+	line-height: 1.35;
+	font-weight: normal;
+	margin-bottom: .5em;
 }
 
-#question-header {
-    clear: both;
-    margin-top: 115px;
-    margin-bottom: 1em;
-    padding: 5px 0;
-    border-bottom: 1px solid #e4e6e8;
+.full_width {
+	display: inline-block;
+	width: 100%;
 }
 
-#question-header h1 {
-    margin-bottom: .5em;
+.head_detail {
+	margin-top: 115px;
+	margin-bottom: 1em;
+	padding: 5px 0;
+	border-bottom: 1px solid #e4e6e8;
 }
 
-#question-header .question-hyperlink {
-    color: #242729;
+.head_detail h1.title {
+	font-size: 31px;
+	line-height: 35px;
+	margin-top: 8px;
 }
 
-#question-header .question-hyperlink {
-    font-size: 20px;
-    line-height: 1.35;
-    font-weight: normal;
-    margin-bottom: .5em;
+.margin8_tb {
+	margin: 8px 0;
 }
+
+.blue {
+	color: #145072;
+}
+
+.font11 {
+	font-size: 11px;
+}
+
+.title {
+	margin: 0;
+}
+
+.intro {
+	display: inline-block;
+}
+
+.font14 {
+	font-size: 14px;
+}
+
+.rendering {
+	text-rendering: geometricPrecision;
+}
+
+/* The rest*/
 .subheader h2 {
-    color: #3b4045;
-    font-size: 15px;
+	color: #3b4045;
+	font-size: 15px;
 }
 
 .subheader h1, .subheader h2 {
-    float: left;
-    margin-bottom: 0;
-    font-weight: normal;
+	float: left;
+	margin-bottom: 0;
+	font-weight: normal;
 }
-
 
 .question-page #answers .answer {
-    border-bottom: 1px solid #e4e6e8;
+	border-bottom: 1px solid #e4e6e8;
 }
 
-#answers-header{
+#display-page #answers {
+	width: 100%;
+}
+
+#display-page #answers .answer table {
+	width: 100%
+}
+
+#display-page #answers .answer table {
+	width: 100%
+}
+
+#answers-header {
 	margin: 0 0 50px 10px;
 }
 
 .answer {
-    padding-bottom: 20px;
-    padding-top: 20px;
-    width: 728px;
-    border-bottom: solid 1px #d2d2d2;
+	padding-bottom: 5px;
+	padding-top: 15px;
+	width: 100%;;
+	border-bottom: solid 1px #d2d2d2;
 }
 
 .votecell {
-    vertical-align: top;
-    padding-right: 15px;
-    min-width: 70px;
+	vertical-align: top;
+	padding-right: 15px;
+	min-width: 70px;
+	width: 20%;
 }
+
 .votecell .vote {
-    min-width: 46px;
+	min-width: 46px;
 }
 
 .vote {
-    text-align: center;
+	text-align: center;
 }
 
 .votecell .vote-count-post {
-    margin: 0;
+	margin: 0;
 }
 
 .vote span {
-    display: block;
-    color: #6a737c;
+	display: block;
+	color: #6a737c;
 }
 
 .vote-count-post {
-    display: block;
-    font-size: 20px;
-    margin: 0 0 3px;
+	display: block;
+	font-size: 20px;
+	margin: 0 0 3px;
 }
+
 td.answercell {
-    vertical-align: top;
+	vertical-align: top;
 }
+
+td.answercell .post-text {
+	margin-left: 10px;
+	width: 90%;
+}
+
 .post-text, .wmd-preview {
-    width: 660px;
-    margin-bottom: 5px;
-    word-wrap: break-word;
-    font-size: 15px;
-    line-height: 1.3;
+	width: 100%;
+	word-wrap: break-word;
+	font-size: 15px;
+	line-height: 1.7;
+}
+
+#main-body {
+	margin: 0 auto;
+    width: 75%;
+}
+
+.head_cm {
+	margin-top: 20px;
+}
+
+.margin13_tb {
+	margin: 13px 0;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.white {
+	color: #FFF;
+}
+
+.font13 {
+	font-size: 13px;
+	margin: 0;
+}
+
+.nowrap {
+	white-space: nowrap;
+}
+
+.left {
+	display: inline-block;
+	float: left;
 }

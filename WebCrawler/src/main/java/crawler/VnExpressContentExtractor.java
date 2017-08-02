@@ -40,7 +40,7 @@ public class VnExpressContentExtractor implements Extractor {
 		this.press = pressService.findPress(url);
 		try {
 			extractComment();
-		} catch (UnirestException e) {
+		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
@@ -61,7 +61,7 @@ public class VnExpressContentExtractor implements Extractor {
 		}
 	}
 
-	private void extractComment() throws UnirestException {
+	private void extractComment() throws Exception {
 		Element articleId = this.doc.select("meta[name=tt_article_id]").first();
 		Element categoryId = this.doc.select("meta[name=tt_category_id]").first();
 		Element siteId = this.doc.select("meta[name=tt_site_id]").first();

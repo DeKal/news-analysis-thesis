@@ -13,12 +13,6 @@ import main.AlgoSentiWord;
 public class AlgoAnalyzeAPI {
 	private static final  DataSetController DataSetController = new DataSetController();
 	
-	public InputStream testGetDataStorage(){
-		
-		//return DataSetController.getSentiWordTrainingSet();
-		return null;
-	}
-	
 	public int getCommentSentiSVM(String content) throws Exception{
 		Class<?> algoSentiSVMClass = Class.forName("AlgoSentiSVM");
 		AlgoSentiSVMInterface api = (AlgoSentiSVMInterface) algoSentiSVMClass.newInstance();

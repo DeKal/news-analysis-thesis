@@ -48,29 +48,15 @@ public class WebController {
         return new ModelAndView("display-link", model);
         
     }
-    
     @RequestMapping(value = "/testAlgo", method = RequestMethod.GET)
-    public ModelAndView testAlgo( ModelMap model) {
+    public ModelAndView testAlgo( ModelMap model) throws Exception {
     	
-    	InputStream inputStream = algoAPI.testGetDataStorage();
-    	StringBuilder strData = new StringBuilder("");
-    	
-		try {
-			InputStreamReader streamReader = new InputStreamReader(inputStream, "UTF-8");
-	    	
-	    	BufferedReader in = new BufferedReader(streamReader);
+    	int inputStream = algoAPI.getCommentSentiSVM("haha");
+    
 
-	    	for (String line; (line = in.readLine()) != null;) {
-	    		strData.append(line).append("\n");
-	    	}
-		} catch (IOException e1) {
-			// TODO Auto-generated catch block
-			e1.printStackTrace();
-		}
-    	
-
-    	model.addAttribute("data", strData.toString());
+    	model.addAttribute("data", inputStream);
     	return new ModelAndView("testAlgo", model);
     }
+
 
 }
