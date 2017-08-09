@@ -29,7 +29,7 @@ public class CrawlerCronJobService {
 		}
 		
 		//bcCrawler.crawlAll();
-		crawlerLink.crawlAll();
+		//crawlerLink.crawlAll();
 		crawlerContent.crawlAll();
 		System.out.println("Done Crawling");
 	}
