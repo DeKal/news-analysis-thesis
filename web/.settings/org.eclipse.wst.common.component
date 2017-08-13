@@ -4,7 +4,7 @@
         <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
-        <wb-resource deploy-path="/" source-path="/lib"/>
+        <wb-resource deploy-path="/WEB-INF/lib/" source-path="/lib"/>
         <wb-resource deploy-path="/models/sentDectection" source-path="/models/sentDetection"/>
         <wb-resource deploy-path="/WEB-INF/lib/models" source-path="/src/main/resources/data/SentiWord/models"/>
         <dependent-module archiveName="common-1.0.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/common/common">
@@ -38,33 +38,6 @@
             <dependency-type>uses</dependency-type>
         </dependent-module>
         <dependent-module archiveName="AlgoClassifer-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/AlgoClassifer/AlgoClassifer">
-            <dependency-type>uses</dependency-type>
-        </dependent-module>
-        <dependent-module archiveName="commons-cli-1.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/web/lib/commons-cli-1.2.jar">
-            <dependency-type>uses</dependency-type>
-        </dependent-module>
-        <dependent-module archiveName="vn.hus.nlp.sd-2.0.0.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/web/lib/vn.hus.nlp.sd-2.0.0.jar">
-            <dependency-type>uses</dependency-type>
-        </dependent-module>
-        <dependent-module archiveName="vn.hus.nlp.fsm-1.0.0.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/web/lib/vn.hus.nlp.fsm-1.0.0.jar">
-            <dependency-type>uses</dependency-type>
-        </dependent-module>
-        <dependent-module archiveName="junit.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/web/lib/junit.jar">
-            <dependency-type>uses</dependency-type>
-        </dependent-module>
-        <dependent-module archiveName="vn.hus.nlp.tokenizer-4.1.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/web/lib/vn.hus.nlp.tokenizer-4.1.1.jar">
-            <dependency-type>uses</dependency-type>
-        </dependent-module>
-        <dependent-module archiveName="maxent-2.5.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/web/lib/maxent-2.5.2.jar">
-            <dependency-type>uses</dependency-type>
-        </dependent-module>
-        <dependent-module archiveName="trove.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/web/lib/trove.jar">
-            <dependency-type>uses</dependency-type>
-        </dependent-module>
-        <dependent-module archiveName="vn.hus.nlp.utils-1.0.0.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/web/lib/vn.hus.nlp.utils-1.0.0.jar">
-            <dependency-type>uses</dependency-type>
-        </dependent-module>
-        <dependent-module archiveName="opennlp-tools-1.4.3.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/web/lib/opennlp-tools-1.4.3.jar">
             <dependency-type>uses</dependency-type>
         </dependent-module>
         <property name="context-root" value="web"/>

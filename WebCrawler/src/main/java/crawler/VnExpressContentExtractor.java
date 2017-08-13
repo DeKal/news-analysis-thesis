@@ -81,8 +81,8 @@ public class VnExpressContentExtractor implements Extractor {
 				JSONObject cmt = cmtArray.getJSONObject(i);
 				String content = cmt.getString("content");
 				//int senti = algoAPI.getCommentSentiSVM(content);
-				int senti = 1;
-				Comment cmtContext = new Comment(content, senti);
+
+				Comment cmtContext = new Comment(content);
 				comments.add(cmtContext);
 
 			}

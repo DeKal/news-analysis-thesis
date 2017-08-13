@@ -79,11 +79,6 @@
 			</dependency>
 			<dependency>
 				<groupId>com.jat.tafs</groupId>
-				<artifactId>cronjoblogic</artifactId>
-				<version>1.0.0</version>
-			</dependency>
-			<dependency>
-				<groupId>com.jat.tafs</groupId>
 				<artifactId>persistence</artifactId>
 				<version>1.0.0</version>
 			</dependency>
