@@ -93,9 +93,8 @@
 
 .votecell {
 	vertical-align: top;
-	padding-right: 15px;
 	min-width: 70px;
-	width: 20%;
+	width: 10%;
 }
 
 .votecell .vote {

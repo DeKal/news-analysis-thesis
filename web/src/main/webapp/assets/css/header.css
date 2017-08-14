@@ -33,7 +33,7 @@
 #header_web {
 	margin-bottom: 50px;
 	border-bottom: solid 2px #d2d2d2;
-	position: fixed;
+	position: absolute;
 	z-index: 1000000;
 }
 

@@ -19,21 +19,27 @@
 	pageContext.setAttribute("shortIntro", press.getShortIntro());
 
 	List<Comment> lComment = press.getComment();
-	int pos = 0, neg = 0, neu = 0, numCmt = lComment.size();
+	int posSVM = 0, negSVM = 0, neuSVM = 0, posW = 0, negW = 0, neuW = 0, numCmt = lComment.size();
 
 	for (Comment cmt : lComment) {
-		double senti = cmt.getSenti();
-		if (senti > 0.4)
-			pos++;
-		else if (senti < - 0.4)
-			neg++;
+		double sentiSVM = cmt.getSentiSVM();
+		if (sentiSVM >= 0)
+			posSVM++;
+		else 
+			negSVM++;
+		if(cmt.getSentiVNWord() >=0)
+			posW++;
+		else
+			negW++;
 
 	}
-	neu = numCmt - pos - neg;
-	
-	pageContext.setAttribute("pos", pos);
-	pageContext.setAttribute("neg", neg);
-	pageContext.setAttribute("neu", neu);
+
+	pageContext.setAttribute("posSVM", posSVM);
+	pageContext.setAttribute("negSVM", negSVM);
+	pageContext.setAttribute("neuSVM", neuSVM);
+	pageContext.setAttribute("posW", posW);
+	pageContext.setAttribute("negW", negW);
+	pageContext.setAttribute("neuW", neuW);
 	pageContext.setAttribute("numCmt", numCmt);
 %>
 <div id="main-body">
@@ -63,7 +69,10 @@
 					aria-expanded="true">Comments ${numCmt}</a></li>
 				<li class="nav-item"><a class="nav-link" id="profile-tab"
 					data-toggle="tab" href="#profile" role="tab"
-					aria-controls="profile">Chart</a></li>
+					aria-controls="profile">SVM Chart</a></li>
+				<li class="nav-item"><a class="nav-link" 
+					data-toggle="tab" href="#profile2" role="tab"
+					aria-controls="profile">VNDict WordNet Chart</a></li>
 			</ul>
 			<div class="tab-content" id="myTabContent">
 				<div role="tabpanel" class="tab-pane fade show active" id="home"
@@ -73,11 +82,63 @@
 
 						<%
 							if (lComment != null) {
+								
+						%>
+						<div class="answer">
+							<table>
+								<tbody>
+									<tr>
+										<td class="answercell">
+											<div class="post-text" itemprop="text"></div>
+										</td>
+
+										<td class="votecell">
+											<div class="vote">
+
+												<span itemprop="upvoteCount"
+													class="vote-count-post high-scored-post"> 
+													SVM
+												</span>
+											</div>
+										</td>
+										
+										<td class="votecell">
+											<div class="vote">
+
+												<span itemprop="upvoteCount"
+													class="vote-count-post high-scored-post"> 
+													SentiWord
+												</span>
+											</div>
+										</td>
+
+									</tr>
+
+								</tbody>
+							</table>
+						</div>
+						<% 
 								int temp = 0;
 								for (Comment comment : lComment) {
 									temp++;
 									pageContext.setAttribute("cmt", comment.getMessage());
-									pageContext.setAttribute("senti", comment.getSenti());
+									if (comment.getSentiSVM()>=0){
+										pageContext.setAttribute("sentiSVM", "Pos");
+										pageContext.setAttribute("SVMColor", "green");
+									}
+									else{
+										pageContext.setAttribute("sentiSVM", "Neg");
+										pageContext.setAttribute("SVMColor", "red");
+									}
+									if (comment.getSentiVNWord()>=0){
+										pageContext.setAttribute("sentiWord", "Pos");
+										pageContext.setAttribute("WordColor", "green");
+									}
+									else{
+										pageContext.setAttribute("sentiWord", "Neg");
+										pageContext.setAttribute("WordColor", "red");
+									}
+								
 						%>
 						<div class="answer">
 							<table>
@@ -92,8 +153,20 @@
 											<div class="vote">
 
 												<span itemprop="upvoteCount"
-													class="vote-count-post high-scored-post"> <fmt:formatNumber
-														type="number" maxIntegerDigits="2" value="${senti}" />
+													class="vote-count-post high-scored-post" 
+													style= "color: ${SVMColor}!important;"> 
+													${sentiSVM}
+												</span>
+											</div>
+										</td>
+										
+										<td class="votecell">
+											<div class="vote">
+
+												<span itemprop="upvoteCount"
+													class="vote-count-post high-scored-post"
+													style= "color: ${WordColor}!important;"> 
+														${sentiWord}
 												</span>
 											</div>
 										</td>
@@ -126,7 +199,7 @@
 					        labels: ['Negative', 'Positive', 'Neutral'],
 					        datasets: [{
 					            label: '# of Votes',
-					            data: [${neg}, ${pos}, ${neu}],
+					            data: [${negSVM}, ${posSVM}, ${neuSVM}],
 					            backgroundColor: [
 					                'rgba(255, 99, 132, 0.2)',
 					                'rgba(54, 162, 235, 0.2)',
@@ -151,7 +224,41 @@
 						});
 					</script>
 				</div>
+				<div class="tab-pane fade" id="profile2" role="tabpanel"
+					aria-labelledby="profile-tab">
+					<canvas id="myChart2" style ="max-width: 600px !important; max-height : 600px !important;margin-top: 50px;"></canvas>
+					<script>
+						var ctx = document.getElementById("myChart2")
+								.getContext('2d');
+						var data = {
+					        labels: ['Negative', 'Positive', 'Neutral'],
+					        datasets: [{
+					            label: '# of Votes',
+					            data: [${negW}, ${posW}, ${neuW}],
+					            backgroundColor: [
+					                'rgba(255, 99, 132, 0.2)',
+					                'rgba(54, 162, 235, 0.2)',
+					                'rgba(255, 206, 86, 0.2)'
+					            ],
+					            borderColor: [
+					                'rgba(255,99,132,1)',
+					                'rgba(54, 162, 235, 1)',
+					                'rgba(255, 206, 86, 1)'
+					            ],
+					            borderWidth: 1
+					        }]
+						};
 
+						var options = {
+	
+						}
+						var myPieChart = new Chart(ctx, {
+							type : 'pie',
+							data : data,
+							options : options
+						});
+					</script>
+				</div>
 			</div>
 		</div>
 

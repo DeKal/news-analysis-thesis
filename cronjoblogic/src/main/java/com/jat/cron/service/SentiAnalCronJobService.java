@@ -29,6 +29,7 @@ public class SentiAnalCronJobService {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
 					}
+					
 				}
 			}
 			pressService.addPress(p);

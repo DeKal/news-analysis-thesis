@@ -18,7 +18,8 @@ public class Press {
 	private String title;
 	private String time;
 	private List<Comment> comment;
-
+	private int posCmt;
+	
 	public Press() {
 	}
 
@@ -99,6 +100,14 @@ public class Press {
 
 	public void setPublisher(String publisher) {
 		this.publisher = publisher;
+	}
+
+	public int getPosCmt() {
+		return posCmt;
+	}
+
+	public void setPosCmt(int posCmt) {
+		this.posCmt = posCmt;
 	}
 
 }
