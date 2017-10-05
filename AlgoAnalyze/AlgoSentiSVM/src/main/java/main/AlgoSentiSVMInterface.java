@@ -8,4 +8,7 @@ public interface AlgoSentiSVMInterface {
 
 	int predict(String content, String featureSpacePath, String inputSetPath, String trainingPath, String outputSetPath,
 			String PropertyPath) throws Exception;
+	
+	int predictFinal(String content, String featureSpacePath, String inputSetPath, String trainingPath, String outputSetPath, String dictPath,
+			String PropertyPath) throws Exception;
 }

@@ -17,8 +17,8 @@ public class QuartzJob implements Job {
 			    WebApplicationContextUtils.getWebApplicationContext(
 			        ContextLoaderListener.getCurrentWebApplicationContext().getServletContext()
 			    );
-		CrawlerCronJobService crawlerCronJobSevice = (CrawlerCronJobService) springContext.getBean("CrawlerCronJobService");
-		crawlerCronJobSevice.run();
+		//CrawlerCronJobService crawlerCronJobSevice = (CrawlerCronJobService) springContext.getBean("CrawlerCronJobService");
+		//crawlerCronJobSevice.run();
 		SentiAnalCronJobService sentiJob = (SentiAnalCronJobService) springContext.getBean("SentiAnalCronJobService");
 		sentiJob.sentimentProcess();
 		

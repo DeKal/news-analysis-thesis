@@ -70,6 +70,19 @@ public class AlgoSentiSVM implements AlgoSentiSVMInterface  {
         return processRunner.predict(content, featureSpacePath, inputSetPath, trainingPath, outputSetPath, PropertyPath);
     }
 
+    @Override
+    public int predictFinal(String content, String featureSpacePath, String inputSetPath, String trainingPath, String outputSetPath,String dictPath, String PropertyPath) throws Exception {
+        /*#####################################################*/
+        /*
+        * This function must be called for clearing SVM Features Space for every new data set.
+        **/
+        CommentExtractor.destroySVMFeatureSpace();
+        /*#####################################################*/
+
+        ProcessRunner processRunner = new ProcessRunner();
+        return processRunner.predictFinal(content, featureSpacePath, inputSetPath, trainingPath, outputSetPath,dictPath, PropertyPath);
+    }
+    
     public static void allDataSet() throws Exception {
         ConsoleOutputCapturer consoleOutputCapturer = new ConsoleOutputCapturer();
         String data_path = PathConfigurationRoot.data;

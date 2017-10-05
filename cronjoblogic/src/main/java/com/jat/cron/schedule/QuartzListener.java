@@ -26,7 +26,7 @@ public class QuartzListener implements ServletContextListener {
 
 			// Create a Trigger that fires every 5 minutes.
 			Trigger trigger = newTrigger().withIdentity("TriggerName", "Group")
-					.withSchedule(CronScheduleBuilder.cronSchedule("0 30 14 * * ?")).build();
+					.withSchedule(CronScheduleBuilder.cronSchedule("0 30 22 * * ?")).build();
 
 			// Setup the Job and Trigger with Scheduler & schedule jobs
 			scheduler = new StdSchedulerFactory().getScheduler();

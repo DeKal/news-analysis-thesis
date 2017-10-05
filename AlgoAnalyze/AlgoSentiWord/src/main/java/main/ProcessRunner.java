@@ -98,14 +98,26 @@ public class ProcessRunner {
 
         SentiAnalyzer analyzer = new SentiAnalyzer(dictHandler.getDict());
         double score = analyzer.analyze(content, propertyPath);
-        if (score < 0.0) {
+        if (score < 0.0 && score >= -1) {
             return -1;
-        } else if (score >= 0.0) {
+        } else if (score >= 0.0 && score <= 1) {
             return 1;
         } else if (Double.isNaN(score)) {
             return 1;
         }
         else
             return 1;
+    }
+    
+    public double predictWithScore(String content, String propertyPath) throws IOException {
+    	File dict = new File("src/main/resources/" + PathConfigurationSentiWord.dictionary);
+        String dictPath =  dict.getAbsolutePath();
+
+        //DictHandler dictHandler = new DictHandler(dictPath);
+
+        SentiAnalyzer analyzer = new SentiAnalyzer(dictHandler.getDict());
+        double score = analyzer.analyze(content, propertyPath);
+        
+        return score;
     }
 }

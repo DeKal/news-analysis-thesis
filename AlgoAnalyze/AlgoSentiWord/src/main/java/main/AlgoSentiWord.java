@@ -97,4 +97,8 @@ public class AlgoSentiWord {
         FileIO.closeWriter();
     }
 
+    public static double predictWithScore(String content, String dictPath, String propertyPath) throws IOException {
+    	 ProcessRunner processRunner = new ProcessRunner(dictPath);
+    	 return processRunner.predictWithScore(content,propertyPath);
+    }
 }

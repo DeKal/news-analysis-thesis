@@ -52,4 +52,31 @@ public class ProcessRunner {
         	return 1;
         else return 0;
     }
+    
+    public int predictFinal(String content, String featureSpacePath, String inputSetPath, String trainingPath, String outputSetPath, String dictPath, String tokenizePropertyPath) throws Exception {
+        CommentExtractor.loadSVMFeatureSpace(featureSpacePath);
+
+        CommentExtractor.TextToComment(content);
+        CommentExtractor.CommentToCommentSVMandFeature(tokenizePropertyPath);
+        CommentExtractor.CommentSVMToPredictSetFinal(inputSetPath,dictPath,tokenizePropertyPath);
+
+        SVMAnalyzer.predict(inputSetPath,trainingPath,outputSetPath);
+        
+        /* Get the result from output file */
+        //File result = new File("src/main/resources/" + PathConfigurationSentiSVM.output);
+        //String resultPath =  result.getAbsolutePath();
+        String resultPath = outputSetPath;
+        
+        FileIO.createReader(resultPath);
+        String senti = FileIO.readLine();
+        FileIO.closeReader();
+        
+        if (senti.trim().equals("-1.0"))
+        	return -1;
+        else if (senti.trim().equals("1.0"))
+        	return 1;
+        else if (senti.trim().equals("0.0"))
+        	return 1;
+        else return 0;
+    }
 }

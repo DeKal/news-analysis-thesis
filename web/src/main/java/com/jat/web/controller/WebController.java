@@ -77,6 +77,27 @@ public class WebController {
 
 		int label = algoAPI.getCommentSentiVNWord("haha");
 		label = algoAPI.getCommentSentiSVM("haha");
+		algoAPI.getCommentSentiSVM("haha");
+		algoAPI.getCommentSentiSVM("haha");
+		algoAPI.getCommentSentiSVM("haha");
+		algoAPI.getCommentSentiSVM("haha");
+		algoAPI.getCommentSentiSVM("haha");
+		algoAPI.getCommentSentiSVM("haha");
+		algoAPI.getCommentSentiSVM("haha");
+		algoAPI.getCommentSentiSVM("haha");
+		algoAPI.getCommentSentiSVM("haha");
+		algoAPI.getCommentSentiSVM("haha");
+		algoAPI.getCommentSentiSVM("haha");
+		algoAPI.getCommentSentiSVM("haha");
+		algoAPI.getCommentSentiSVM("haha");
+		algoAPI.getCommentSentiSVM("haha");
+		algoAPI.getCommentSentiSVM("haha");
+		algoAPI.getCommentSentiSVM("haha");
+		algoAPI.getCommentSentiSVM("haha");
+		algoAPI.getCommentSentiSVM("haha");
+		algoAPI.getCommentSentiSVM("haha");
+		algoAPI.getCommentSentiSVM("haha");
+		algoAPI.getCommentSentiSVM("haha");
 		String data;
 
 		/*

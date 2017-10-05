@@ -19,10 +19,18 @@ public class AlgoAnalyzeAPI {
 		Class<?> algoSentiSVMClass = Class.forName("AlgoSentiSVM");
 		AlgoSentiSVMInterface api = (AlgoSentiSVMInterface) algoSentiSVMClass.newInstance();
 	
+		/*
 		return api.predict(content, DataSetController.getSentiSVMFeatureSet(),
 							DataSetController.getSentiSVMInputSet(), DataSetController.getSentiSVMTrainSet(),
 							DataSetController.getSentiSVMOutPutSet(), DataSetController.getProperty()
 							);			
+		*/
+		
+		return api.predictFinal(content, DataSetController.getSentiSVMFeatureSet(),
+				DataSetController.getSentiSVMInputSet(), DataSetController.getSentiSVMTrainSet(),
+				DataSetController.getSentiSVMOutPutSet(), DataSetController.getSentiWordDictionary(), 
+				DataSetController.getProperty()
+				);	
 	}
 	
 	public int getCommentSentiVNWord(String content) throws IOException{

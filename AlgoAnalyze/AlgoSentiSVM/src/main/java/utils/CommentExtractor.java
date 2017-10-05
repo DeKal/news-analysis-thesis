@@ -4,6 +4,7 @@ import common.io.FileIO;
 import common.model.TermFrequency;
 import config.PathConfigurationRoot;
 import config.PathConfigurationSentiSVM;
+import main.AlgoSentiWord;
 import model.*;
 import vn.hus.nlp.tokenizer.VietTokenizer;
 
@@ -163,6 +164,14 @@ public class CommentExtractor {
         for (CommentSVM commentSVM : mCommentSVMCollection.getCommentSVMList()){
             String label = String.valueOf(commentSVM.getLabelCode());
             FileIO.write(label + " ");
+            
+            /*#######################*/
+            /* Get sentiment scores features */
+            //double score = AlgoSentiWord.predictWithScore(commentSVM.getComment().getContent());
+            //if (Double.isNaN(score))
+            	//score = -100;
+            //FileIO.write("1:" + String.valueOf(score) + " ");
+            /*#######################*/
 
             LinkedList<TermFrequency> termList = commentSVM.getTermList();
             for (TermFrequency t : termList){
@@ -198,6 +207,14 @@ public class CommentExtractor {
         for (CommentSVM commentSVM : mCommentSVMCollection.getCommentSVMList()){
             String label = String.valueOf(commentSVM.getLabelCode());
             FileIO.write(label + " ");
+            
+            /*#######################*/
+            /* Get sentiment scores features */
+            //double score = AlgoSentiWord.predictWithScore(commentSVM.getComment().getContent());
+            //if (Double.isNaN(score))
+            	//score = -100;
+            //FileIO.write("1:" + String.valueOf(score) + " ");
+            /*#######################*/
 
             LinkedList<TermFrequency> termList = commentSVM.getTermList();
             for (TermFrequency t : termList){
@@ -216,6 +233,92 @@ public class CommentExtractor {
         FileIO.closeWriter();
     }
 
+    public static void CommentSVMToTrainingSetFinal(String dictPath, String propertyPath) throws IOException{
+        /*
+        String projectPath = System.getProperty("user.dir");
+        String path = projectPath + "\\save";
+        String name = "training_data.txt";
+
+        String fullPath = path + "\\" + name;
+        */
+
+        String fullPath = PathConfigurationSentiSVM.training_set;
+
+        FileIO.createWriter(fullPath);
+
+        SVMFeature feature = mSVMFeatureSpace.getFeatureSpace();
+        for (CommentSVM commentSVM : mCommentSVMCollection.getCommentSVMList()){
+            String label = String.valueOf(commentSVM.getLabelCode());
+            FileIO.write(label + " ");
+            
+            /*#######################*/
+            /* Get sentiment scores features */
+            double score = AlgoSentiWord.predictWithScore(commentSVM.getComment().getContent(), dictPath, propertyPath);
+            if (Double.isNaN(score))
+            	score = -100;
+            FileIO.write("1:" + String.valueOf(score) + " ");
+            /*#######################*/
+
+            LinkedList<TermFrequency> termList = commentSVM.getTermList();
+            for (TermFrequency t : termList){
+                // Get index of the feature
+                String term = t.getTerm();
+                int index = feature.getIndexOfFeature(term);
+                // Get value of the feature
+                int value = t.getFrequency();
+                FileIO.write(String.valueOf(index) + ":" + String.valueOf(value) + " ");
+            }
+
+            // At the end of comment, insert newline for another comment
+            FileIO.writeln("");
+        }
+
+        FileIO.closeWriter();
+    }
+
+    public static void CommentSVMToTestingSetFinal(String dictPath, String propertyPath) throws IOException{
+        /*
+        String projectPath = System.getProperty("user.dir");
+        String path = projectPath + "\\save";
+        String name = "testing_data.txt";
+
+        String fullPath = path + "\\" + name;
+        */
+
+        String fullPath = PathConfigurationSentiSVM.testing_set;
+
+        FileIO.createWriter(fullPath);
+
+        SVMFeature feature = mSVMFeatureSpace.getFeatureSpace();
+        for (CommentSVM commentSVM : mCommentSVMCollection.getCommentSVMList()){
+            String label = String.valueOf(commentSVM.getLabelCode());
+            FileIO.write(label + " ");
+            
+            /*#######################*/
+            /* Get sentiment scores features */
+            double score = AlgoSentiWord.predictWithScore(commentSVM.getComment().getContent(), dictPath, propertyPath);
+            if (Double.isNaN(score))
+            	score = -100;
+            FileIO.write("1:" + String.valueOf(score) + " ");
+            /*#######################*/
+
+            LinkedList<TermFrequency> termList = commentSVM.getTermList();
+            for (TermFrequency t : termList){
+                // Get index of the feature
+                String term = t.getTerm();
+                int index = feature.getIndexOfFeature(term);
+                // Get value of the feature
+                int value = t.getFrequency();
+                FileIO.write(String.valueOf(index) + ":" + String.valueOf(value) + " ");
+            }
+
+            // At the end of comment, insert newline for another comment
+            FileIO.writeln("");
+        }
+
+        FileIO.closeWriter();
+    }
+    
     public static void CommentSVMToPredictSet(String inputSetPath){
         /*
         String projectPath = System.getProperty("user.dir");
@@ -237,6 +340,53 @@ public class CommentExtractor {
         for (CommentSVM commentSVM : mCommentSVMCollection.getCommentSVMList()){
             String label = String.valueOf(commentSVM.getLabelCode());
             FileIO.write(label + " ");
+
+            LinkedList<TermFrequency> termList = commentSVM.getTermList();
+            for (TermFrequency t : termList){
+                // Get index of the feature
+                String term = t.getTerm();
+                int index = feature.getIndexOfFeature(term);
+                // Get value of the feature
+                int value = t.getFrequency();
+                FileIO.write(String.valueOf(index) + ":" + String.valueOf(value) + " ");
+            }
+
+            // At the end of comment, insert newline for another comment
+            FileIO.writeln("");
+        }
+
+        FileIO.closeWriter();
+    }
+    
+    public static void CommentSVMToPredictSetFinal(String inputSetPath, String dictPath, String propertyPath) throws IOException{
+        /*
+        String projectPath = System.getProperty("user.dir");
+        String path = projectPath + "\\save";
+        String name = "testing_data.txt";
+
+        String fullPath = path + "\\" + name;
+        */
+
+    	String path = inputSetPath;
+    	
+    	if (path == null){
+	        File resourcesDirectory = new File("src/main/resources/" + PathConfigurationSentiSVM.input);
+	        path =  resourcesDirectory.getAbsolutePath();
+    	}
+        FileIO.createWriter(path);
+
+        SVMFeature feature = mSVMFeatureSpace.getFeatureSpace();
+        for (CommentSVM commentSVM : mCommentSVMCollection.getCommentSVMList()){
+            String label = String.valueOf(commentSVM.getLabelCode());
+            FileIO.write(label + " ");
+            
+            /*#######################*/
+            /* Get sentiment scores features */
+            double score = AlgoSentiWord.predictWithScore(commentSVM.getComment().getContent(), dictPath, propertyPath);
+            if (Double.isNaN(score))
+            	score = -100;
+            FileIO.write("1:" + String.valueOf(score) + " ");
+            /*#######################*/
 
             LinkedList<TermFrequency> termList = commentSVM.getTermList();
             for (TermFrequency t : termList){

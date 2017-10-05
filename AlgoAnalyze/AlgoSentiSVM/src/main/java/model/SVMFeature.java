@@ -32,7 +32,7 @@ public class SVMFeature {
     public  void addFeature(String f){
         String t = f.toLowerCase();
         if (!featureList.containsKey(t)) {
-            int index = featureList.size() - 1;
+            int index = featureList.size() + 2;
             featureList.put(t, index);
         }
     }
@@ -42,7 +42,7 @@ public class SVMFeature {
         if (featureList.containsKey(t))
             return featureList.get(t);
 
-        return -1;
+        return -100;
     }
 
     public LinkedHashMap<String, Integer> getFeatureList(){
